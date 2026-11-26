@@ -1,0 +1,1459 @@
+{
+  "schema_version": "1.0",
+  "updated_at_utc": "2026-11-09T13:37:29.993032+00:00",
+  "decision_cards": [],
+  "claims": [
+    {
+      "claim_id": "C-01",
+      "question_id": "q1",
+      "claim_type": "key_number",
+      "problem_type": [
+        "OPT"
+      ],
+      "statement": "固定运力下三种路线的建设交付工期上界",
+      "models": [
+        {
+          "name": "固定容量建设",
+          "role": "固定运力下三种路线的建设交付工期上界",
+          "rationale": "沿用建模组交付的 v9 基线",
+          "problem_specific_adaptation": "按对应任务情景、阶段与数量口径提取",
+          "validation": "实际重跑、归档对照和独立 v9 约束复核",
+          "inputs_from": "construction_v9.py 与 proofs/construction_v9.md",
+          "outputs_to": "results/论文组结果表.csv 与 figures/result_q1_construction_bounds.svg",
+          "assumptions": [
+            "交付 1 亿吨一般建设物资",
+            "火箭频次为具名设计情景"
+          ],
+          "constraints": [
+            "三港额定提升总质量口径",
+            "火箭净载荷及额定发射频次"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "evidence/2026_MCM_Problem_B.pdf",
+          "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+          "provenance": "本地赛题附件",
+          "unit": "题目规定"
+        },
+        {
+          "path": "proofs/construction_v9.md",
+          "sha256": "eb465f8a20507546fe6cb246096150af5e849e451217888cbf44460ab90c90e4",
+          "provenance": "建模组 v9 数学合同与具名情景",
+          "unit": "见具体物理量"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "construction_v9.py",
+          "sha256": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850",
+          "description": "v9 原始数值计算"
+        },
+        {
+          "path": "programming_handoff.py",
+          "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+          "description": "按情景提取可审计结果表"
+        }
+      ],
+      "execution": {
+        "command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "harbours": 3,
+          "lift_gross_t_year_each": 179000.0,
+          "selected_R_sites": 10,
+          "R_flights_year_each": 250,
+          "R_payload_t": 125.0,
+          "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+          "generic_construction_t": 100000000.0,
+          "water_horizon_days": 365,
+          "gross_service_t_day": 1154.3999999999999,
+          "default_mission_key": "42ece0ad97c436c7",
+          "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+          "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+          "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+        },
+        "output_files": [
+          {
+            "path": "results/joint_v9.json",
+            "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+          },
+          {
+            "path": "results/论文组结果表.csv",
+            "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+          },
+          {
+            "path": "figures/result_q1_construction_bounds.svg",
+            "sha256": "99e30b826c9a1c7f9e8849e96d7c1b46236a5c04ebb594ed8261a252c796c3c5"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "ideal_R_catalogue__construction_delivery_upper",
+          "source_output": "results/joint_v9.json#construction_summary / policy 05f5b7e9793f7baa67 / construction_delivery_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q1 / ideal_R_catalogue / construction_delivery_upper",
+              "value": 320.11506849315066,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "ideal_E_catalogue__construction_delivery_upper",
+          "source_output": "results/joint_v9.json#construction_summary / policy 118f9dbce0224dc8c1 / construction_delivery_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q1 / ideal_E_catalogue / construction_delivery_upper",
+              "value": 893.7561643835617,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "ideal_ER_catalogue__construction_delivery_upper",
+          "source_output": "results/joint_v9.json#construction_summary / policy 49bd9939872f36b167 / construction_delivery_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q1 / ideal_ER_catalogue / construction_delivery_upper",
+              "value": 235.76986301369863,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "p1_ideal_rocket_days",
+          "source_output": "results/programming_smoke.json#delivery_upper_days",
+          "occurrences": [
+            {
+              "location": "results/programming_smoke.json#delivery_upper_days",
+              "value": 116842,
+              "unit": "day"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "固定运力下三种路线的建设交付工期上界，以归档逐条对照并保留上界和情景口径。",
+        "parameter_sources": [
+          "proofs/construction_v9.md",
+          "construction_v9.py"
+        ],
+        "failure_conditions": [
+          "运力、库存、时限、故障支持或单价偏离声明情景时，按修改后输入重算。"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "结果复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/run_record.json",
+            "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+          },
+          {
+            "path": "results/independent_v9.json",
+            "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+          },
+          {
+            "path": "results/archive_comparison.json",
+            "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+          },
+          {
+            "path": "results/programming_smoke.json",
+            "sha256": "eaf1f0246201e214b3a48739d47b4b4ae8888f38691d95a0911bc6a1c7182009"
+          },
+          {
+            "path": "evidence_chain/P2_技术复核.json",
+            "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-01",
+        "A-02",
+        "SA-01",
+        "SA-02"
+      ]
+    },
+    {
+      "claim_id": "C-02",
+      "question_id": "q2",
+      "claim_type": "key_number",
+      "problem_type": [
+        "OPT"
+      ],
+      "statement": "相同电梯份额下，具名建设故障提高交付工期上界",
+      "models": [
+        {
+          "name": "建设损失与补发",
+          "role": "相同电梯份额下，具名建设故障提高交付工期上界",
+          "rationale": "沿用建模组交付的 v9 基线",
+          "problem_specific_adaptation": "按对应任务情景、阶段与数量口径提取",
+          "validation": "实际重跑、归档对照和独立 v9 约束复核",
+          "inputs_from": "construction_v9.py 与 proofs/construction_v9.md",
+          "outputs_to": "results/论文组结果表.csv 与 figures/raw_q2_declared_fault_budgets.svg",
+          "assumptions": [
+            "电梯份额固定为 30%",
+            "采用声明的滚动故障预算"
+          ],
+          "constraints": [
+            "容量、补发和可用船队回代",
+            "保证的交付量"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "evidence/2026_MCM_Problem_B.pdf",
+          "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+          "provenance": "本地赛题附件",
+          "unit": "题目规定"
+        },
+        {
+          "path": "proofs/construction_v9.md",
+          "sha256": "eb465f8a20507546fe6cb246096150af5e849e451217888cbf44460ab90c90e4",
+          "provenance": "建模组 v9 数学合同与具名情景",
+          "unit": "见具体物理量"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "construction_v9.py",
+          "sha256": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850",
+          "description": "v9 原始数值计算"
+        },
+        {
+          "path": "programming_handoff.py",
+          "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+          "description": "按情景提取可审计结果表"
+        }
+      ],
+      "execution": {
+        "command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "harbours": 3,
+          "lift_gross_t_year_each": 179000.0,
+          "selected_R_sites": 10,
+          "R_flights_year_each": 250,
+          "R_payload_t": 125.0,
+          "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+          "generic_construction_t": 100000000.0,
+          "water_horizon_days": 365,
+          "gross_service_t_day": 1154.3999999999999,
+          "default_mission_key": "42ece0ad97c436c7",
+          "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+          "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+          "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+        },
+        "output_files": [
+          {
+            "path": "results/joint_v9.json",
+            "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+          },
+          {
+            "path": "results/论文组结果表.csv",
+            "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+          },
+          {
+            "path": "figures/raw_q2_declared_fault_budgets.svg",
+            "sha256": "7bf3cbf7317216d6dc027f4e8814e815a4e099f243be090c78bfaf576a7dfdd8"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "ideal_fixed_E_share_0.30__construction_delivery_upper",
+          "source_output": "results/joint_v9.json#construction_baselines / policy 56763a771534b99a5d / construction_delivery_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q2 / ideal_fixed_E_share_0.30 / construction_delivery_upper",
+              "value": 97935.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "ideal_fixed_E_share_0.30__central_construction_budget",
+          "source_output": "results/joint_v9.json#construction_baselines / policy 56763a771534b99a5d / central_construction_budget",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q2 / ideal_fixed_E_share_0.30 / central_construction_budget",
+              "value": 82405932820418.58,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "value_id": "fault_fixed_E_share_0.30__construction_delivery_upper",
+          "source_output": "results/joint_v9.json#construction_baselines / policy 24b2a8b50ec6c3634e / construction_delivery_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q2 / fault_fixed_E_share_0.30 / construction_delivery_upper",
+              "value": 113289.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "fault_fixed_E_share_0.30__central_construction_budget",
+          "source_output": "results/joint_v9.json#construction_baselines / policy 24b2a8b50ec6c3634e / central_construction_budget",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q2 / fault_fixed_E_share_0.30 / central_construction_budget",
+              "value": 84988464917728.75,
+              "unit": "USD"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "相同电梯份额下，具名建设故障提高交付工期上界，以归档逐条对照并保留上界和情景口径。",
+        "parameter_sources": [
+          "proofs/construction_v9.md",
+          "construction_v9.py"
+        ],
+        "failure_conditions": [
+          "运力、库存、时限、故障支持或单价偏离声明情景时，按修改后输入重算。"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "结果复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/run_record.json",
+            "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+          },
+          {
+            "path": "results/independent_v9.json",
+            "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+          },
+          {
+            "path": "results/archive_comparison.json",
+            "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+          },
+          {
+            "path": "evidence_chain/P2_技术复核.json",
+            "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-01",
+        "A-02",
+        "SA-02"
+      ]
+    },
+    {
+      "claim_id": "C-03",
+      "question_id": "q3",
+      "claim_type": "key_number",
+      "problem_type": [
+        "NET",
+        "OPT"
+      ],
+      "statement": "365 天生活和医疗供水量、备料时间及预算差额",
+      "models": [
+        {
+          "name": "循环供水与阶段账本",
+          "role": "365 天生活和医疗供水量、备料时间及预算差额",
+          "rationale": "沿用建模组交付的 v9 基线",
+          "problem_specific_adaptation": "按对应任务情景、阶段与数量口径提取",
+          "validation": "实际重跑、归档对照和独立 v9 约束复核",
+          "inputs_from": "joint_v9.py 与 proofs/water_v9.md",
+          "outputs_to": "results/论文组结果表.csv 与 figures/process_q3_water_preposition.svg",
+          "assumptions": [
+            "365 天供水期",
+            "生活与医疗服务用水",
+            "设备和初始水按阶段额外计入"
+          ],
+          "constraints": [
+            "月面库存保障",
+            "同建设路线配对比较"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "evidence/2026_MCM_Problem_B.pdf",
+          "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+          "provenance": "本地赛题附件",
+          "unit": "题目规定"
+        },
+        {
+          "path": "proofs/water_v9.md",
+          "sha256": "80dcca63793cb39be67aa9a07b3b2060a14b5ff9b45736dee1e981770168788f",
+          "provenance": "建模组 v9 数学合同与具名情景",
+          "unit": "见具体物理量"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "joint_v9.py",
+          "sha256": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165",
+          "description": "v9 原始数值计算"
+        },
+        {
+          "path": "programming_handoff.py",
+          "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+          "description": "按情景提取可审计结果表"
+        }
+      ],
+      "execution": {
+        "command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "harbours": 3,
+          "lift_gross_t_year_each": 179000.0,
+          "selected_R_sites": 10,
+          "R_flights_year_each": 250,
+          "R_payload_t": 125.0,
+          "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+          "generic_construction_t": 100000000.0,
+          "water_horizon_days": 365,
+          "gross_service_t_day": 1154.3999999999999,
+          "default_mission_key": "42ece0ad97c436c7",
+          "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+          "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+          "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+        },
+        "output_files": [
+          {
+            "path": "results/joint_v9.json",
+            "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+          },
+          {
+            "path": "results/论文组结果表.csv",
+            "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+          },
+          {
+            "path": "figures/process_q3_water_preposition.svg",
+            "sha256": "434d40d0dc825646ab1e3c73f79e5218482ba6906bb5a398fc1c8f9cfa92c5ef"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "minimum_central_budget__gross_service_water_over_horizon",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy c9cc3b90716159eb6c / gross_service_water_over_horizon",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / minimum_central_budget / gross_service_water_over_horizon",
+              "value": 421355.99999999994,
+              "unit": "t"
+            }
+          ]
+        },
+        {
+          "value_id": "minimum_central_budget__initial_usable_water_on_moon",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy c9cc3b90716159eb6c / initial_usable_water_on_moon",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / minimum_central_budget / initial_usable_water_on_moon",
+              "value": 21654.4,
+              "unit": "t"
+            }
+          ]
+        },
+        {
+          "value_id": "minimum_central_budget__additional_preposition_upper",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy c9cc3b90716159eb6c / additional_preposition_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / minimum_central_budget / additional_preposition_upper",
+              "value": 1445.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "minimum_central_budget__incremental_central_budget_vs_matched_construction_only",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy c9cc3b90716159eb6c / incremental_central_budget_vs_matched_construction_only",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / minimum_central_budget / incremental_central_budget_vs_matched_construction_only",
+              "value": 142050890139.6797,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__gross_service_water_over_horizon",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy 90545590de96ee94ee / gross_service_water_over_horizon",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / earliest_habitation_bound / gross_service_water_over_horizon",
+              "value": 421355.99999999994,
+              "unit": "t"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__initial_usable_water_on_moon",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy 90545590de96ee94ee / initial_usable_water_on_moon",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / earliest_habitation_bound / initial_usable_water_on_moon",
+              "value": 24154.4,
+              "unit": "t"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__additional_preposition_upper",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy 90545590de96ee94ee / additional_preposition_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / earliest_habitation_bound / additional_preposition_upper",
+              "value": 1096.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__incremental_central_budget_vs_matched_construction_only",
+          "source_output": "results/joint_v9.json#water_catalogues,candidates,construction_baselines / policy 90545590de96ee94ee / incremental_central_budget_vs_matched_construction_only",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q3 / earliest_habitation_bound / incremental_central_budget_vs_matched_construction_only",
+              "value": 125997422860.28125,
+              "unit": "USD"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "365 天生活和医疗供水量、备料时间及预算差额，以归档逐条对照并保留上界和情景口径。",
+        "parameter_sources": [
+          "proofs/water_v9.md",
+          "joint_v9.py"
+        ],
+        "failure_conditions": [
+          "运力、库存、时限、故障支持或单价偏离声明情景时，按修改后输入重算。"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "结果复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/run_record.json",
+            "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+          },
+          {
+            "path": "results/independent_v9.json",
+            "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+          },
+          {
+            "path": "results/archive_comparison.json",
+            "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+          },
+          {
+            "path": "evidence_chain/P2_技术复核.json",
+            "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-01",
+        "A-02",
+        "SA-02"
+      ]
+    },
+    {
+      "claim_id": "C-04",
+      "question_id": "q4",
+      "claim_type": "key_number",
+      "problem_type": [
+        "EVA",
+        "OPT"
+      ],
+      "statement": "排放代理约束下的最低情景预算",
+      "models": [
+        {
+          "name": "有限目录排放预算筛选",
+          "role": "排放代理约束下的最低情景预算",
+          "rationale": "沿用建模组交付的 v9 基线",
+          "problem_specific_adaptation": "按对应任务情景、阶段与数量口径提取",
+          "validation": "实际重跑、归档对照和独立 v9 约束复核",
+          "inputs_from": "cost_environment_v9.py 与 proofs/cost_environment_v9.md",
+          "outputs_to": "results/论文组结果表.csv 与 figures/result_q4_emissions_budget_frontier.svg",
+          "assumptions": [
+            "默认任务及故障模式",
+            "中央单价与排放系数"
+          ],
+          "constraints": [
+            "给定排放代理量上限",
+            "候选策略在同一有限目录内比较"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "evidence/2026_MCM_Problem_B.pdf",
+          "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+          "provenance": "本地赛题附件",
+          "unit": "题目规定"
+        },
+        {
+          "path": "proofs/cost_environment_v9.md",
+          "sha256": "fdacf30a3b8b96c605c6426b117c71e4c92ae00e69c591babca26e2c3bdcedce",
+          "provenance": "建模组 v9 数学合同与具名情景",
+          "unit": "见具体物理量"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "cost_environment_v9.py",
+          "sha256": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341",
+          "description": "v9 原始数值计算"
+        },
+        {
+          "path": "programming_handoff.py",
+          "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+          "description": "按情景提取可审计结果表"
+        }
+      ],
+      "execution": {
+        "command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "harbours": 3,
+          "lift_gross_t_year_each": 179000.0,
+          "selected_R_sites": 10,
+          "R_flights_year_each": 250,
+          "R_payload_t": 125.0,
+          "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+          "generic_construction_t": 100000000.0,
+          "water_horizon_days": 365,
+          "gross_service_t_day": 1154.3999999999999,
+          "default_mission_key": "42ece0ad97c436c7",
+          "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+          "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+          "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+        },
+        "output_files": [
+          {
+            "path": "results/joint_v9.json",
+            "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+          },
+          {
+            "path": "results/论文组结果表.csv",
+            "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+          },
+          {
+            "path": "figures/result_q4_emissions_budget_frontier.svg",
+            "sha256": "88c05928c4b387f671dee9f203e76fa4b250f3ba3968aebe36a969a032adf705"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "central_emissions_cap_4__emissions_proxy_cap",
+          "source_output": "results/joint_v9.json#selections.central.epsilon_rows / policy 4e143506c9e60177d6 / emissions_proxy_cap",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q4 / central_emissions_cap_4 / emissions_proxy_cap",
+              "value": 4440683578865.209,
+              "unit": "kg CO2 proxy"
+            }
+          ]
+        },
+        {
+          "value_id": "central_emissions_cap_4__selected_emissions_proxy",
+          "source_output": "results/joint_v9.json#selections.central.epsilon_rows / policy 4e143506c9e60177d6 / selected_emissions_proxy",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q4 / central_emissions_cap_4 / selected_emissions_proxy",
+              "value": 4415007068343.89,
+              "unit": "kg CO2 proxy"
+            }
+          ]
+        },
+        {
+          "value_id": "central_emissions_cap_4__selected_central_budget",
+          "source_output": "results/joint_v9.json#selections.central.epsilon_rows / policy 4e143506c9e60177d6 / selected_central_budget",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q4 / central_emissions_cap_4 / selected_central_budget",
+              "value": 79633123371312.22,
+              "unit": "USD"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "排放代理约束下的最低情景预算，以归档逐条对照并保留上界和情景口径。",
+        "parameter_sources": [
+          "proofs/cost_environment_v9.md",
+          "cost_environment_v9.py"
+        ],
+        "failure_conditions": [
+          "运力、库存、时限、故障支持或单价偏离声明情景时，按修改后输入重算。"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "结果复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/run_record.json",
+            "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+          },
+          {
+            "path": "results/independent_v9.json",
+            "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+          },
+          {
+            "path": "results/archive_comparison.json",
+            "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+          },
+          {
+            "path": "evidence_chain/P2_技术复核.json",
+            "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-01",
+        "A-02",
+        "SA-02"
+      ]
+    },
+    {
+      "claim_id": "C-05",
+      "question_id": "q5",
+      "claim_type": "key_number",
+      "problem_type": [
+        "EVA",
+        "OPT"
+      ],
+      "statement": "最低中央预算与最短入住上界的取舍",
+      "models": [
+        {
+          "name": "预算和入住前沿",
+          "role": "最低中央预算与最短入住上界的取舍",
+          "rationale": "沿用建模组交付的 v9 基线",
+          "problem_specific_adaptation": "按对应任务情景、阶段与数量口径提取",
+          "validation": "实际重跑、归档对照和独立 v9 约束复核",
+          "inputs_from": "joint_v9.py 与 proofs/joint_v9.md",
+          "outputs_to": "results/论文组结果表.csv 与 figures/result_q5_habitation_budget_frontier.svg",
+          "assumptions": [
+            "建设与供水合并方案",
+            "中央情景和默认故障模式"
+          ],
+          "constraints": [
+            "同一候选目录和运力",
+            "共同前提下的工期与预算"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "evidence/2026_MCM_Problem_B.pdf",
+          "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+          "provenance": "本地赛题附件",
+          "unit": "题目规定"
+        },
+        {
+          "path": "proofs/joint_v9.md",
+          "sha256": "1823d2c195757b903c316d1fea7dc9dded964e0aeeae8e66d9e6f2375eb01096",
+          "provenance": "建模组 v9 数学合同与具名情景",
+          "unit": "见具体物理量"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "joint_v9.py",
+          "sha256": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165",
+          "description": "v9 原始数值计算"
+        },
+        {
+          "path": "programming_handoff.py",
+          "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+          "description": "按情景提取可审计结果表"
+        }
+      ],
+      "execution": {
+        "command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "harbours": 3,
+          "lift_gross_t_year_each": 179000.0,
+          "selected_R_sites": 10,
+          "R_flights_year_each": 250,
+          "R_payload_t": 125.0,
+          "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+          "generic_construction_t": 100000000.0,
+          "water_horizon_days": 365,
+          "gross_service_t_day": 1154.3999999999999,
+          "default_mission_key": "42ece0ad97c436c7",
+          "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+          "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+          "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+        },
+        "output_files": [
+          {
+            "path": "results/joint_v9.json",
+            "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+          },
+          {
+            "path": "results/论文组结果表.csv",
+            "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+          },
+          {
+            "path": "figures/result_q5_habitation_budget_frontier.svg",
+            "sha256": "71908f09567aec8825d24be84bb8e95ec043de300c5c30c4a3b1a4f3fe8b7059"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "minimum_central_budget__habitation_upper",
+          "source_output": "results/joint_v9.json#candidates,selections,cost_time_frontier_ids / policy c9cc3b90716159eb6c / habitation_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q5 / minimum_central_budget / habitation_upper",
+              "value": 1036.3013653659955,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "minimum_central_budget__central_complete_policy_budget",
+          "source_output": "results/joint_v9.json#candidates,selections,cost_time_frontier_ids / policy c9cc3b90716159eb6c / central_complete_policy_budget",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q5 / minimum_central_budget / central_complete_policy_budget",
+              "value": 67643022186337.625,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__habitation_upper",
+          "source_output": "results/joint_v9.json#candidates,selections,cost_time_frontier_ids / policy 90545590de96ee94ee / habitation_upper",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q5 / earliest_habitation_bound / habitation_upper",
+              "value": 303.99177632489943,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "earliest_habitation_bound__central_complete_policy_budget",
+          "source_output": "results/joint_v9.json#candidates,selections,cost_time_frontier_ids / policy 90545590de96ee94ee / central_complete_policy_budget",
+          "occurrences": [
+            {
+              "location": "results/论文组结果表.csv / q5 / earliest_habitation_bound / central_complete_policy_budget",
+              "value": 85383702984465.27,
+              "unit": "USD"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "最低中央预算与最短入住上界的取舍，以归档逐条对照并保留上界和情景口径。",
+        "parameter_sources": [
+          "proofs/joint_v9.md",
+          "joint_v9.py"
+        ],
+        "failure_conditions": [
+          "运力、库存、时限、故障支持或单价偏离声明情景时，按修改后输入重算。"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "结果复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/run_record.json",
+            "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+          },
+          {
+            "path": "results/independent_v9.json",
+            "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+          },
+          {
+            "path": "results/archive_comparison.json",
+            "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+          },
+          {
+            "path": "evidence_chain/P2_技术复核.json",
+            "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-01",
+        "A-02",
+        "SA-02"
+      ]
+    },
+    {
+      "claim_id": "C-06",
+      "question_id": "q2",
+      "claim_type": "key_number",
+      "problem_type": "OPT",
+      "statement": "单独取消地面发射场额外停运时，重选电梯份额可降低建设交付工期上界。",
+      "models": [
+        {
+          "name": "Q2 单参数对照与固定份额和候选份额比较",
+          "role": "单独取消地面发射场额外停运时，重选电梯份额可降低建设交付工期上界。",
+          "rationale": "补充用户确认的 v9 对比和决策筛选",
+          "problem_specific_adaptation": "用实际建设交付和入住阶段的不同时间口径",
+          "validation": "独立回算建设工期与候选交集，核对来源哈希",
+          "inputs_from": "proofs/construction_v9.md",
+          "outputs_to": "results/supplemental/q2_fault_attribution.csv",
+          "assumptions": [
+            "默认 v9 运力与任务",
+            "地面发射场额外停运预算单独归零"
+          ],
+          "constraints": [
+            "按 5% 网格及平衡份额比较",
+            "中央情景建设预算用于工期并列比较"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "results/joint_v9.json",
+          "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f",
+          "provenance": "编程组 v9 已校验原始结果",
+          "unit": "day, USD, kg CO2e proxy"
+        },
+        {
+          "path": "proofs/construction_v9.md",
+          "sha256": "eb465f8a20507546fe6cb246096150af5e849e451217888cbf44460ab90c90e4",
+          "provenance": "建模组 v9 证明与口径",
+          "unit": "见相应量纲"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "fault_attribution_v9.py",
+          "sha256": "e68bc8cadb8a843011dd9149f0291dcf4cdc7f6c50aa37f2f0c96ceeca424f87",
+          "description": "Q2 单参数对照与固定份额和候选份额比较"
+        }
+      ],
+      "execution": {
+        "command": "python fault_attribution_v9.py",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "baseline_mission_key": "42ece0ad97c436c7",
+          "mode": "fault",
+          "price_and_emissions_scenario": "central",
+          "q2_reference_E_share": 0.29063479,
+          "q2_single_parameter_changes": [
+            "lift_closed_days",
+            "E_closed_days",
+            "R_closed_days",
+            "port_closed_days",
+            "cargo_losses_E_per_harbour_year",
+            "cargo_losses_R_per_site_year",
+            "hull_losses_E_per_harbour_year"
+          ],
+          "q4_q5_deadlines_years": [
+            50.0,
+            100.0,
+            250.0,
+            350.0,
+            500.0,
+            1000.0,
+            1500.0
+          ],
+          "q4_q5_emissions_caps_kg_CO2e_proxy": [
+            1176473891760.0,
+            1992526313536.3022,
+            2808578735312.6045,
+            3624631157088.9067,
+            4440683578865.209,
+            5256736000641.512,
+            6072788422417.813,
+            6888840844194.115,
+            7704893265970.418
+          ],
+          "example_deadline_years": 350,
+          "example_emissions_caps_Gt_CO2e_proxy": [
+            1.99,
+            2.81
+          ],
+          "days_per_year": 365,
+          "kg_per_Gt": 1000000000000.0,
+          "random_seed_usage": "Deterministic; CLI seed 0 is unused."
+        },
+        "output_files": [
+          {
+            "path": "results/supplemental/q2_fault_attribution.csv",
+            "sha256": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "fixed_construction_delivery_upper_days",
+          "source_output": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / fixed_baseline_share / construction_delivery_upper_days",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / fixed_baseline_share / construction_delivery_upper_days",
+              "value": 109764.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "reselected_construction_delivery_upper_days",
+          "source_output": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / reselected_shortest_bound / construction_delivery_upper_days",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / reselected_shortest_bound / construction_delivery_upper_days",
+              "value": 89540.0,
+              "unit": "day"
+            }
+          ]
+        },
+        {
+          "value_id": "reselected_construction_E_share",
+          "source_output": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / reselected_shortest_bound / construction_E_share",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q2_fault_attribution.csv / no_ground_site_closures / reselected_shortest_bound / construction_E_share",
+              "value": 0.23689063,
+              "unit": "fraction"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "单独取消地面发射场额外停运时，重选电梯份额可降低建设交付工期上界。",
+        "parameter_sources": [
+          "proofs/construction_v9.md",
+          "results/joint_v9.json"
+        ],
+        "failure_conditions": [
+          "需要已校验的 v9 输出与相同的假设、单位和情景"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/supplemental/verification.json",
+            "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+          },
+          {
+            "path": "results/supplemental/复现清单.json",
+            "sha256": "ab6910e054ef90eced8b394c6b93dff78cafef5a35fe8fc0e47fe3b2dac76b4a"
+          },
+          {
+            "path": "evidence_chain/P2_补充分析复核.json",
+            "sha256": "b9918cbab093f417148f3748d7e034ba991d428eb241d95e7e02903f2a235435"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-04",
+        "SA-03",
+        "SA-04"
+      ]
+    },
+    {
+      "claim_id": "C-07",
+      "question_id": "q4",
+      "claim_type": "key_number",
+      "problem_type": "OPT",
+      "statement": "350 年入住期限和 2.81 Gt 排放代理上限下，当前目录有 251 个共同可行候选。",
+      "models": [
+        {
+          "name": "默认任务故障候选的联合约束筛选",
+          "role": "350 年入住期限和 2.81 Gt 排放代理上限下，当前目录有 251 个共同可行候选。",
+          "rationale": "补充用户确认的 v9 对比和决策筛选",
+          "problem_specific_adaptation": "用实际建设交付和入住阶段的不同时间口径",
+          "validation": "独立回算建设工期与候选交集，核对来源哈希",
+          "inputs_from": "proofs/cost_environment_v9.md",
+          "outputs_to": "results/supplemental/q4_q5_joint_screening_custom.csv",
+          "assumptions": [
+            "默认任务和故障模式",
+            "中央排放代理系数",
+            "2.81 Gt 为示例上限"
+          ],
+          "constraints": [
+            "入住时间上界至多 350 年",
+            "按 kg 比较排放代理量"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "results/joint_v9.json",
+          "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f",
+          "provenance": "编程组 v9 已校验原始结果",
+          "unit": "day, USD, kg CO2e proxy"
+        },
+        {
+          "path": "proofs/cost_environment_v9.md",
+          "sha256": "fdacf30a3b8b96c605c6426b117c71e4c92ae00e69c591babca26e2c3bdcedce",
+          "provenance": "建模组 v9 证明与口径",
+          "unit": "见相应量纲"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "joint_screening_v9.py",
+          "sha256": "7637642499fca191d4f4a35d117affc731255932060b576196f4a7fe2e8d6b6a",
+          "description": "默认任务故障候选的联合约束筛选"
+        }
+      ],
+      "execution": {
+        "command": "python joint_screening_v9.py --deadline-years 350 --emissions-cap-gt 1.99 2.81",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "baseline_mission_key": "42ece0ad97c436c7",
+          "mode": "fault",
+          "price_and_emissions_scenario": "central",
+          "q2_reference_E_share": 0.29063479,
+          "q2_single_parameter_changes": [
+            "lift_closed_days",
+            "E_closed_days",
+            "R_closed_days",
+            "port_closed_days",
+            "cargo_losses_E_per_harbour_year",
+            "cargo_losses_R_per_site_year",
+            "hull_losses_E_per_harbour_year"
+          ],
+          "q4_q5_deadlines_years": [
+            50.0,
+            100.0,
+            250.0,
+            350.0,
+            500.0,
+            1000.0,
+            1500.0
+          ],
+          "q4_q5_emissions_caps_kg_CO2e_proxy": [
+            1176473891760.0,
+            1992526313536.3022,
+            2808578735312.6045,
+            3624631157088.9067,
+            4440683578865.209,
+            5256736000641.512,
+            6072788422417.813,
+            6888840844194.115,
+            7704893265970.418
+          ],
+          "example_deadline_years": 350,
+          "example_emissions_caps_Gt_CO2e_proxy": [
+            1.99,
+            2.81
+          ],
+          "days_per_year": 365,
+          "kg_per_Gt": 1000000000000.0,
+          "random_seed_usage": "Deterministic; CLI seed 0 is unused."
+        },
+        "output_files": [
+          {
+            "path": "results/supplemental/q4_q5_joint_screening_custom.csv",
+            "sha256": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "example_joint_eligible_count",
+          "source_output": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / joint_eligible_count",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / joint_eligible_count",
+              "value": 251.0,
+              "unit": "policy"
+            }
+          ]
+        },
+        {
+          "value_id": "example_selected_emissions_Gt_CO2e_proxy",
+          "source_output": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_emissions_Gt_CO2e_proxy",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_emissions_Gt_CO2e_proxy",
+              "value": 2.7969604039414766,
+              "unit": "Gt CO2e proxy"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "350 年入住期限和 2.81 Gt 排放代理上限下，当前目录有 251 个共同可行候选。",
+        "parameter_sources": [
+          "proofs/cost_environment_v9.md",
+          "results/joint_v9.json"
+        ],
+        "failure_conditions": [
+          "需要已校验的 v9 输出与相同的假设、单位和情景"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/supplemental/verification.json",
+            "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+          },
+          {
+            "path": "results/supplemental/复现清单.json",
+            "sha256": "ab6910e054ef90eced8b394c6b93dff78cafef5a35fe8fc0e47fe3b2dac76b4a"
+          },
+          {
+            "path": "evidence_chain/P2_补充分析复核.json",
+            "sha256": "b9918cbab093f417148f3748d7e034ba991d428eb241d95e7e02903f2a235435"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-04",
+        "SA-03",
+        "SA-04"
+      ]
+    },
+    {
+      "claim_id": "C-08",
+      "question_id": "q5",
+      "claim_type": "key_number",
+      "problem_type": "OPT",
+      "statement": "350 年与 2.81 Gt 示例限额下的最低中央预算与入住上界。",
+      "models": [
+        {
+          "name": "按两项约束筛选后在有限候选中最小化预算",
+          "role": "350 年与 2.81 Gt 示例限额下的最低中央预算与入住上界。",
+          "rationale": "补充用户确认的 v9 对比和决策筛选",
+          "problem_specific_adaptation": "用实际建设交付和入住阶段的不同时间口径",
+          "validation": "独立回算建设工期与候选交集，核对来源哈希",
+          "inputs_from": "proofs/joint_v9.md",
+          "outputs_to": "results/supplemental/q4_q5_joint_screening_custom.csv",
+          "assumptions": [
+            "默认任务和故障模式",
+            "中央预算系数",
+            "示例限额来自本次补充分析"
+          ],
+          "constraints": [
+            "入住时间上界至多 350 年",
+            "排放代理量至多 2.81 Gt"
+          ]
+        }
+      ],
+      "alternatives_rejected": [],
+      "data_sources": [
+        {
+          "path": "results/joint_v9.json",
+          "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f",
+          "provenance": "编程组 v9 已校验原始结果",
+          "unit": "day, USD, kg CO2e proxy"
+        },
+        {
+          "path": "proofs/joint_v9.md",
+          "sha256": "1823d2c195757b903c316d1fea7dc9dded964e0aeeae8e66d9e6f2375eb01096",
+          "provenance": "建模组 v9 证明与口径",
+          "unit": "见相应量纲"
+        }
+      ],
+      "transformations": [
+        {
+          "path": "joint_screening_v9.py",
+          "sha256": "7637642499fca191d4f4a35d117affc731255932060b576196f4a7fe2e8d6b6a",
+          "description": "按两项约束筛选后在有限候选中最小化预算"
+        }
+      ],
+      "execution": {
+        "command": "python joint_screening_v9.py --deadline-years 350 --emissions-cap-gt 1.99 2.81",
+        "random_seed": "not_applicable",
+        "parameters": {
+          "baseline_mission_key": "42ece0ad97c436c7",
+          "mode": "fault",
+          "price_and_emissions_scenario": "central",
+          "q2_reference_E_share": 0.29063479,
+          "q2_single_parameter_changes": [
+            "lift_closed_days",
+            "E_closed_days",
+            "R_closed_days",
+            "port_closed_days",
+            "cargo_losses_E_per_harbour_year",
+            "cargo_losses_R_per_site_year",
+            "hull_losses_E_per_harbour_year"
+          ],
+          "q4_q5_deadlines_years": [
+            50.0,
+            100.0,
+            250.0,
+            350.0,
+            500.0,
+            1000.0,
+            1500.0
+          ],
+          "q4_q5_emissions_caps_kg_CO2e_proxy": [
+            1176473891760.0,
+            1992526313536.3022,
+            2808578735312.6045,
+            3624631157088.9067,
+            4440683578865.209,
+            5256736000641.512,
+            6072788422417.813,
+            6888840844194.115,
+            7704893265970.418
+          ],
+          "example_deadline_years": 350,
+          "example_emissions_caps_Gt_CO2e_proxy": [
+            1.99,
+            2.81
+          ],
+          "days_per_year": 365,
+          "kg_per_Gt": 1000000000000.0,
+          "random_seed_usage": "Deterministic; CLI seed 0 is unused."
+        },
+        "output_files": [
+          {
+            "path": "results/supplemental/q4_q5_joint_screening_custom.csv",
+            "sha256": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40"
+          }
+        ]
+      },
+      "reported_values": [
+        {
+          "value_id": "example_selected_budget_USD",
+          "source_output": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_budget_USD",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_budget_USD",
+              "value": 86869495175159.1,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "value_id": "example_selected_habitation_upper_years",
+          "source_output": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_habitation_upper_years",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / selected_habitation_upper_years",
+              "value": 321.9917808219178,
+              "unit": "year"
+            }
+          ]
+        },
+        {
+          "value_id": "example_construction_E_share",
+          "source_output": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / construction_E_share",
+          "occurrences": [
+            {
+              "location": "results/supplemental/q4_q5_joint_screening_custom.csv / 350 years / 2.81 Gt / central / construction_E_share",
+              "value": 0.25,
+              "unit": "fraction"
+            }
+          ]
+        }
+      ],
+      "explainability": {
+        "team_explanation": "350 年与 2.81 Gt 示例限额下的最低中央预算与入住上界。",
+        "parameter_sources": [
+          "proofs/joint_v9.md",
+          "results/joint_v9.json"
+        ],
+        "failure_conditions": [
+          "需要已校验的 v9 输出与相同的假设、单位和情景"
+        ]
+      },
+      "verification": {
+        "result": "待队员确认",
+        "responsible_person": "",
+        "methods": [
+          "程序复现",
+          "约束回代"
+        ],
+        "evidence_files": [
+          {
+            "path": "results/supplemental/verification.json",
+            "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+          },
+          {
+            "path": "results/supplemental/复现清单.json",
+            "sha256": "ab6910e054ef90eced8b394c6b93dff78cafef5a35fe8fc0e47fe3b2dac76b4a"
+          },
+          {
+            "path": "evidence_chain/P2_补充分析复核.json",
+            "sha256": "b9918cbab093f417148f3748d7e034ba991d428eb241d95e7e02903f2a235435"
+          }
+        ]
+      },
+      "ai_record_ids": [
+        "A-04",
+        "SA-03",
+        "SA-04"
+      ]
+    }
+  ],
+  "gate_records": [],
+  "schema_help": {
+    "claim_types": [
+      "citation",
+      "key_number",
+      "model_choice",
+      "qualitative_conclusion"
+    ],
+    "responsible_person": "角色（队员N）",
+    "path_rule": "所有项目文件路径均相对 PROJECT_ROOT，并记录 sha256",
+    "decision_rule": "模型取舍等主观分叉使用 D-01 决策卡；硬规则与事实真假不得做成选项",
+    "decision_kinds": [
+      "assumption_tradeoff",
+      "consistency_resolution",
+      "innovation_strategy",
+      "model_strategy",
+      "source_convention",
+      "verification_strategy"
+    ]
+  }
+}

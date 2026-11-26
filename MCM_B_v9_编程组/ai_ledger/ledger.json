@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.2",
+  "contest_profile": {
+    "name": "CUMCM 2026",
+    "rules_sources": [],
+    "rules_frozen_at": null,
+    "hard_constraints": [
+      "正文≤30页",
+      "电子版≤20MB",
+      "摘要≤1页",
+      "无目录",
+      "匿名",
+      "附录含支撑材料清单",
+      "AI声明置于参考文献前"
+    ]
+  },
+  "team": {
+    "anonymous": true,
+    "role_holders": {}
+  },
+  "tools_used": [
+    {
+      "tool_id": "T-01",
+      "name": "OpenAI Codex",
+      "version": "GPT-6",
+      "usage_mode": "客户端",
+      "notes": ""
+    }
+  ],
+  "entries": [
+    {
+      "record_id": "A-01",
+      "tool_id": "T-01",
+      "stage": "编程",
+      "purpose_category": "求解过程核验",
+      "purpose_detail": "核对建模组交付的 v9 源码并在隔离目录重跑",
+      "inputs_to_ai": [
+        "建模组交付的 MCM_B_v9 和既有运行记录"
+      ],
+      "prompt_summary": "现在开始做编程的部分",
+      "process": "校验源码哈希、检查依赖、运行独立副本并对照结果",
+      "ai_output_summary": "编程组运行记录、验证输出与结果追溯",
+      "paper_location": "MCM_B_v9_编程组/results",
+      "adoption": "部分采纳",
+      "human_modification": "待队员确认",
+      "verification_method": "程序复现",
+      "verification_result": "待人工核验",
+      "verification_evidence": "results/programming_smoke.json、results/programming_run.log、results/run_record.json、results/archive_comparison.json",
+      "responsible_person": "",
+      "is_pure_language_polish": false,
+      "polish_unchanged_confirmed": false,
+      "claim_ids": []
+    },
+    {
+      "record_id": "A-02",
+      "tool_id": "T-01",
+      "stage": "编程",
+      "purpose_category": "局部代码生成",
+      "purpose_detail": "新增归档数值对照、论文结果表提取与绘图脚本",
+      "inputs_to_ai": [
+        "重跑生成的联合、供水、阶段和工程敏感性结果"
+      ],
+      "prompt_summary": "现在开始做编程的部分",
+      "process": "按实际策略字段比对数值并保留并列规则，编写论文组结果表和英文图脚本",
+      "ai_output_summary": "programming_handoff.py、plot_handoff.py、结果表和五张图",
+      "paper_location": "MCM_B_v9_编程组",
+      "adoption": "部分采纳",
+      "human_modification": "待队员确认",
+      "verification_method": "结果复现",
+      "verification_result": "待人工核验",
+      "verification_evidence": "results/archive_comparison.json、results/figure_audit.json",
+      "responsible_person": "",
+      "is_pure_language_polish": false,
+      "polish_unchanged_confirmed": false,
+      "claim_ids": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-05"
+      ]
+    },
+    {
+      "record_id": "A-03",
+      "tool_id": "T-01",
+      "stage": "编程",
+      "purpose_category": "支撑材料整理",
+      "purpose_detail": "从现有求解源码选出报告用伪代码和附录片段",
+      "inputs_to_ai": [
+        "课程说明与编程组 v9 求解源码"
+      ],
+      "prompt_summary": "你摘取核心部分你觉得哪些需要放在报告上",
+      "process": "核对联合流程、运输及供水源码，并逐段校验两段摘录语法树",
+      "ai_output_summary": "正文算法及两段附录源码",
+      "paper_location": "报告核心代码摘录.md",
+      "adoption": "部分采纳",
+      "human_modification": "待队员确认",
+      "verification_method": "逐行检查",
+      "verification_result": "待人工核验",
+      "verification_evidence": "报告核心代码摘录.md 对应 construction_v9.py 与 water_v9.py",
+      "responsible_person": "",
+      "is_pure_language_polish": false,
+      "polish_unchanged_confirmed": false,
+      "claim_ids": []
+    },
+    {
+      "record_id": "A-04",
+      "tool_id": "T-01",
+      "stage": "编程",
+      "purpose_category": "局部代码生成",
+      "purpose_detail": "编写 Q2 单项故障对照与 Q4–Q5 入住期限和排放代理上限联合筛选",
+      "inputs_to_ai": [
+        "已验收技术复现的 v9 数据和用户确认的两项补充分析"
+      ],
+      "prompt_summary": "补一支 Q2 的单项故障分析脚本，补 Q4–Q5 的联合筛选",
+      "process": "沿用 v9 模型，以反事实逐项归零和有限目录筛选生成可核对表格",
+      "ai_output_summary": "fault_attribution_v9.py、joint_screening_v9.py 和补充结果表",
+      "paper_location": "results/supplemental",
+      "adoption": "部分采纳",
+      "human_modification": "待队员确认",
+      "verification_method": "程序复现",
+      "verification_result": "待人工核验",
+      "verification_evidence": "results/supplemental/q2_fault_attribution.csv、results/supplemental/q4_q5_joint_screening.csv",
+      "responsible_person": "",
+      "is_pure_language_polish": false,
+      "polish_unchanged_confirmed": false,
+      "claim_ids": [
+        "C-06",
+        "C-07",
+        "C-08"
+      ]
+    },
+    {
+      "record_id": "A-05",
+      "tool_id": "T-01",
+      "stage": "编程",
+      "purpose_category": "支撑材料整理",
+      "purpose_detail": "更新论文组交接包并核对同限额的三种 v9 电网情景",
+      "inputs_to_ai": [
+        "现有 v9 候选、补充分析 CSV、已验证的筛选脚本和旧交接包"
+      ],
+      "prompt_summary": "还需要补充优化什么吗",
+      "process": "复用联合筛选，独立计数和核对最低预算，整理已校验的表和相对链接",
+      "ai_output_summary": "更新版论文组交接 ZIP，含两项补充分析和电网情景对照",
+      "paper_location": "output/MCM_B_v9_论文组交接_含补充分析.zip 的 00_先读.md",
+      "adoption": "部分采纳",
+      "human_modification": "待队员确认",
+      "verification_method": "结果复现",
+      "verification_result": "待人工核验",
+      "verification_evidence": "交接包内结果表、补充复现清单与独立技术复核",
+      "responsible_person": "",
+      "is_pure_language_polish": false,
+      "polish_unchanged_confirmed": false,
+      "claim_ids": []
+    }
+  ],
+  "subagent_usage": [
+    {
+      "record_id": "SA-01",
+      "gate": "P1",
+      "agent_name": "v9_programming_qa",
+      "tool_id": "T-01",
+      "scope": "隔离副本的物理接口、全火箭最小算例与输入哈希技术复核",
+      "result": "技术复核通过，两个命令退出 0，15 个源码哈希一致，人工责任签核待完成",
+      "evidence": "results/programming_smoke.json#independent_technical_review",
+      "human_review": "待真实队员确认",
+      "claim_ids": [
+        "C-01"
+      ]
+    },
+    {
+      "record_id": "SA-02",
+      "gate": "P2",
+      "agent_name": "v9_programming_qa",
+      "tool_id": "T-01",
+      "scope": "隔离副本全流程运行、归档对照、论文数据与图表语义审核",
+      "result": "技术复核通过，独立重跑、归档对照及绘图均退出 0，人工责任签核待完成",
+      "evidence": "evidence_chain/P2_技术复核.json",
+      "human_review": "待真实队员确认",
+      "claim_ids": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-05"
+      ]
+    },
+    {
+      "record_id": "SA-03",
+      "gate": "P1",
+      "agent_name": "v9_supplement_qa",
+      "tool_id": "T-01",
+      "scope": "Q2 单参数故障情景与 Q4–Q5 联合筛选的独立小样例复核",
+      "result": "独立小样例技术复核通过，Q2 工期及 Q4–Q5 两个样例退出 0，人工核验待队员确认",
+      "evidence": "results/supplemental/verification.json",
+      "human_review": "待队员确认",
+      "claim_ids": [
+        "C-06",
+        "C-07",
+        "C-08"
+      ]
+    },
+    {
+      "record_id": "SA-04",
+      "gate": "P2",
+      "agent_name": "v9_supplement_qa",
+      "tool_id": "T-01",
+      "scope": "补充脚本独立重跑、联合约束回算、故障参数核对和复现清单审计",
+      "result": "P2 技术复核通过，隔离重跑三条命令均退出 0，三份 CSV 逐字节一致",
+      "evidence": "evidence_chain/P2_补充分析复核.json",
+      "human_review": "待队员确认",
+      "claim_ids": [
+        "C-06",
+        "C-07",
+        "C-08"
+      ]
+    }
+  ],
+  "declaration": null,
+  "details_pdf": null,
+  "submission_check": null
+}

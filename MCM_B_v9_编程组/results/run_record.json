@@ -1,0 +1,51 @@
+{
+  "version": "v9_complete_numerical_run",
+  "completed_at": "2026-11-09T10:52:25.128158+08:00",
+  "timezone": "Asia/Shanghai",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-15.3-arm64-arm-64bit",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "stage_seconds": {
+    "physics_v9.py": 0.25699845899998763,
+    "water_v9.py": 1.9227742919997581,
+    "joint_v9.py": 17.212398167000174,
+    "sensitivity_v9.py": 3.4866307500001312,
+    "verify_v9.py": 10.16558245899978
+  },
+  "total_seconds": 34.33097095899984,
+  "independent_checks_pass": true,
+  "producer_sources_unchanged": true,
+  "producer_code_sha256": {
+    "physics_v9.py": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2",
+    "water_v9.py": "254c7a13f6b4f3c929304b3e568157be62f011ce57e0489330704148cfd40276",
+    "joint_v9.py": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165",
+    "sensitivity_v9.py": "790dd514b05f5c195cdcc91a40a942cc16daafdf45d00380325d77421fd1038a",
+    "verify_v9.py": "4652c12163e283c29fc797de46224d4f55af1a69714c78e052c385c4f3f440e9",
+    "construction_v9.py": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850",
+    "cost_environment_v9.py": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341",
+    "registry_v9.py": "874e8a112aa2c64f5fcb7443eb42291b06da4485442a33b94e581bc0b952642b",
+    "phase_audit_v9.py": "54297a401f5dba2b1dbbd4cbbbb728b2c9a457c1ea73c3a599b9da5f35d54ac7",
+    "reference/physics_v8.py": "29a12fb250ac78b366947b5f76c1c0289c24fe0cd8d2dbf4133c0f43159ac14d",
+    "reference/water_v8.py": "397270fad79105e69cf0a4080324b14990b4b3fdb0f641ab63a9a52cf916018c",
+    "reference/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "root_code_sha256": {
+    "build_report_v9.py": "bfd242ff7c5233b04eb318dac0f1f1300d12603bf9daccc08a05a65e32feaaf4",
+    "construction_v9.py": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850",
+    "cost_environment_v9.py": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341",
+    "joint_v9.py": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165",
+    "package_v9.py": "ac5a26ce8f376f08e52510cfc2dda639a47c04dd384e01d8d8d0203fa723e88e",
+    "phase_audit_v9.py": "54297a401f5dba2b1dbbd4cbbbb728b2c9a457c1ea73c3a599b9da5f35d54ac7",
+    "physics_v9.py": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2",
+    "registry_v9.py": "874e8a112aa2c64f5fcb7443eb42291b06da4485442a33b94e581bc0b952642b",
+    "run_v9.py": "0006d1f4cf66947e08c015fab61fd26206136b67cd7e7d8001a02833a82f64cc",
+    "sensitivity_v9.py": "790dd514b05f5c195cdcc91a40a942cc16daafdf45d00380325d77421fd1038a",
+    "verify_v9.py": "4652c12163e283c29fc797de46224d4f55af1a69714c78e052c385c4f3f440e9",
+    "water_v9.py": "254c7a13f6b4f3c929304b3e568157be62f011ce57e0489330704148cfd40276"
+  },
+  "scope": "Reproducibility and checks of explicitly stated model supports. Not empirical lunar reliability, actual future prices, unrestricted optimality or engineering certification."
+}

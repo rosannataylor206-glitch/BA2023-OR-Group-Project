@@ -1,0 +1,36 @@
+{
+  "scope": "v9 ideal all-rocket construction at the stated baseline capacities",
+  "command": "python physics_v9.py followed by plan_construction(0, ideal_inputs(ConstructionInputs()), chosen_mission, target_t=100_000_000)",
+  "target_t": 100000000,
+  "guaranteed_t": 100000993.15068492,
+  "delivery_upper_days": 116842,
+  "delivery_upper_years": 320.11506849315066,
+  "net_payload_per_flight_t": 125.0,
+  "sites": 10,
+  "nominal_flights_per_site_per_year": 250,
+  "resource_checks": {
+    "payload_guarantee": true,
+    "fixed_harbours": true,
+    "fixed_rocket_sites": true,
+    "no_lift_capacity_multiplier": true,
+    "terminal_slots": true,
+    "terminal_touchdown": true,
+    "terminal_unload": true,
+    "single_pad_rating": true,
+    "imposed_warehouse": true
+  },
+  "independent_technical_review": {
+    "result": "PASS",
+    "reviewer": "v9_programming_qa",
+    "isolated_copy": true,
+    "commands_exit_0": [
+      "python physics_v9.py",
+      "plan_construction(0.0, ideal_inputs(ConstructionInputs()), chosen_mission, target_t=100_000_000)"
+    ],
+    "source_hashes_matched": 15,
+    "official_problem_hash_matched": true,
+    "matched_archived_delivery_days": 116842,
+    "resource_checks_true": 9,
+    "formal_p1_human_confirmation": "pending"
+  }
+}

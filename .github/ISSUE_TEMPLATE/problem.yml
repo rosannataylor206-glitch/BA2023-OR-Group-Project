@@ -1,0 +1,64 @@
+name: 实际发现的问题
+description: 仅记录有证据的问题；不要预先虚构缺陷
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "Issue ID 创建后由 GitHub 分配；敏感值请脱敏。"
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 严重程度
+      options:
+        - 待评估
+        - P0-critical
+        - P1-major
+        - P2-minor
+        - P3-enhancement
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 文件位置与受检版本
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据及已验证／存在风险／尚未验证
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影响范围
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: 修复建议与验证方法
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      placeholder: 待认领
+  - type: dropdown
+    id: status
+    attributes:
+      label: 当前状态
+      options:
+        - To Do
+        - In Progress
+        - In Review
+        - Done
+        - Blocked

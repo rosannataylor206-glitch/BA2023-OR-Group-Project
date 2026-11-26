@@ -1,0 +1,63 @@
+# Local tools, credentials and machine artifacts
+.tools/
+.env
+.env.*
+!.env.example
+**/*credentials*.json
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.DS_Store
+**/.DS_Store
+.~*
+~$*
+*.tmp
+*.temp
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Retained locally: historical / unrelated / third-party materials
+/MCM_B_v6/
+/MCM_B_v9/
+/2026 MCM B 2/
+/队友已完成初步/
+/output/
+/tmp/
+/*.pdf
+/.agents/
+# Approved first-draft scope. Two large JSONs are restored from a verified archive.
+# Archive duplication and third-party embedded attachments
+*.zip
+!/MCM_B_v9_编程组/results/core_certificates_v9.zip
+*.rar
+*.7z
+/MCM_B_v9_编程组/results/joint_v9.json
+/MCM_B_v9_编程组/results/phases_v9.json
+/MCM_B_v9_编程组/evidence/*.pdf
+/MCM_B_v9_编程组/results/figure_audit.json
+# Machine-specific and privacy preflight evidence: local only
+/review/00_skill_checks.json
+/review/00_skill_inventory.md
+/review/github_setup/preflight.json
+/review/github_setup/upload_inventory.csv
+/review/github_setup/approved-files.txt
+/review/github_setup/upload_manifest.json
+/review/github_setup/local_integrity.json
+/review/github_setup/remote_state.json
+
+# Concurrent/unclassified local work; not part of approved OR upload
+/q1_l2_reference/
+
+# Personal baseline: duplicated QA previews and unrelated local experiments
+/MCM_B_v9_编程组/figures/_qa/
+/Q1_six_model_exploration 2/
+/review/baseline/previous_90_manifest.json
+/review/baseline/local_*.json

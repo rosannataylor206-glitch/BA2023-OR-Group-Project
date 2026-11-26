@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "id": "bvad2022_system_boundaries",
+      "title": "Life Support Baseline Values and Assumptions Document",
+      "year": 2022,
+      "publisher": "NASA",
+      "url": "https://ntrs.nasa.gov/api/citations/20210024855/downloads/BVAD_2.15.22-final.pdf",
+      "read_location": "PDF page22, printed page8, section2.4.3, Equation2-1; PDFpage22 bottom limits per-capita/default four-crew context",
+      "supports": "Track hardware, power, thermal, volume and crew-time interfaces; record system boundaries and original-scale assumptions.",
+      "does_not_support": "A calibrated100000-person lunar module, future CAPEX, or treating equivalent mass as physical freight."
+    },
+    {
+      "id": "ho2022_multistage",
+      "title": "Towards an extension of equivalent system mass for human exploration missions on Mars",
+      "authors": "Ho, Makrygiorgos, Hill and Berliner",
+      "year": 2022,
+      "doi": "10.1038/s41526-022-00214-7",
+      "url": "https://www.nature.com/articles/s41526-022-00214-7",
+      "read_location": "Abstract; Introduction Equation1 and its stated system/location factors",
+      "supports": "A methodological reason to retain phase, location and reliability-dependent resource accounting.",
+      "does_not_support": "Lunar cost conversion factors or validation of the present model; the paper presents a preliminary framework for Mars mission comparisons."
+    }
+  ],
+  "project_use": "We use a phase/location ledger and a parameterized cost objective. We do not claim full ESM/xESM implementation or audited financial cost."
+}

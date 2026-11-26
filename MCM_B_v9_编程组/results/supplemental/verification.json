@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "q2_rows_independently_checked_against_plan_construction": 16,
+  "q2_fault_parameters_removed_individually": 7,
+  "q4_q5_default_grid_rows_verified_against_candidate_intersections": 63,
+  "q4_q5_default_grid_rows_with_selected_policy": 34,
+  "q4_q5_custom_limit_cases_verified": 2,
+  "q4_q5_inclusive_boundary_test": "pass",
+  "q4_q5_relaxation_monotonicity_test": "pass",
+  "frozen_v9_hashes_verified": {
+    "input_files": 20,
+    "output_files": 32
+  }
+}

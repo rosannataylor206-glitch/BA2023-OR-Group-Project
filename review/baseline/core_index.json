@@ -1,0 +1,402 @@
+{
+  "stage": "v0.1-first-draft candidate; not committed or reviewed",
+  "artifacts": [
+    {
+      "path": "MCM_B_v9_编程组/MCM_B_v9_建模修订与独立验证说明.docx",
+      "bytes": 223157,
+      "sha256": "d7cabb14f22e3914a36d043a0a4280a13ebe5a85c57902e79f742dfcae543b1a"
+    },
+    {
+      "path": "MCM_B_v9_编程组/README_v9.txt",
+      "bytes": 4722,
+      "sha256": "06f4634d5ed5b7849fb917c74e47249a164abef03e8c2a3365636db5aebf6f28"
+    },
+    {
+      "path": "MCM_B_v9_编程组/ai_ledger/ledger.json",
+      "bytes": 8397,
+      "sha256": "4294c851c6ef98d0b05d536c77ef9c2b8133e8e7ab1a29052325cb2dccb7ed24"
+    },
+    {
+      "path": "MCM_B_v9_编程组/build_report_v9.py",
+      "bytes": 48876,
+      "sha256": "bfd242ff7c5233b04eb318dac0f1f1300d12603bf9daccc08a05a65e32feaaf4"
+    },
+    {
+      "path": "MCM_B_v9_编程组/construction_v9.py",
+      "bytes": 22764,
+      "sha256": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850"
+    },
+    {
+      "path": "MCM_B_v9_编程组/cost_environment_v9.py",
+      "bytes": 16354,
+      "sha256": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/assumption_ledger_v7.json",
+      "bytes": 3512,
+      "sha256": "ee05ee82b30d7c0c206a110652b9c778b8ba5800c754d039ac79c9cdbb69a34c"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/cost_environment_v9_sources.json",
+      "bytes": 4655,
+      "sha256": "561c5a50ceea48672dcf8785ec57f5d1872567f1556f32c14d116e4b5e0689b9"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/fault_math_sources.json",
+      "bytes": 17527,
+      "sha256": "6aeed7958d94c793cc72c58b3c16ec87cc4cb000842168f415a7f53042a82d28"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/physics_sources.json",
+      "bytes": 19299,
+      "sha256": "59e8c2017649c4244a040df67f2df61607f28a91c5210c87e3e91022fcd91a49"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/physics_v8_sources.json",
+      "bytes": 6018,
+      "sha256": "90b64457c6f0a61d53a987343408d5551ed963a5a4cdc3bedcf98670fe92a5b6"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/power_v9_sources.json",
+      "bytes": 992,
+      "sha256": "24eea00575a85312acf369aca6c9c2fac18bd1f04fe079c5e1c7b6c066da9e70"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/system_cost_v8_sources.json",
+      "bytes": 1585,
+      "sha256": "44f729aa40cdc8606f99ae4aeafc09edf56adf4c8e840cf181b071e717db23a1"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence/water_sources.json",
+      "bytes": 15438,
+      "sha256": "87daff1bf4250df2130f584aca491cd0f07379dfd944f080e44255b1b2ad26b7"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence_chain/P2_技术复核.json",
+      "bytes": 1249,
+      "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence_chain/P2_补充分析复核.json",
+      "bytes": 872,
+      "sha256": "b9918cbab093f417148f3748d7e034ba991d428eb241d95e7e02903f2a235435"
+    },
+    {
+      "path": "MCM_B_v9_编程组/evidence_chain/evidence.json",
+      "bytes": 57124,
+      "sha256": "60af10add677db311efa8153ec7f56f4635ac1317e0c14e334c07b7984e0b97b"
+    },
+    {
+      "path": "MCM_B_v9_编程组/fault_attribution_v9.py",
+      "bytes": 5457,
+      "sha256": "e68bc8cadb8a843011dd9149f0291dcf4cdc7f6c50aa37f2f0c96ceeca424f87"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/process_q3_water_preposition.png",
+      "bytes": 83267,
+      "sha256": "4df36143cbe72994484dd3916993693efdb576723fdceccac27b9eca3ca15875"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/process_q3_water_preposition.svg",
+      "bytes": 12839,
+      "sha256": "434d40d0dc825646ab1e3c73f79e5218482ba6906bb5a398fc1c8f9cfa92c5ef"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/raw_q2_declared_fault_budgets.png",
+      "bytes": 59609,
+      "sha256": "f31624834e2569d27ae8166e4a634127b9a6a5939a08e62b638bd61782985cb9"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/raw_q2_declared_fault_budgets.svg",
+      "bytes": 9065,
+      "sha256": "7bf3cbf7317216d6dc027f4e8814e815a4e099f243be090c78bfaf576a7dfdd8"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q1_construction_bounds.png",
+      "bytes": 70385,
+      "sha256": "c2c2a6c37e0e3b87846a822adf9cc0f7b430a50e0bb140fa259b249af7667097"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q1_construction_bounds.svg",
+      "bytes": 11343,
+      "sha256": "99e30b826c9a1c7f9e8849e96d7c1b46236a5c04ebb594ed8261a252c796c3c5"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q4_emissions_budget_frontier.png",
+      "bytes": 87647,
+      "sha256": "13b6fd53123444d82ff4a148ee1d4e0022ef1a11450450bccedbae4acb393bab"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q4_emissions_budget_frontier.svg",
+      "bytes": 328887,
+      "sha256": "88c05928c4b387f671dee9f203e76fa4b250f3ba3968aebe36a969a032adf705"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q5_habitation_budget_frontier.png",
+      "bytes": 95449,
+      "sha256": "2cbfcf201ca9e8f7999b5f2e1506d1d5b251eb212aaeb0682e840e62edab63b0"
+    },
+    {
+      "path": "MCM_B_v9_编程组/figures/result_q5_habitation_budget_frontier.svg",
+      "bytes": 329490,
+      "sha256": "71908f09567aec8825d24be84bb8e95ec043de300c5c30c4a3b1a4f3fe8b7059"
+    },
+    {
+      "path": "MCM_B_v9_编程组/joint_screening_v9.py",
+      "bytes": 5610,
+      "sha256": "7637642499fca191d4f4a35d117affc731255932060b576196f4a7fe2e8d6b6a"
+    },
+    {
+      "path": "MCM_B_v9_编程组/joint_v9.py",
+      "bytes": 28079,
+      "sha256": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165"
+    },
+    {
+      "path": "MCM_B_v9_编程组/package_v9.py",
+      "bytes": 5948,
+      "sha256": "ac5a26ce8f376f08e52510cfc2dda639a47c04dd384e01d8d8d0203fa723e88e"
+    },
+    {
+      "path": "MCM_B_v9_编程组/phase_audit_v9.py",
+      "bytes": 17982,
+      "sha256": "54297a401f5dba2b1dbbd4cbbbb728b2c9a457c1ea73c3a599b9da5f35d54ac7"
+    },
+    {
+      "path": "MCM_B_v9_编程组/physics_v9.py",
+      "bytes": 18325,
+      "sha256": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2"
+    },
+    {
+      "path": "MCM_B_v9_编程组/plot_handoff.py",
+      "bytes": 6922,
+      "sha256": "17804bdecac49cea2562a566535d05657b296c13771f99b193065bebb1ba7d56"
+    },
+    {
+      "path": "MCM_B_v9_编程组/programming_handoff.py",
+      "bytes": 14462,
+      "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/audit_scope_v9.md",
+      "bytes": 5607,
+      "sha256": "34d6845dc902e69bd7b7fbd61af02bcc1ba3e4f444f5f763073cb9e0c3c0248e"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/construction_v9.md",
+      "bytes": 9271,
+      "sha256": "eb465f8a20507546fe6cb246096150af5e849e451217888cbf44460ab90c90e4"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/cost_environment_v9.md",
+      "bytes": 6703,
+      "sha256": "fdacf30a3b8b96c605c6426b117c71e4c92ae00e69c591babca26e2c3bdcedce"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/joint_v9.md",
+      "bytes": 9681,
+      "sha256": "1823d2c195757b903c316d1fea7dc9dded964e0aeeae8e66d9e6f2375eb01096"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/physics_v9.md",
+      "bytes": 9172,
+      "sha256": "7e7633fa0329592f51f84da1c57e26c485e15f3650fd93228841380880cda354"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/sensitivity_v9.md",
+      "bytes": 4053,
+      "sha256": "5b6a4fd817b90cc4faa88e20a9507771bf61a57c286468f677dbff27eb36192c"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/water_v8_reference.md",
+      "bytes": 11071,
+      "sha256": "d7f05d2ce710c12c0a62b77e6d689b0dca4f1deca9e7e7721e9f01743aa3f1c1"
+    },
+    {
+      "path": "MCM_B_v9_编程组/proofs/water_v9.md",
+      "bytes": 10751,
+      "sha256": "80dcca63793cb39be67aa9a07b3b2060a14b5ff9b45736dee1e981770168788f"
+    },
+    {
+      "path": "MCM_B_v9_编程组/reference/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "MCM_B_v9_编程组/reference/physics_v8.py",
+      "bytes": 23213,
+      "sha256": "29a12fb250ac78b366947b5f76c1c0289c24fe0cd8d2dbf4133c0f43159ac14d"
+    },
+    {
+      "path": "MCM_B_v9_编程组/reference/water_v8.py",
+      "bytes": 28965,
+      "sha256": "397270fad79105e69cf0a4080324b14990b4b3fdb0f641ab63a9a52cf916018c"
+    },
+    {
+      "path": "MCM_B_v9_编程组/registry_v9.py",
+      "bytes": 1742,
+      "sha256": "874e8a112aa2c64f5fcb7443eb42291b06da4485442a33b94e581bc0b952642b"
+    },
+    {
+      "path": "MCM_B_v9_编程组/requirements.txt",
+      "bytes": 39,
+      "sha256": "7accabe827ac0ba6d43f84edf435fe47371f054e5be69c562963b12f4170d26d"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/archive_comparison.json",
+      "bytes": 4487,
+      "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/independent_v9.json",
+      "bytes": 3585,
+      "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/joint_v9.json",
+      "bytes": 64582105,
+      "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/phases_v9.json",
+      "bytes": 45532268,
+      "sha256": "eda270d2650f3e653089850ca17dc3c33f2dd7f430554c37a4c8415963bb586e"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/physics_v9.json",
+      "bytes": 160972,
+      "sha256": "1d81e8daecc152abc30a528cadbeab3677b2ec56195815d5b22a82b7dfbec766"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/physics_v9_catalogue.csv",
+      "bytes": 4845,
+      "sha256": "14e24a1a082ee842414104a38dc23399d6891383443b3a407e112567d2b5e0b2"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/policy_summary_v9.csv",
+      "bytes": 2021980,
+      "sha256": "6b4d132ae2adc5ec863cb3a93b4f4d39ae4e90f1208fb68b80fd639c98fb574b"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/programming_smoke.json",
+      "bytes": 1269,
+      "sha256": "eaf1f0246201e214b3a48739d47b4b4ae8888f38691d95a0911bc6a1c7182009"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/programming_table_profile.json",
+      "bytes": 9457,
+      "sha256": "b09423851d1fc05156304ce73f75be7e8a85bfc38c92d84e543645106d5c6491"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/run_record.json",
+      "bytes": 3125,
+      "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/sensitivity_phases_v9.json",
+      "bytes": 12767498,
+      "sha256": "1c634c83ceec2a8cf09e743f418fcb18cda8027515d41ab358cf1f0286340ead"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/sensitivity_v9.csv",
+      "bytes": 16921,
+      "sha256": "dde1b5783de2fea3e3a2f5068c274fe169448e75731420494fbf361cbafaaa84"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/sensitivity_v9.json",
+      "bytes": 27158185,
+      "sha256": "c0cd008f130b94072988acb651d7996b6a7be2bfb16e0a713d25dcaeb31389f4"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/supplemental/q2_fault_attribution.csv",
+      "bytes": 4187,
+      "sha256": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/supplemental/q4_q5_joint_screening.csv",
+      "bytes": 13377,
+      "sha256": "4f4f1361f8c8f7911daaafb8ef545016fe6d72bf8731981d2db812ab257f0a7c"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/supplemental/q4_q5_joint_screening_custom.csv",
+      "bytes": 867,
+      "sha256": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/supplemental/verification.json",
+      "bytes": 482,
+      "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/supplemental/复现清单.json",
+      "bytes": 4947,
+      "sha256": "ab6910e054ef90eced8b394c6b93dff78cafef5a35fe8fc0e47fe3b2dac76b4a"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/water_v9.json",
+      "bytes": 464941,
+      "sha256": "4248ae95f774feba1ef69a4bcde769aea802a6d205853986197cfa132c83281f"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/复现清单.json",
+      "bytes": 10424,
+      "sha256": "9c2fbe1aba2a195e1a093d48e755a2a31d15dc2d1070ad1691aeb816d1d79e7f"
+    },
+    {
+      "path": "MCM_B_v9_编程组/results/论文组结果表.csv",
+      "bytes": 16610,
+      "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+    },
+    {
+      "path": "MCM_B_v9_编程组/run_v9.py",
+      "bytes": 3166,
+      "sha256": "0006d1f4cf66947e08c015fab61fd26206136b67cd7e7d8001a02833a82f64cc"
+    },
+    {
+      "path": "MCM_B_v9_编程组/sensitivity_v9.py",
+      "bytes": 13040,
+      "sha256": "790dd514b05f5c195cdcc91a40a942cc16daafdf45d00380325d77421fd1038a"
+    },
+    {
+      "path": "MCM_B_v9_编程组/utils/plot_style.py",
+      "bytes": 17160,
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+    },
+    {
+      "path": "MCM_B_v9_编程组/utils/supplemental_io.py",
+      "bytes": 1535,
+      "sha256": "28900b32bb07fa3610b61f3190d733b2b47e26c4b9f80d55135dd5ed19acd64c"
+    },
+    {
+      "path": "MCM_B_v9_编程组/verify_v9.py",
+      "bytes": 37541,
+      "sha256": "4652c12163e283c29fc797de46224d4f55af1a69714c78e052c385c4f3f440e9"
+    },
+    {
+      "path": "MCM_B_v9_编程组/water_v9.py",
+      "bytes": 28641,
+      "sha256": "254c7a13f6b4f3c929304b3e568157be62f011ce57e0489330704148cfd40276"
+    },
+    {
+      "path": "MCM_B_v9_编程组/使用指南.md",
+      "bytes": 6345,
+      "sha256": "ffc9f6a3411911de1713703cf1b5bae0a567fbf6de77e51847dcb0cd176c2bae"
+    },
+    {
+      "path": "MCM_B_v9_编程组/报告核心代码摘录.md",
+      "bytes": 5976,
+      "sha256": "9fcbc0813987fc946fc09b044c5af99bec166cc071f85d11a76164f060216fea"
+    },
+    {
+      "path": "MCM_B_v9_编程组/编程交接.md",
+      "bytes": 7804,
+      "sha256": "e9ab72f0fa10f99c6c6fcc80357db202c35198106599cf59f68df8f2b53f6a8b"
+    },
+    {
+      "path": "report.1docx.docx",
+      "bytes": 1710200,
+      "sha256": "836aa1b8b31758a225185178c6b7ae4d117c216e63819215e99d6b80c9af91f7"
+    }
+  ],
+  "count": 79,
+  "note": "Static source/structure inventory only; storage rights and first push pending."
+}

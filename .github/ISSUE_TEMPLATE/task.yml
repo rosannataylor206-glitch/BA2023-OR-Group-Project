@@ -1,0 +1,35 @@
+name: 阶段任务
+description: 计划任务，不代表已发现技术缺陷
+title: "[任务] "
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: 任务范围与文件
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Requirements
+        - Environment
+        - Mathematical Modeling
+        - Programming
+        - Data & Validation
+        - Academic Writing
+        - Quality Assurance
+        - Presentation
+        - Final Submission
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收要求与证据
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      placeholder: 待认领

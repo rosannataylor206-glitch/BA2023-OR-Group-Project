@@ -1,0 +1,363 @@
+{
+  "task": "v7 bounded-variable-lead-time mathematical research; original v6 code untouched",
+  "retrieved_on": "2026-10-23",
+  "status": "Complete conservative proof and verified primary sources; not an empirical lunar parameter fit",
+  "v6_inputs_read": [
+    "output/team_handoff_v6/input/MCM_B_v6/robust_certificate.py",
+    "output/team_handoff_v6/input/MCM_B_v6/proof_notes.txt",
+    "output/team_handoff_v6/input/MCM_B_v6/water_model.py"
+  ],
+  "sources": [
+    {
+      "id": "TY2017",
+      "title": "Robust inventory control under demand and lead time uncertainty",
+      "authors": [
+        "Andreas Thorsen",
+        "Tao Yao"
+      ],
+      "publication_year": 2017,
+      "online_first_year": 2015,
+      "journal": "Annals of Operations Research",
+      "volume": "257",
+      "pages": "207-236",
+      "doi": "10.1007/s10479-015-2084-1",
+      "source_type": "original research article, author accepted manuscript in university repository",
+      "url": "https://scholarworks.montana.edu/bitstreams/04b7d35a-3384-4437-bb70-bc791e747cb8/download",
+      "verified_full_text": true,
+      "web_ref": "turn100view0",
+      "locations": [
+        {
+          "section": "4.2",
+          "equations": "10-11",
+          "manuscript_page": 10,
+          "pdf_page": 11,
+          "topic": "Monotone cumulative arrival indicators and a finite maximum delivery deadline; crossing orders permitted."
+        },
+        {
+          "section": "6.1",
+          "definition": "2",
+          "manuscript_page": 20,
+          "pdf_page": 21,
+          "topic": "Budget-type lead-time uncertainty set."
+        },
+        {
+          "section": "2.1",
+          "manuscript_page": 3,
+          "pdf_page": 4,
+          "topic": "Lead-time arrival uncertainty couples columns; naive rowwise robustification is not justified."
+        },
+        {
+          "section": "5",
+          "topic": "Adversarial/Benders solution approach."
+        }
+      ],
+      "used_for": "Motivates explicit uncertain-arrival support, individual deadlines, crossing orders and a possible later budgeted-delay refinement.",
+      "does_not_establish": "Finite-horizon inventory costs/backlogging formulation; not our infinite-horizon daily no-shortage certificate. Its lead-time budgets are not automatically the v6 rolling365 fault budgets.",
+      "publisher_url": "https://link.springer.com/article/10.1007/s10479-015-2084-1",
+      "publisher_web_ref": "turn103view0"
+    },
+    {
+      "id": "BS2004",
+      "title": "The Price of Robustness",
+      "authors": [
+        "Dimitris Bertsimas",
+        "Melvyn Sim"
+      ],
+      "publication_year": 2004,
+      "journal": "Operations Research",
+      "volume": "52(1)",
+      "pages": "35-53",
+      "doi": "10.1287/opre.1030.0065",
+      "source_type": "original research article, official author-hosted PDF",
+      "url": "https://www.mit.edu/~dbertsim/papers/Robust%20Optimization/The%20price%20of%20Robustness.pdf",
+      "verified_full_text": true,
+      "web_ref": "turn87view0",
+      "locations": [
+        {
+          "section": "3",
+          "proposition": "1",
+          "equation": "6",
+          "journal_page": 37,
+          "pdf_page": 3,
+          "topic": "Finite-dimensional Gamma-budget support maximization."
+        },
+        {
+          "section": "3",
+          "theorem": "1",
+          "equation": "7",
+          "journal_page": 38,
+          "pdf_page": 4,
+          "topic": "Equivalent LP robust counterpart through duality."
+        }
+      ],
+      "used_for": "Sound source for static budget support functions and LP dualization; useful for a separately defined finite delay-budget subproblem.",
+      "does_not_establish": "A static per-row Gamma budget is not a rolling calendar support, stochastic probability calibration, or proof that arrival-indicator decisions can be robustified independently row by row."
+    },
+    {
+      "id": "BT2006",
+      "title": "A Robust Optimization Approach to Inventory Theory",
+      "authors": [
+        "Dimitris Bertsimas",
+        "Aurelie Thiele"
+      ],
+      "publication_year": 2006,
+      "journal": "Operations Research",
+      "volume": "54(1)",
+      "pages": "150-168",
+      "doi": "10.1287/opre.1050.0238",
+      "source_type": "original research article, official author-hosted PDF",
+      "url": "https://web.mit.edu/dbertsim/www/papers/Robust%20Optimization/A%20Robust%20Optimization%20Approach%20to%20Inventory%20Theory.pdf",
+      "verified_full_text": true,
+      "web_ref": "turn87view1",
+      "locations": [
+        {
+          "section": "3.1",
+          "journal_page": 153,
+          "pdf_page": 4,
+          "topic": "Prefix demand budgets in a robust single-installation model."
+        },
+        {
+          "remark": "3",
+          "journal_page": 153,
+          "pdf_page": 4,
+          "topic": "Explicit extension to arbitrary CONSTANT lead time."
+        }
+      ],
+      "used_for": "Inventory-position and robust-demand-model background, plus an explicit boundary showing why variable lead time needs a separate argument.",
+      "does_not_establish": "It does not license replacing a fixed lead time by an unknown realized lead time or using future lead-time values in decisions."
+    },
+    {
+      "id": "LBT2001",
+      "title": "Network Calculus: A Theory of Deterministic Queuing Systems for the Internet",
+      "authors": [
+        "Jean-Yves Le Boudec",
+        "Patrick Thiran"
+      ],
+      "publication_year": 2001,
+      "edition_used": "Author online corrected version dated2022-08-23",
+      "series": "Lecture Notes in Computer Science2050",
+      "doi": "10.1007/3-540-45318-0",
+      "source_type": "primary author monograph, explicitly not an original journal article",
+      "url": "https://leboudec.github.io/netcal/latex/netCalBook.pdf",
+      "verified_full_text": true,
+      "web_ref": "turn87view2",
+      "locations": [
+        {
+          "definition": "1.3.1",
+          "printed_page": 19,
+          "pdf_page": 37,
+          "topic": "Service-curve definition and min-plus convolution."
+        },
+        {
+          "definition": "1.3.2",
+          "printed_page": 21,
+          "pdf_page": 39,
+          "topic": "Strict service is guaranteed over backlogged periods."
+        },
+        {
+          "theorem": "1.4.1",
+          "printed_page": 22,
+          "pdf_page": 40,
+          "topic": "Backlog bound by the vertical difference of arrival/service envelopes."
+        },
+        {
+          "theorem": "1.4.6",
+          "printed_page": 28,
+          "pdf_page": 46,
+          "topic": "Concatenation of service curves."
+        },
+        {
+          "section": "1.6.3",
+          "printed_page": 39,
+          "pdf_page": 57,
+          "topic": "Fixed and variable delay; pure delay need not have strict service."
+        }
+      ],
+      "page_number_convention": "PDF_page is one-based including cover; webP labels are zero-based.",
+      "used_for": "Envelope and busy-period framework. The water-specific shared-loss/backlog and max-deadline ledger proof are our own adaptation.",
+      "does_not_establish": "An idle shipping opportunity bound cannot be used as unconditional actual arrival service; a service curve need not be strict. No lunar engineering calibration is supplied."
+    }
+  ],
+  "recommended_upgrade": {
+    "name": "maximum-deadline commitment inequality with deferred fixed-deadline loss ledger",
+    "real_arrivals": "Successful batch j dispatched at tau_j arrives at an unknown a_j in[tau_j+Lmin,tau_j+Lmax]; early successes received immediately; order crossings allowed.",
+    "loss_information": "No absence before tau_j+Lmax is called loss. Earlier genuine failure telemetry may be observed, but replenishment settlement is deferred to the fixed latest deadline. Actual telemetry and ledger timestamps must be stored separately.",
+    "loss_budget_clock": "Use failed-batch dispatch-date rolling budget or equivalent fixedLmax deadline-settlement rolling budget. Do not transfer variable early-confirmation budgets without a new envelope.",
+    "controller": "Original causal IP feedback, using actual received fresh water, recoverable backlog and unsettled promised water; individual future lead times never enter the rule.",
+    "key_equations": [
+      "IP_t=W_t+Y_t+P_t=r-H_t+Q*N_t=r-d_t",
+      "0<=P_t<=Q*(N_t-N_(t-Lmax))",
+      "d_t+P_t<=d_(t-Lmax)+sum(h_s,s=t-Lmax+1..t)",
+      "r7=Q+sup_{n>=Lmax}[A(n)-S(n-Lmax)] when Lmax>=R",
+      "r7[p,h]=(h+1)*Q+sup_{n>=Lmax+p-1}[A(n)-S(n-Lmax-p+1)]"
+    ],
+    "no_extra_quarantine": "The controller counts real early receipts immediately. IP<=r and Y,P>=0 imply physicalW<=r, so no additional quarantine capacity is needed merely to prove this extension.",
+    "startup": "For t<Lmax, P_t<=Q*N_t and whole-history common-fault lemma imply d_t+P_t+Y_t<=A(t+1)<=A(Lmax)<=r7; it is not necessary or true to assume no early arrivals.",
+    "rate_conditions": [
+      "K>=eta*G",
+      "K*(P0-R)>=eta*G*P0",
+      "m=Q*(1/Delta-B/P0)-D-eta*G*R/P0-Q*J/P0>0"
+    ],
+    "resource_boundary": "Actual dispatch availability must still satisfy the rollingB support after fleet effects. Independently require enough replacement/return capacity for boundedTturn_max, e.g.F>=ceil(Tturn_max/Delta).",
+    "finite_scan": {
+      "E": "Lmax+p-1",
+      "n0": "ceil((1+B)/(1/Delta-B/P0))",
+      "Tper": "lcm(P0,Delta)",
+      "range": "E through E+n0+Tper whenE>=R",
+      "reason": "Envelope drops exactlyTper*m per period after truncation ends."
+    },
+    "optimality_scope": "Sufficient hard-support bound for the given causal policy; not an exact all-policy reserve optimum or a probability guarantee.",
+    "optional_extra_budget": "If a justified support bounds open commitments of age AT LEAST Lmin after dayt, i.e.tau_j<=t-Lmin, byM_old andLmin>=R, r6(Lmin)+Q*M_old is sufficient. The weak inequality at the boundary is essential. Take min withr6(Lmax) only when both supports hold. Count latent failed cargo too.",
+    "loss_batch_daily_count": "FixedglobalLmax plus at most one dispatch/day implies at most one failed full batch settled/day, as required for b_J remainder min(J,nmodP). Heterogeneous offsets or variable early settlements need a new loss envelope.",
+    "intraday_boundary": "Noquarantineproofboundsday-endW only. Sequentialarrivals+recoverybeforeconsumptionmayneedadditionalfreshheadroomG; physicaltankdesignrequiresseparatecheck."
+  },
+  "numeric_envelope_checks": [
+    {
+      "eta": 0.94,
+      "Lmax": 60,
+      "required_reserve_t": 13463.596,
+      "critical_n": 120,
+      "finite_scan_end": 498
+    },
+    {
+      "eta": 0.94,
+      "Lmax": 90,
+      "required_reserve_t": 15195.196,
+      "critical_n": 150,
+      "finite_scan_end": 528
+    },
+    {
+      "eta": 0.94,
+      "Lmax": 120,
+      "required_reserve_t": 16926.796,
+      "critical_n": 180,
+      "finite_scan_end": 558
+    },
+    {
+      "eta": 0.98,
+      "Lmax": 60,
+      "required_reserve_t": 9115.356,
+      "critical_n": 120,
+      "finite_scan_end": 498
+    },
+    {
+      "eta": 0.98,
+      "Lmax": 90,
+      "required_reserve_t": 9692.556,
+      "critical_n": 150,
+      "finite_scan_end": 528
+    },
+    {
+      "eta": 0.98,
+      "Lmax": 120,
+      "required_reserve_t": 10269.756,
+      "critical_n": 180,
+      "finite_scan_end": 558
+    }
+  ],
+  "numeric_scope": "G962,Q103.618,Delta1,B60,R7,J1,P0365. Formula values before engineering margin/rounding; unchanged actualK must satisfy rateconditions. Read-only existingv6 function evaluated withK1000 to check arithmetic; the bound isK-independent after conditions hold.",
+  "counterexamples": [
+    {
+      "name": "nominal-lag identity fails",
+      "example": "Batch at0, nominalL1, actualL3: atday1 P=Q butQ*(N1-N0)=0."
+    },
+    {
+      "name": "oldreserve can physically fail",
+      "example": "G2,eta.5,D1,Q2,Delta1,K1.1,B=R=J=0,nominalL1 gives oldr3; firstbatchsentday1arrivesday4underactualL3, Wday3=-1. NewLmax3certificateis5."
+    },
+    {
+      "name": "loss-clock compression",
+      "example": "Failed dispatches0and365 obeyJ1/rolling365dispatchdays; confirmations90and410 (lags90and45) violateJ1/rolling365observationdays; fixedM90settlements90and455 preserve the budget."
+    },
+    {
+      "name": "false nominal-timeout loss",
+      "example": "Calling a still-bounded delayed shipment lost before its latest deadline then accepting it later breaks the ledger or requires negative loss corrections, invalidating monotoneH arguments."
+    },
+    {
+      "name": "unbounded delay or permanent hull loss",
+      "example": "No finite resolution horizon or insufficient replacement fleet can defeat any finite reserve and the assumed opportunity service support."
+    }
+  ],
+  "proof_file": "output/model_v7/research/v7_variable_lead_proof.md",
+  "proof_sha256": "3ea2088fe936bb02a13f1fbf9916b80f72fc68b3049c317303ba8efe8894eb87",
+  "proof_is_project_derivation": true,
+  "recommendation_order": [
+    "Implement deadline ledger andP inequality first, preserving original policy and support.",
+    "Recheck fleet/turnaround and parameter-dependent process/transport rate conditions.",
+    "Test batchIDs, loss clocks, mass andIP identities, crossing arrivals, startup, rolling-window boundary clusters.",
+    "Only introduce Gamma-style lateness budget after explicitly deriving a valid rolling/age support; do not blindly dualize uncertain arrival rows."
+  ],
+  "independent_counterexample_trace": [
+    {
+      "day": 0,
+      "net_demand_t": 1,
+      "arrived_t": 0,
+      "W_end_t": 2
+    },
+    {
+      "day": 1,
+      "net_demand_t": 1,
+      "arrived_t": 0,
+      "W_end_t": 1
+    },
+    {
+      "day": 2,
+      "net_demand_t": 1,
+      "arrived_t": 0,
+      "W_end_t": 0
+    },
+    {
+      "day": 3,
+      "net_demand_t": 1,
+      "arrived_t": 0,
+      "W_end_t": -1
+    },
+    {
+      "day": 4,
+      "net_demand_t": 1,
+      "arrived_t": 2,
+      "W_end_t": 0
+    }
+  ],
+  "independent_mathematical_review": {
+    "reviewer_task": "/root/model_audit/primary_sources",
+    "main_theorem": "Passed ledger/pipeline bound, deferredloss clock, startup, no-quarantine dominance andsharedfault proof.",
+    "correction_applied": "OptionalM_old support counts age>=Lmin, notstrictlyolder, because N[t]-N[t-Lmin] excludesboundarydispatch.",
+    "additional_corrections_applied": [
+      "Integer1<=Lmin<=Lmax.",
+      "Tank/storageclaimrestrictedtoday-end; explicitintradayheadroomcounterexampleandcapacityallowance."
+    ],
+    "compartment_review": "PassedAnew,mnew,finite-scanandNc capacity proof under explicitcalendar/repair/isolationassumptions. Clarifiedthatbaseearlyarrivalcouplingisnotusedfortankextension."
+  },
+  "compartment_loss_extension": {
+    "mechanism": "Actual isolated fresh-compartment loss, absolute capacityCtonnes per compartment, notfractionoftotalreserve.",
+    "calendar_supports": {
+      "binary_day": "Atmost1incident/dayandTincidentdays/rollingP: E_T(n)=Tfloor(n/P)+min(T,nmodP).",
+      "general_events": "Multipleincidents/dayallowedbutatmostTevents/rollingP: E_T(0)=0,E_T(n)=Tceil(n/P) forn>=1."
+    },
+    "equations": [
+      "h_new=D+ell+loss_cargo+z_tank",
+      "A_new(n)=A(n)+C*E_T(n)",
+      "m_new=m-C*T/P>0",
+      "r_new=Q+sup_{n>=Lmax}[A_new(n)-S(n-Lmax)]",
+      "Nc>=ceil(r_new/C)+T forday-endcapacity; repairswithinPdaysandcurrentrepairscompletebeforecurrentincidents."
+    ],
+    "proof_scope": "LedgeridentityandPboundunchanged; addactualobservedtanklossandenvelope tobusyperiod/startup. Sharedcapture/backloglemmaunchanged. Perioddriftbecomes-H*m_new.",
+    "resource_boundary": "AtmostTdisabledcompartmentsrequiresrepairbound<=P, isolationtoonecompartmentperincident, accessibleintact/standbycapacity. Withoutrepairbounddisabledtanksaccumulateindefinitely.",
+    "intraday_boundary": "W<=r isday-endonly. Withrupturebeforearrival/recoveryandthenGconsumption, conservativefreshpeak<=r+G; supplyseparateflowbufferorNc>=ceil((r+G)/C)+T forall-phasecapacity. Do notdoublecountworkingloopwatercapacity.",
+    "evidence_boundary": "NoNASAvaluesforfuturelunarC,T,repairtimeorerrorfreeisolationareassumed. Engineeringmechanismevidenceandparametercalibrationtobeattachedseparatelybyroot.",
+    "coupling_boundary": "Baseearly-arrivaldominancedoesnotcarryoverautomaticallytostate-dependenttanklosses. Thedirectledger/envelopeproofremainsvalidanddoesnotrequirethatcoupling.",
+    "actual_design_capacity": "UseNc>=ceil(r_design/C)+T, where r_designincludesmarginandroundingandr_design>=r7. Initialcompartmentsallintactorcountinitialdisabledcapacityseparately.",
+    "rate_scope": "Strictpositive margin is sufficient for the stated certificate; a zero margin isnotbyitselfphysicalimpossibility."
+  },
+  "necessary_lower_bound_scope": {
+    "direct_end_to_end_support": "If Delta1,J>=1 and every successful batch may actually takeLmax, zeroinitialpipeline permitsr*>=(B+Lmax+1)D+etaGR by destroyingthefirstbatchafterinitialBclosure.",
+    "example_Lmax90": {
+      "eta94_t": 15045.68,
+      "eta98_t": 9504.56
+    },
+    "FIFO_derived_deadline_warning": "A composite guaranteeLmax=u+kappa isnotpermissionforallbatchestotakeLmax. FIFOreceivingwaitmaxima maynotbesimultaneouslyfeasible. Mainu60+FIFOderived68casedoesNOTinheritnecessary68witnesswithoutanexplicitadmissiblepath.",
+    "tank_warning": "AddingCtoanall-policynecessaryboundisunproved: singlecompartmentactualwaterdependsallocation. Zero-tankfailurewitnessvalidbutloose.",
+    "no_new_near_optimal_claim": "No1-2percentnearoptimalityisclaimedforcombinedFIFO/leadtime/tankextension."
+  }
+}

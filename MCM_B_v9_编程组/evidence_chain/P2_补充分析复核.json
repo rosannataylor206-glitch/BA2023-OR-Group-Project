@@ -1,0 +1,27 @@
+{
+  "technical_result": "PASS",
+  "reviewer": "v9_supplement_qa",
+  "scope": "Isolated clean replay of the supplemental scripts using verified saved v9 inputs",
+  "command_exit_codes": {
+    "python fault_attribution_v9.py": 0,
+    "python joint_screening_v9.py": 0,
+    "python joint_screening_v9.py --deadline-years 350 --emissions-cap-gt 1.99 2.81": 0
+  },
+  "byte_identical_supplemental_csvs": 3,
+  "q2_rows_checked": 16,
+  "q2_individual_fault_cases_checked": 7,
+  "q4_q5_default_grid_rows_checked": 63,
+  "q4_q5_default_grid_selected_rows": 34,
+  "q4_q5_custom_rows_checked": 2,
+  "strict_inclusive_thresholds_and_tie_ranking": "PASS",
+  "baseline_manifest_hashes_checked": {
+    "inputs": 20,
+    "outputs": 32
+  },
+  "supplemental_manifest_hashes_checked": {
+    "inputs": 16,
+    "outputs": 3,
+    "validation_record": 1
+  },
+  "formal_human_review": "pending"
+}

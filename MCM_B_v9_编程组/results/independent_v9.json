@@ -1,0 +1,76 @@
+{
+  "version": "v9_independent_audit",
+  "physics": {
+    "independent_mass_and_velocity_records": 27,
+    "rounded_tail_composition_checked": true,
+    "finite_speed_grid_checked": 21,
+    "scope": "Independent algebra within the circular, impulsive, zero-SOI mission family."
+  },
+  "water": {
+    "independent_components": 44,
+    "scalar_interval_points_including_extended_tails": 171551,
+    "architecture_cross_product_checked": true,
+    "raw_loss_suffix_tests": {
+      "independent_fault_and_raw_loss_paths": 2643,
+      "suffix_interval_checks": 693828,
+      "scope": "Complete stated small periodic binary calendars, three partial-capture levels and raw-loss phases; not all real histories."
+    },
+    "queue_tests": {
+      "independent_small_arrival_and_closure_cases": 450
+    }
+  },
+  "construction": {
+    "independent_policy_certificates": 41,
+    "ideal_to_fault_monotonic_comparisons": 20,
+    "declared_capacity_parameters_respond": true,
+    "returned_base_reuse_case_checked": true,
+    "small_physical_queue_tests": {
+      "full_fifo_source_lift_dispatch_receiving_calendar_cases": 625,
+      "scope": "Complete stated four-day periodic fault phases, balanced R-calendar phases and independently simulated packetized FIFO queues; not all full-size histories."
+    },
+    "scope": "Independent affine, integer loss/replacement, full-source, fleet, cutoff and resource arithmetic; no all-policy earliest-time proof."
+  },
+  "cost_environment": {
+    "independent_dot_product_and_coefficient_box_records": 10,
+    "shared_coefficient_difference_box_checked": true,
+    "fixed_plan_crossing_checked": true,
+    "finite_environment_epsilon_and_dominance_toys": true,
+    "scope": "Listed parameterized terms and coefficient boxes, not empirical future prices or complete environmental impact."
+  },
+  "integrated_phase_recurrences": {
+    "main": {
+      "policy_records": 13728,
+      "phase_entries": 219968,
+      "critical_item_entries": 130944
+    },
+    "construction_baselines": {
+      "policy_records": 88,
+      "phase_entries": 336,
+      "critical_item_entries": 0
+    },
+    "sensitivity": {
+      "policy_records": 4872,
+      "phase_entries": 62080,
+      "critical_item_entries": 36096
+    },
+    "unique_route_object_checks": 1084,
+    "scope": "Independent saved phase-history recurrence, homogeneous item identities, fleet credit, quarantine and warehouse peaks, manufacturing/full-job features, phase timing and exposure composition. External ready-service and century-maintenance assumptions are not physically certified."
+  },
+  "catalogue_choices": {
+    "main_policy_cartesian_choices_checked": 13728,
+    "main_and_sensitivity_cost_records_checked": 93440,
+    "unique_additional_water_scalar_intervals": 335721,
+    "all_mission_engineering_water_components_checked": 451,
+    "finite_selection_groups_checked": 100,
+    "environment_epsilon_queries_checked": 45,
+    "nested_limit_comparisons_checked": 20,
+    "sensitivity_policy_instances_checked": 4872,
+    "complete_route_and_packing_cross_product": true,
+    "ideal_fault_fixed_capacity_baselines_present": true,
+    "source_hashes_match": true,
+    "cost_time_and_cost_environment_frontiers_checked": true,
+    "scope": "All saved finite candidates and coefficient scenarios; no unrestricted design-space optimum or empirical forecast."
+  },
+  "all_implemented_checks_pass": true,
+  "scope": "Independent finite arithmetic, event calendar, physical-accounting recurrence and complete saved-catalogue checks. No actual hardware, lifetime/readiness or future-price certification."
+}

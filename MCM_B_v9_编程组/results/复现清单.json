@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-09T03:06:59.103556+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "build_report_v9.py",
+      "sha256": "bfd242ff7c5233b04eb318dac0f1f1300d12603bf9daccc08a05a65e32feaaf4",
+      "bytes": 48876
+    },
+    {
+      "path": "construction_v9.py",
+      "sha256": "d297d715f3620b785d4485dfea862f225eb1cff915b54cc8c3f742cb18c60850",
+      "bytes": 22764
+    },
+    {
+      "path": "cost_environment_v9.py",
+      "sha256": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341",
+      "bytes": 16354
+    },
+    {
+      "path": "joint_v9.py",
+      "sha256": "2dd6a03b7d498942b88317cda67ff415b9a11ca8f76038e076bf014738b05165",
+      "bytes": 28079
+    },
+    {
+      "path": "package_v9.py",
+      "sha256": "ac5a26ce8f376f08e52510cfc2dda639a47c04dd384e01d8d8d0203fa723e88e",
+      "bytes": 5948
+    },
+    {
+      "path": "phase_audit_v9.py",
+      "sha256": "54297a401f5dba2b1dbbd4cbbbb728b2c9a457c1ea73c3a599b9da5f35d54ac7",
+      "bytes": 17982
+    },
+    {
+      "path": "physics_v9.py",
+      "sha256": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2",
+      "bytes": 18325
+    },
+    {
+      "path": "reference/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reference/physics_v8.py",
+      "sha256": "29a12fb250ac78b366947b5f76c1c0289c24fe0cd8d2dbf4133c0f43159ac14d",
+      "bytes": 23213
+    },
+    {
+      "path": "reference/water_v8.py",
+      "sha256": "397270fad79105e69cf0a4080324b14990b4b3fdb0f641ab63a9a52cf916018c",
+      "bytes": 28965
+    },
+    {
+      "path": "registry_v9.py",
+      "sha256": "874e8a112aa2c64f5fcb7443eb42291b06da4485442a33b94e581bc0b952642b",
+      "bytes": 1742
+    },
+    {
+      "path": "run_v9.py",
+      "sha256": "0006d1f4cf66947e08c015fab61fd26206136b67cd7e7d8001a02833a82f64cc",
+      "bytes": 3166
+    },
+    {
+      "path": "sensitivity_v9.py",
+      "sha256": "790dd514b05f5c195cdcc91a40a942cc16daafdf45d00380325d77421fd1038a",
+      "bytes": 13040
+    },
+    {
+      "path": "verify_v9.py",
+      "sha256": "4652c12163e283c29fc797de46224d4f55af1a69714c78e052c385c4f3f440e9",
+      "bytes": 37541
+    },
+    {
+      "path": "water_v9.py",
+      "sha256": "254c7a13f6b4f3c929304b3e568157be62f011ce57e0489330704148cfd40276",
+      "bytes": 28641
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "7accabe827ac0ba6d43f84edf435fe47371f054e5be69c562963b12f4170d26d",
+      "bytes": 39
+    },
+    {
+      "path": "evidence/2026_MCM_Problem_B.pdf",
+      "sha256": "bbb6efb682e2d4a3cfb4a4170adfdd9184c294f549e03c7ed415dd819bb827ca",
+      "bytes": 236380
+    },
+    {
+      "path": "programming_handoff.py",
+      "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+      "bytes": 14462
+    },
+    {
+      "path": "plot_handoff.py",
+      "sha256": "17804bdecac49cea2562a566535d05657b296c13771f99b193065bebb1ba7d56",
+      "bytes": 6922
+    },
+    {
+      "path": "utils/plot_style.py",
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2",
+      "bytes": 17160
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "macOS-15.3-arm64-arm-64bit",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "key_parameters": {
+    "harbours": 3,
+    "lift_gross_t_year_each": 179000.0,
+    "selected_R_sites": 10,
+    "R_flights_year_each": 250,
+    "R_payload_t": 125.0,
+    "R_site_calendar_identity": "Future250/year is a named scenario, not official supplied historical frequency.",
+    "generic_construction_t": 100000000.0,
+    "water_horizon_days": 365,
+    "gross_service_t_day": 1154.3999999999999,
+    "default_mission_key": "42ece0ad97c436c7",
+    "random_seed_usage": "not_applicable; the CLI seed 0 is unused because the v9 runs are deterministic",
+    "declared_fault_scope": "rolling budgets in ConstructionInputs and WaterInputs",
+    "output_scope": "sufficient v9 time bounds, declared-scenario budgets and model emissions proxies"
+  },
+  "reproduce_command": "python run_v9.py && python programming_handoff.py && python plot_handoff.py",
+  "numerical_entry_point": "python run_v9.py",
+  "archive_comparison_command": "python programming_handoff.py --compare-with ../MCM_B_v9",
+  "seed_applies": false,
+  "run_record": {
+    "completed_at": "2026-11-09T10:52:25.128158+08:00",
+    "total_seconds": 34.33097095899984,
+    "stage_seconds": {
+      "physics_v9.py": 0.25699845899998763,
+      "water_v9.py": 1.9227742919997581,
+      "joint_v9.py": 17.212398167000174,
+      "sensitivity_v9.py": 3.4866307500001312,
+      "verify_v9.py": 10.16558245899978
+    },
+    "independent_checks_pass": true,
+    "producer_sources_unchanged": true
+  },
+  "output_files": [
+    {
+      "path": "results/archive_comparison.json",
+      "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6",
+      "bytes": 4487
+    },
+    {
+      "path": "results/figure_audit.json",
+      "sha256": "31e85e523d11ac0f1da2f711542cb8e62af16a75940c53dbf065a87d0f68b568",
+      "bytes": 1868
+    },
+    {
+      "path": "results/independent_v9.json",
+      "sha256": "87ea1dc9a8d257923c8eb0f8b7eb16bc9c4b500a33ed6c61ca43c5f5ab7946de",
+      "bytes": 3585
+    },
+    {
+      "path": "results/joint_v9.json",
+      "sha256": "f94736110437dc152f44eb33c770c37dfd652262afa9c60b7ca7e835d67cbd6f",
+      "bytes": 64582105
+    },
+    {
+      "path": "results/phases_v9.json",
+      "sha256": "eda270d2650f3e653089850ca17dc3c33f2dd7f430554c37a4c8415963bb586e",
+      "bytes": 45532268
+    },
+    {
+      "path": "results/physics_v9.json",
+      "sha256": "1d81e8daecc152abc30a528cadbeab3677b2ec56195815d5b22a82b7dfbec766",
+      "bytes": 160972
+    },
+    {
+      "path": "results/physics_v9_catalogue.csv",
+      "sha256": "14e24a1a082ee842414104a38dc23399d6891383443b3a407e112567d2b5e0b2",
+      "bytes": 4845
+    },
+    {
+      "path": "results/policy_summary_v9.csv",
+      "sha256": "6b4d132ae2adc5ec863cb3a93b4f4d39ae4e90f1208fb68b80fd639c98fb574b",
+      "bytes": 2021980
+    },
+    {
+      "path": "results/programming_run.log",
+      "sha256": "8b1fde1a3101cbe235c8d7528c90a99916d1f43e4cb7403ede5d0c4dffc5dc35",
+      "bytes": 6372
+    },
+    {
+      "path": "results/programming_smoke.json",
+      "sha256": "eaf1f0246201e214b3a48739d47b4b4ae8888f38691d95a0911bc6a1c7182009",
+      "bytes": 1269
+    },
+    {
+      "path": "results/programming_table_profile.json",
+      "sha256": "b09423851d1fc05156304ce73f75be7e8a85bfc38c92d84e543645106d5c6491",
+      "bytes": 9457
+    },
+    {
+      "path": "results/run_record.json",
+      "sha256": "561acb2d3690b18fb9871ce0c0244851b702da66a5d1cd44941a6acffcbdc21e",
+      "bytes": 3125
+    },
+    {
+      "path": "results/sensitivity_phases_v9.json",
+      "sha256": "1c634c83ceec2a8cf09e743f418fcb18cda8027515d41ab358cf1f0286340ead",
+      "bytes": 12767498
+    },
+    {
+      "path": "results/sensitivity_v9.csv",
+      "sha256": "dde1b5783de2fea3e3a2f5068c274fe169448e75731420494fbf361cbafaaa84",
+      "bytes": 16921
+    },
+    {
+      "path": "results/sensitivity_v9.json",
+      "sha256": "c0cd008f130b94072988acb651d7996b6a7be2bfb16e0a713d25dcaeb31389f4",
+      "bytes": 27158185
+    },
+    {
+      "path": "results/water_v9.json",
+      "sha256": "4248ae95f774feba1ef69a4bcde769aea802a6d205853986197cfa132c83281f",
+      "bytes": 464941
+    },
+    {
+      "path": "results/论文组结果表.csv",
+      "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778",
+      "bytes": 16610
+    },
+    {
+      "path": "figures/_qa/process_q3_water_preposition_grayscale.png",
+      "sha256": "3421923cb0f57a75e3e93930e3aa127a1a6f3f0884be5ca965642d2085b937e6",
+      "bytes": 82450
+    },
+    {
+      "path": "figures/_qa/raw_q2_declared_fault_budgets_grayscale.png",
+      "sha256": "a92495ea71f75deb9fbb2d8850dd035d1bf138902055b84b507779412477f711",
+      "bytes": 59441
+    },
+    {
+      "path": "figures/_qa/result_q1_construction_bounds_grayscale.png",
+      "sha256": "ab4010b6712e5f15773c7e8b71818de4a318b6d12a7a3f54032ace960657155a",
+      "bytes": 68664
+    },
+    {
+      "path": "figures/_qa/result_q4_emissions_budget_frontier_grayscale.png",
+      "sha256": "2f7df05a0e7048d01db0bb66391b7b4b308182ff0ad2f263a30f4f44a00a058e",
+      "bytes": 83491
+    },
+    {
+      "path": "figures/_qa/result_q5_habitation_budget_frontier_grayscale.png",
+      "sha256": "bc821d4af39d519395666355044434646e3204ed2e923bf75945654e2d5f6a37",
+      "bytes": 90666
+    },
+    {
+      "path": "figures/process_q3_water_preposition.png",
+      "sha256": "4df36143cbe72994484dd3916993693efdb576723fdceccac27b9eca3ca15875",
+      "bytes": 83267
+    },
+    {
+      "path": "figures/process_q3_water_preposition.svg",
+      "sha256": "434d40d0dc825646ab1e3c73f79e5218482ba6906bb5a398fc1c8f9cfa92c5ef",
+      "bytes": 12839
+    },
+    {
+      "path": "figures/raw_q2_declared_fault_budgets.png",
+      "sha256": "f31624834e2569d27ae8166e4a634127b9a6a5939a08e62b638bd61782985cb9",
+      "bytes": 59609
+    },
+    {
+      "path": "figures/raw_q2_declared_fault_budgets.svg",
+      "sha256": "7bf3cbf7317216d6dc027f4e8814e815a4e099f243be090c78bfaf576a7dfdd8",
+      "bytes": 9065
+    },
+    {
+      "path": "figures/result_q1_construction_bounds.png",
+      "sha256": "c2c2a6c37e0e3b87846a822adf9cc0f7b430a50e0bb140fa259b249af7667097",
+      "bytes": 70385
+    },
+    {
+      "path": "figures/result_q1_construction_bounds.svg",
+      "sha256": "99e30b826c9a1c7f9e8849e96d7c1b46236a5c04ebb594ed8261a252c796c3c5",
+      "bytes": 11343
+    },
+    {
+      "path": "figures/result_q4_emissions_budget_frontier.png",
+      "sha256": "13b6fd53123444d82ff4a148ee1d4e0022ef1a11450450bccedbae4acb393bab",
+      "bytes": 87647
+    },
+    {
+      "path": "figures/result_q4_emissions_budget_frontier.svg",
+      "sha256": "88c05928c4b387f671dee9f203e76fa4b250f3ba3968aebe36a969a032adf705",
+      "bytes": 328887
+    },
+    {
+      "path": "figures/result_q5_habitation_budget_frontier.png",
+      "sha256": "2cbfcf201ca9e8f7999b5f2e1506d1d5b251eb212aaeb0682e840e62edab63b0",
+      "bytes": 95449
+    },
+    {
+      "path": "figures/result_q5_habitation_budget_frontier.svg",
+      "sha256": "71908f09567aec8825d24be84bb8e95ec043de300c5c30c4a3b1a4f3fe8b7059",
+      "bytes": 329490
+    }
+  ]
+}

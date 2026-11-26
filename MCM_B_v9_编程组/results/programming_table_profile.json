@@ -1,0 +1,481 @@
+{
+  "source": "results/论文组结果表.csv",
+  "n_rows": 117,
+  "n_cols": 7,
+  "columns": {
+    "question": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 5,
+      "categories": [
+        [
+          "q2",
+          39
+        ],
+        [
+          "q3",
+          27
+        ],
+        [
+          "q4",
+          27
+        ],
+        [
+          "q5",
+          15
+        ],
+        [
+          "q1",
+          9
+        ]
+      ],
+      "min_group_n": 9,
+      "max_group_n": 39,
+      "small_groups_flag": true
+    },
+    "scenario": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 24,
+      "categories": [
+        [
+          "minimum_central_budget",
+          14
+        ],
+        [
+          "earliest_habitation_bound",
+          14
+        ],
+        [
+          "minimum_central_budget_stock_only",
+          14
+        ],
+        [
+          "ideal_fixed_E_share_0.00",
+          5
+        ],
+        [
+          "fault_fixed_E_share_0.00",
+          5
+        ],
+        [
+          "ideal_fixed_E_share_0.30",
+          5
+        ],
+        [
+          "fault_fixed_E_share_0.30",
+          5
+        ],
+        [
+          "ideal_fixed_E_share_1.00",
+          5
+        ],
+        [
+          "fault_fixed_E_share_1.00",
+          5
+        ],
+        [
+          "central_emissions_cap_1",
+          3
+        ],
+        [
+          "central_emissions_cap_7",
+          3
+        ],
+        [
+          "central_emissions_cap_6",
+          3
+        ],
+        [
+          "central_emissions_cap_5",
+          3
+        ],
+        [
+          "central_emissions_cap_4",
+          3
+        ],
+        [
+          "central_emissions_cap_3",
+          3
+        ],
+        [
+          "central_emissions_cap_2",
+          3
+        ],
+        [
+          "ideal_R_catalogue",
+          3
+        ],
+        [
+          "central_emissions_cap_0",
+          3
+        ],
+        [
+          "ideal_E_catalogue",
+          3
+        ],
+        [
+          "fault_ER_catalogue",
+          3
+        ],
+        [
+          "fault_E_catalogue",
+          3
+        ],
+        [
+          "fault_R_catalogue",
+          3
+        ],
+        [
+          "ideal_ER_catalogue",
+          3
+        ],
+        [
+          "central_emissions_cap_8",
+          3
+        ]
+      ],
+      "min_group_n": 3,
+      "max_group_n": 14,
+      "small_groups_flag": true
+    },
+    "policy_id": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 19,
+      "categories": [
+        [
+          "c9cc3b90716159eb6c",
+          17
+        ],
+        [
+          "90545590de96ee94ee",
+          14
+        ],
+        [
+          "8066846b934681871a",
+          14
+        ],
+        [
+          "118f9dbce0224dc8c1",
+          8
+        ],
+        [
+          "05f5b7e9793f7baa67",
+          8
+        ],
+        [
+          "c7a5c71ff4e8430f72",
+          8
+        ],
+        [
+          "f85322b99c9b3672bd",
+          8
+        ],
+        [
+          "56763a771534b99a5d",
+          5
+        ],
+        [
+          "24b2a8b50ec6c3634e",
+          5
+        ],
+        [
+          "3d1e825d9369d1f399",
+          3
+        ],
+        [
+          "49bd9939872f36b167",
+          3
+        ],
+        [
+          "950a578af44617abc0",
+          3
+        ],
+        [
+          "15e216a23c367e5a13",
+          3
+        ],
+        [
+          "be1acf707a3c134eca",
+          3
+        ],
+        [
+          "32aaaccfb2c5b41eae",
+          3
+        ],
+        [
+          "4e143506c9e60177d6",
+          3
+        ],
+        [
+          "e0a0a6e70a94fcdc11",
+          3
+        ],
+        [
+          "7b1e44250de4477c09",
+          3
+        ],
+        [
+          "2f3854b70fe528d12d",
+          3
+        ]
+      ],
+      "min_group_n": 3,
+      "max_group_n": 17,
+      "small_groups_flag": true
+    },
+    "metric": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 22,
+      "categories": [
+        [
+          "elevator_share",
+          12
+        ],
+        [
+          "construction_delivery_upper",
+          12
+        ],
+        [
+          "central_construction_budget",
+          12
+        ],
+        [
+          "selected_emissions_proxy",
+          9
+        ],
+        [
+          "emissions_proxy_cap",
+          9
+        ],
+        [
+          "selected_central_budget",
+          9
+        ],
+        [
+          "construction_hull_loss_upper",
+          6
+        ],
+        [
+          "construction_cargo_loss_upper",
+          6
+        ],
+        [
+          "gross_service_water_over_horizon",
+          3
+        ],
+        [
+          "water_service_horizon",
+          3
+        ],
+        [
+          "water_recovery_rate",
+          3
+        ],
+        [
+          "initial_usable_water_on_moon",
+          3
+        ],
+        [
+          "initial_packed_water_cargo",
+          3
+        ],
+        [
+          "gross_service_water_per_day",
+          3
+        ],
+        [
+          "additional_preposition_upper",
+          3
+        ],
+        [
+          "incremental_central_budget_vs_matched_construction_only",
+          3
+        ],
+        [
+          "elevator_construction_share",
+          3
+        ],
+        [
+          "elevator_preposition_share",
+          3
+        ],
+        [
+          "habitation_upper",
+          3
+        ],
+        [
+          "central_complete_policy_budget",
+          3
+        ],
+        [
+          "central_emissions_proxy",
+          3
+        ],
+        [
+          "fresh_water_reserve",
+          3
+        ]
+      ],
+      "min_group_n": 3,
+      "max_group_n": 12,
+      "small_groups_flag": true
+    },
+    "value": {
+      "type": "continuous",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "mean": 17133510469193.701,
+      "median": 326221.0,
+      "sd": 32301290240869.316,
+      "min": 0.0,
+      "max": 94438054672175.34,
+      "skewness": 1.5248359249601766,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 24,
+      "outlier_lo": -10020246750207.2,
+      "outlier_hi": 16700411251147.262,
+      "needs_log_axis": false
+    },
+    "unit": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 8,
+      "categories": [
+        [
+          "USD",
+          27
+        ],
+        [
+          "fraction",
+          21
+        ],
+        [
+          "kg CO2 proxy",
+          21
+        ],
+        [
+          "t",
+          18
+        ],
+        [
+          "day",
+          12
+        ],
+        [
+          "year",
+          9
+        ],
+        [
+          "hull",
+          6
+        ],
+        [
+          "t/day",
+          3
+        ]
+      ],
+      "min_group_n": 3,
+      "max_group_n": 27,
+      "small_groups_flag": true
+    },
+    "source": {
+      "type": "categorical",
+      "n_total": 117,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 117,
+      "n_unique": 5,
+      "categories": [
+        [
+          "joint_v9.json#construction_baselines",
+          30
+        ],
+        [
+          "joint_v9.json#water_catalogues,candidates,construction_baselines",
+          27
+        ],
+        [
+          "joint_v9.json#selections.central.epsilon_rows",
+          27
+        ],
+        [
+          "joint_v9.json#construction_summary",
+          18
+        ],
+        [
+          "joint_v9.json#candidates,selections,cost_time_frontier_ids",
+          15
+        ]
+      ],
+      "min_group_n": 15,
+      "max_group_n": 30,
+      "small_groups_flag": false
+    }
+  },
+  "correlation": null,
+  "group_summary": {
+    "by": [
+      "question"
+    ],
+    "n_groups": 5,
+    "min_n_per_group": 9,
+    "max_n_per_group": 39,
+    "median_n_per_group": 27,
+    "small_groups_flag": true,
+    "tiny_groups_flag": false,
+    "per_group_counts": [
+      [
+        "q1",
+        9
+      ],
+      [
+        "q2",
+        39
+      ],
+      [
+        "q3",
+        27
+      ],
+      [
+        "q4",
+        27
+      ],
+      [
+        "q5",
+        15
+      ]
+    ]
+  },
+  "warnings": [
+    "列 'question' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'scenario' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'policy_id' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'metric' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'unit' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。"
+  ],
+  "suggestions": [
+    "分类 vs 连续，小样本（每组 n<10）→ **箱线图/小提琴图 + stripplot 叠加原始点**；**避免**只画均值柱状图，会掩盖分布。",
+    "分类维度组合数 = 2006400（question, scenario, policy_id, metric, unit, source 全交叉），**一张图塞不下**——建议按某一维拆成多面板，或选择子集。",
+    "value 高度偏态（skew=1.52）→ 考虑对数变换或小提琴图代替均值柱图"
+  ]
+}

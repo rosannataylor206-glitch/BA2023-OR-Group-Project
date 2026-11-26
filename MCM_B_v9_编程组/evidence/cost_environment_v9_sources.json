@@ -1,0 +1,73 @@
+{
+  "version": "v9_cost_environment_primary_source_ledger",
+  "access_date": "2026-10-28",
+  "source_identity": "Historical references for boundaries and magnitudes. None establishes the cost, emissions, hardware or availability of a2050 125tMoon cargo flight or space elevator.",
+  "sources": [
+    {
+      "id": "NASA_Psyche_2020",
+      "title": "NASA Awards Launch Services Contract for the Psyche Mission",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-launch-services-contract-for-the-psyche-mission/",
+      "publication_date": "2020-02-28",
+      "primary": true,
+      "read_location": "Body contract-release C20-006, paragraphs1–2",
+      "verified_fact": "NASA reported approximately117millionUSD for launching Psyche and secondary payloads, including launch service and other mission-related costs.",
+      "model_use": "A historical price magnitude reference; the illustrative coefficient117millionUSD is explicitly uncalibrated for futureMoon cargo delivery.",
+      "limitations": "Different payload, destination, price date and cost scope; not a FalconHeavy current list price, 2050 quote, or landing service price.",
+      "retrieval_ref": "turn131view0"
+    },
+    {
+      "id": "EIA_price_2024",
+      "title": "Electric Power Annual Table1.1",
+      "url": "https://www.eia.gov/electricity/annual/table.php?t=epa_01_01.html",
+      "publication_date": "2026-10-21 current page; historical2024 column",
+      "primary": true,
+      "read_location": "Table1.1, Sales Revenue and Average Price, Industrial row,2024column",
+      "verified_value": 0.0813,
+      "unit": "USD/kWh",
+      "verified_fact": "The2024USindustrial average retail electricity price was8.13cents/kWh.",
+      "model_use": "Historical electricity-price illustration, with separate named sensitivity coefficients.",
+      "limitations": "USnational retail average, not global equatorial2050 generation or elevator electricity procurement; page also contains2025data, which this benchmark does not use.",
+      "retrieval_ref": "turn131view1"
+    },
+    {
+      "id": "EIA_generation_CO2_2023",
+      "title": "How much carbon dioxide is produced per kilowatthour of US electricity generation",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11",
+      "publication_date": "2024-12-11 last update shown",
+      "primary": true,
+      "read_location": "Opening paragraph and all-energy-sources row of2023utility-scale table",
+      "verified_value": 0.81,
+      "unit": "lbCO2/kWh",
+      "model_conversion_kg_kWh": 0.36740981970000003,
+      "model_use": "A historical grid-operationalCO2 benchmark; lowerandhighergridcoefficients are declared sensitivity scenarios.",
+      "limitations": "Generation-only national average, variable across time and plants; not delivered-power lifecycleCO2 or futureglobal electricity mix.",
+      "retrieval_ref": "turn131view4"
+    },
+    {
+      "id": "FAA_Falcon_2020",
+      "title": "Final Environmental Assessment and FONSI for SpaceX Falcon Launches at KSC and CCAFS",
+      "url": "https://www.faa.gov/sites/faa.gov/files/space/environmental/nepa_docs/SpaceX_Falcon_Program_Final_EA_and_FONSI.pdf",
+      "publication_date": "2020-07",
+      "primary": true,
+      "read_location": "PDFpages90–91, printedpages71–72, §4.4.1.1, Tables4-4and4-5",
+      "verified_table4_4_FH_launches": 10,
+      "verified_table4_4_FH_CO2_t": 11613,
+      "derived_direct_CO2_per_FH_launch_t": 1161.3,
+      "verified_table4_5_FH_GHG_t_for10_launches": 26747,
+      "model_use": "Table4-4 direct-launch number supplies a historical benchmark for a separate transfer multiplier; it is not equated with Table4-5 or a future125tMoon-flight footprint.",
+      "limitations": "The two tables have different reported totals; do not merge their boundaries or use this historicFONSI as approval for the vastly largerfuturecadence. DirectCO2 does not cover soot,NOx,watervapour,ozonechemistry,noise,ecology,upstreammanufacture or nuclear impacts.",
+      "retrieval_ref": "turn131view3"
+    }
+  ],
+  "coefficient_provenance": {
+    "observed_or_reported_historical_benchmarks": [
+      "NASA_Psyche_2020",
+      "EIA_price_2024",
+      "EIA_generation_CO2_2023",
+      "FAA_Falcon_2020"
+    ],
+    "all_future_cost_intervals": "Named analyst-selected uncertainty/stress ranges, not empirical bounds, calibrated forecasts or confidence intervals.",
+    "all_future_nonCO2_and_nuclear_effects": "Unknown/unmodeled, explicitly not zero and not claimed negligible.",
+    "century_horizons": "Constant-technology service-contract comparison only; prices, technology and durability are not predicted centuries ahead."
+  }
+}

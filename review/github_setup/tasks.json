@@ -1,0 +1,182 @@
+[
+  {
+    "id": "D01",
+    "title": "数学建模初稿",
+    "category": "Mathematical Modeling",
+    "status": "Done",
+    "label": "modeling",
+    "evidence": "用户确认初稿完成；候选模型说明和 proofs 文件存在。未进行独立模型审核。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/1"
+  },
+  {
+    "id": "D02",
+    "title": "编程求解初稿",
+    "category": "Programming",
+    "status": "Done",
+    "label": "programming",
+    "evidence": "用户确认初稿完成；候选代码与保存结果存在。历史运行记录不等于本轮测试通过。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/2"
+  },
+  {
+    "id": "D03",
+    "title": "论文初稿",
+    "category": "Academic Writing",
+    "status": "Done",
+    "label": "paper",
+    "evidence": "用户确认初稿完成；report.1docx.docx 存在。未评审正文。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/3"
+  },
+  {
+    "id": "D04",
+    "title": "Skill 检查与配置",
+    "category": "Environment",
+    "status": "Done",
+    "label": "documentation",
+    "evidence": "review/00_skill_inventory.md；写作工具 22 项、decision_log 20 项内置测试通过。不是业务测试。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/4"
+  },
+  {
+    "id": "D05",
+    "title": "AGENTS.md 建立",
+    "category": "Environment",
+    "status": "Done",
+    "label": "documentation",
+    "evidence": "课程规则、六道质量门禁已写入 AGENTS.md。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/5"
+  },
+  {
+    "id": "D06",
+    "title": "700 个原始文件完整性验证",
+    "category": "Data & Validation",
+    "status": "Done",
+    "label": "validation",
+    "evidence": "初始化前 700/700 原始哈希一致；结束快照仅系统 .DS_Store 漂移，其他 699 个原始文件一致。GitHub #6 已补充披露。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/6"
+  },
+  {
+    "id": "T01",
+    "title": "NumPy 及相关计算环境兼容性",
+    "category": "Environment",
+    "status": "Blocked",
+    "label": "programming",
+    "evidence": "已验证 Anaconda NumPy 1.26.4 不满足 v9 声明 numpy>=2.0；内置文档环境缺 SciPy/Matplotlib。验收：隔离环境、依赖记录、最小运行与版本偏差证据。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/7"
+  },
+  {
+    "id": "T02",
+    "title": "BA2023 课程规范核验",
+    "category": "Requirements",
+    "status": "To Do",
+    "label": "documentation",
+    "evidence": "BA2023 指南、Rubrics、Syllabus、Slides 的适用版本尚未核验；存在 BUS2003 命名文件。验收：课程依据索引与冲突记录。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/8"
+  },
+  {
+    "id": "T03",
+    "title": "数学建模独立审核",
+    "category": "Mathematical Modeling",
+    "status": "To Do",
+    "label": "modeling",
+    "evidence": "Gate 1 未运行。验收：约束/假设/单位/可行性与最优性边界的独立检查报告。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/9"
+  },
+  {
+    "id": "T04",
+    "title": "编程与算法审核",
+    "category": "Programming",
+    "status": "To Do",
+    "label": "programming",
+    "evidence": "Gate 2 未运行。验收：静态检查及隔离副本实际复现证据。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/10"
+  },
+  {
+    "id": "T05",
+    "title": "数据及数值结果验证",
+    "category": "Data & Validation",
+    "status": "To Do",
+    "label": "data",
+    "evidence": "Gate 3 未运行。验收：来源、输入哈希、边界/残差/基准和敏感性报告。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/11"
+  },
+  {
+    "id": "T06",
+    "title": "论文深度审核",
+    "category": "Academic Writing",
+    "status": "To Do",
+    "label": "paper",
+    "evidence": "Gate 5 未运行。验收：结构、证据、语言、引用与格式四遍检查。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/12"
+  },
+  {
+    "id": "T07",
+    "title": "模型、代码、数据、结果、论文一致性检查",
+    "category": "Quality Assurance",
+    "status": "To Do",
+    "label": "validation",
+    "evidence": "Gate 4 未运行。验收：关键主张—证据与多位置数值/单位映射。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/13"
+  },
+  {
+    "id": "T08",
+    "title": "模拟 Rubrics 评分",
+    "category": "Quality Assurance",
+    "status": "Blocked",
+    "label": "validation",
+    "evidence": "课程 Rubrics 未核验；不编造评分权重或分数。验收：逐条评分依据、证据和不确定性。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/14"
+  },
+  {
+    "id": "T09",
+    "title": "受控整改",
+    "category": "Quality Assurance",
+    "status": "To Do",
+    "label": "validation",
+    "evidence": "依赖正式审核发现和人工批准的整改范围；不预先虚构问题。验收：新版本、影响分析和受影响门禁复验。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/15"
+  },
+  {
+    "id": "T10",
+    "title": "最终独立审核",
+    "category": "Quality Assurance",
+    "status": "To Do",
+    "label": "validation",
+    "evidence": "Gate 6 未运行。验收：冻结版本、独立性记录、残余问题及提交建议。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/16"
+  },
+  {
+    "id": "T11",
+    "title": "Presentation 准备",
+    "category": "Presentation",
+    "status": "To Do",
+    "label": "documentation",
+    "evidence": "尚未制作；课程 Presentation 要求待核验。验收以真实课程要求为准。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/17"
+  },
+  {
+    "id": "T12",
+    "title": "最终提交",
+    "category": "Final Submission",
+    "status": "Blocked",
+    "label": "documentation",
+    "evidence": "需课程要求核验、审核闭环、成员人工确认与最终文件检查；本阶段不提交作业。",
+    "owner": "待认领",
+    "issue_url": "https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/18"
+  }
+]
