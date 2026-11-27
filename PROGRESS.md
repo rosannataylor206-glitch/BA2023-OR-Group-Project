@@ -95,3 +95,7 @@ GitHub 配置已完成：Private 仓库、Private Projects 和 18 项 Issues 均
 | 最终提交 | [#18](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/18) | Blocked |
 
 原18项阶段任务和实际缺陷记录全部保留，改名任务已添加原因评论；未分配负责人。新任务不等于通过审核，Report整改仍待批准。
+
+## 本轮同步完成
+
+研究资料与Report审核流程已发布至 `sync/report-materials-20261127`，提交 `62e0d7e`，完整远程树223文件匹配。[PR #27](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/pull/27)供双人审阅，main与初稿Tag保留。资料同步任务#22可关闭为Done（仅同步完成，不代表研究/论文质量通过）；其余任务按Report Matrix继续。

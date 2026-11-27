@@ -67,3 +67,11 @@ Mathematical Model → Code → Results → Figures → Report：本轮数值复
 | 最终提交 | [#18](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/18) | Blocked |
 
 原18项阶段任务和实际缺陷记录全部保留，改名任务已添加原因评论；未分配负责人。新任务不等于通过审核，Report整改仍待批准。
+
+## 远程核验与交付入口
+
+成果同步提交：[62e0d7eed8ed84ef50f24a417bd86079edee49c5](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/commit/62e0d7eed8ed84ef50f24a417bd86079edee49c5)。125项新增/修改，完整远程树223文件逐Git SHA与本地匹配。112项研究资料已同步；剩余13项是管理/审核/恢复脚本。分支[sync/report-materials-20261127](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/tree/sync/report-materials-20261127)，[PR #27](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/pull/27)已创建，未合并main。main与v0.1 Tag保持原位，未force push。
+
+公开验证摘要见[latest_validation_summary.json](latest_validation_summary.json)，包含9命令退出码/耗时、6表容差对比和日志SHA，不包含本机绝对路径或凭证。五主PNG均已实际打开检查可读性；尚未认证最终Word尺寸的视觉效果。
+
+本报告后续状态记录提交不修改任何研究源/结果或英文Report。当前仍需两人确认错题封面修订、教师课程材料/179000吨口径、章节负责人及正式Word整改；不用重新分配建模/编程角色。
