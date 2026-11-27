@@ -59,3 +59,8 @@ GitHub 配置已完成：Private 仓库、Private Projects 和 18 项 Issues 均
 - 七份审核报告已写入 review/01–07；P0 封面农业题与正文月球题不一致，P1 运力口径歧义、课程 Rubric 缺失、外部设施未闭合等。模型/论文整改等待用户确认。
 - 历史 MCM_B_v9/ 目录有 17 项相对早期 700 文件哈希快照变化，另有 .DS_Store 漂移；原因未确认，未混入冻结候选包。
 - Issue/Projects 同步状态以远程核验为准；未验证事项不标 Done。
+
+## GitHub 同步核验补充
+
+- 已有任务 #7 已关闭；#8、#15 Blocked；#9–#13 In Review；#14 继续 Blocked。Projects 对应状态已同步。
+- 新建实际缺陷 [#19](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/19)（P0，论文身份）和 [#20](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/20)（P1，运力口径），均加入 Private Projects，Blocked。18 个原阶段任务保留；看板现共 20 项。

@@ -4,6 +4,12 @@
 
 初稿基线 `9994d70` / `v0.1-first-draft` 已存私有仓库，保留原 README 初始化提交。项目 `.venv` 已解决 NumPy 兼容性，隔离 `run_v9.py` 退出码 0（80.846 秒），独立跨材料算术 19/19 通过。**这只证明声明情景内的数值链部分可复现，不足以判定模型正确、课程 Excellent 或论文可提交。** 课程 M1 独立质检为 BLOCKED；未开始正式整改，原模型、业务代码和论文初稿未被本轮修改。
 
+## GitHub 缺陷跟踪
+
+- 报告身份冲突：[#19](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/19)，P0，Blocked。
+- 179,000 t/year 运力口径：[#20](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/20)，P1，Blocked。
+- 课程资料缺口沿用任务 [#8](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/8)；环境 [#7](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/7) 已完成。
+
 ## 优先问题
 
 | 优先级 | 问题与证据 | 影响及修复/验证 |
