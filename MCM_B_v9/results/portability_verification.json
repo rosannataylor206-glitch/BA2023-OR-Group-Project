@@ -1,0 +1,24 @@
+{
+  "version": "v9_clean_archive_reproduction",
+  "date": "2026-10-28",
+  "pipeline_exit_code": 0,
+  "different_working_directory": true,
+  "PYTHONPATH_empty": true,
+  "numerical_json_matches": {
+    "physics_v9.json": true,
+    "water_v9.json": true,
+    "joint_v9.json": true,
+    "phases_v9.json": true,
+    "sensitivity_v9.json": true,
+    "sensitivity_phases_v9.json": true,
+    "independent_v9.json": true
+  },
+  "ignored_nondeterministic_fields": [
+    "elapsed_seconds",
+    "environment"
+  ],
+  "independent_audit_all_pass": true,
+  "report_rebuild_members_identical": true,
+  "archive_rebuild_and_manifest_checks_passed": true,
+  "scope": "Same installed Python/scientific/document stack; this does not establish arbitrary operating-system/version compatibility or physical engineering validation."
+}

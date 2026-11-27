@@ -1,0 +1,91 @@
+[
+  {
+    "item": "G",
+    "value": "962t/day (9.62kg/person/day ×100000)",
+    "classification": "NASA design-reference plus problem population",
+    "boundary": "Domestic and medical service only; not calibrated total agriculture/industry/cooling demand."
+  },
+  {
+    "item": "eta",
+    "value": [
+      0.94,
+      0.98
+    ],
+    "classification": "Technology-informed scenario",
+    "boundary": "ISS active-architecture evidence; not annual lunar availability or100000-person validation."
+  },
+  {
+    "item": "Q",
+    "value": "103.618t net per125t paid flight",
+    "classification": "Legacy container-reference calculation",
+    "boundary": "1006 containers ×103kg water; container/cargo architecture remains a transfer assumption."
+  },
+  {
+    "item": "water fault budgets",
+    "value": "P365 B60 R7 J1",
+    "classification": "Uncalibrated robust design support",
+    "boundary": "Rolling windows, shared processing/capture faults; losses on fixed-deadline ledger. No probabilities."
+  },
+  {
+    "item": "upstream lead-time supports",
+    "value": [
+      "fixed60",
+      "30..90",
+      "30..60 plus FIFO receiver"
+    ],
+    "classification": "Logistics service design/stress scenarios",
+    "boundary": "Not ballistic flight-time observations. Future delay and losses not available to controller."
+  },
+  {
+    "item": "receiver slots",
+    "value": [
+      1,
+      4,
+      8
+    ],
+    "classification": "Capacity design scenarios",
+    "boundary": "Work-conserving FIFO completed-flight handling. Physical pad throughput not calibrated."
+  },
+  {
+    "item": "return and service",
+    "value": "30days additional",
+    "classification": "Scenario bound",
+    "boundary": "Cargo loss does not permanently remove vessel; worst total cycle=Lmax+30."
+  },
+  {
+    "item": "tank rupture",
+    "value": "C1000t, <=1incident per rolling365d and per day; repair<=365d",
+    "classification": "Mechanism-informed, numerically uncalibrated design",
+    "boundary": "Isolated single compartment, repair before same-day incident, no spreading contamination; capacity construction not full compartment hydraulics."
+  },
+  {
+    "item": "construction closures",
+    "value": "monthly P12 common<=1, each route<=1",
+    "classification": "Robust design/stress scenario",
+    "boundary": "Elevator lift and transfer share open flag;1month lift/flight lags, landing has positive floor. Not arbitrary segment failure/delays."
+  },
+  {
+    "item": "construction derating",
+    "value": "profile-specific pointwise floors",
+    "classification": "Uncalibrated engineering capacity support",
+    "boundary": "Ground monthly AND calendar-year quotas may derate; not inferred from average availability."
+  },
+  {
+    "item": "beta and route tariff ratio",
+    "value": "baseline1.5 and0.5; beta scans1..8",
+    "classification": "Legacy reference scenarios",
+    "boundary": "Not derived from a validated apex-to-surface trajectory or future price."
+  },
+  {
+    "item": "lift energy",
+    "value": "19.215kWh/kg moving mass at70% drive/no recovery",
+    "classification": "First-principles screen under explicit physical assumptions",
+    "boundary": "Efficiency is scenario; climber/tether/propellant total moving mass and dynamic losses require engineering study."
+  },
+  {
+    "item": "manufacturing, O&M, consumables and CAPEX",
+    "value": null,
+    "classification": "Unknown, not silently zero",
+    "boundary": "No global engineering investment-optimality or full lifecycle environmental claim."
+  }
+]

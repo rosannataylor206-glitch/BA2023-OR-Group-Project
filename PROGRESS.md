@@ -68,3 +68,30 @@ GitHub 配置已完成：Private 仓库、Private Projects 和 18 项 Issues 均
 ## 可见性更正（2026-11-27）
 
 用户确认仓库 Public 及组员邀请是本人主动操作，并明确选择今后保持 Public。Agent 已据此重新设置并核验仓库 PUBLIC；Projects 保持 Private。误判可见性异常的 [#21](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/21) 已更正并关闭。未来新增成果公开前仍核对批准范围和敏感信息。
+
+## Report中心更新（2026-11-27）
+
+两名作者共同完善Report，不再分配建模/编程岗位。新版20个PY与当前模型包匹配；主链+LP+导出+绘图+补充共9命令隔离复跑均退出0，6表数值在容差内一致，ID不同。两交付运行记录为不同批次，Report更新需保持整套表/图/ID来源。21项章节整改见review/report_review_matrix.csv，负责人待确认。
+
+本轮共同作者公开授权已取得；新研究范围112项列入latest_research_manifest.csv，四大JSON无损归档，原件只读。旧基线保留；新增工作独立分支，不改main。论文未实际整改，P0封面冲突、P1课程/运力口径、验证与结构问题仍待闭环。
+
+## 当前14项Report任务
+
+| 任务 | Issue | 状态 |
+| --- | --- | --- |
+| 最新研究资料同步 | [#22](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/22) | In Review |
+| Q1–Q5章节完善 | [#23](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/23) | To Do |
+| 管理启示与结论 | [#24](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/24) | To Do |
+| 英文学术表达 | [#25](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/25) | To Do |
+| 参考文献与引用 | [#26](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/26) | To Do |
+| 数学模型技术核验 | [#9](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/9) | In Review |
+| 最新编程结果核验 | [#10](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/10) | In Review |
+| Report结构检查 | [#12](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/12) | In Review |
+| 图表与数值一致性 | [#13](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/13) | In Review |
+| 敏感性及模型评价 | [#11](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/11) | In Review |
+| Rubrics评分审核 | [#14](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/14) | Blocked |
+| Report整改 | [#15](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/15) | Blocked |
+| 独立终审 | [#16](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/16) | To Do |
+| 最终提交 | [#18](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/18) | Blocked |
+
+原18项阶段任务和实际缺陷记录全部保留，改名任务已添加原因评论；未分配负责人。新任务不等于通过审核，Report整改仍待批准。

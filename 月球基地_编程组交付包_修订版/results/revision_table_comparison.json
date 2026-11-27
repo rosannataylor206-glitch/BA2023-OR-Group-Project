@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "all_match": true,
+    "files": 4,
+    "byte_identical": 4
+  },
+  "report": [
+    {
+      "file": "论文组结果表.csv",
+      "sha256_old": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778",
+      "sha256_new": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778",
+      "identical_bytes": true,
+      "rows_old": 117,
+      "rows_new": 117,
+      "cell_differences": 0,
+      "differences_sample": [],
+      "match": true
+    },
+    {
+      "file": "supplemental\\q2_fault_attribution.csv",
+      "sha256_old": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db",
+      "sha256_new": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db",
+      "identical_bytes": true,
+      "rows_old": 16,
+      "rows_new": 16,
+      "cell_differences": 0,
+      "differences_sample": [],
+      "match": true
+    },
+    {
+      "file": "supplemental\\q4_q5_joint_screening.csv",
+      "sha256_old": "4f4f1361f8c8f7911daaafb8ef545016fe6d72bf8731981d2db812ab257f0a7c",
+      "sha256_new": "4f4f1361f8c8f7911daaafb8ef545016fe6d72bf8731981d2db812ab257f0a7c",
+      "identical_bytes": true,
+      "rows_old": 63,
+      "rows_new": 63,
+      "cell_differences": 0,
+      "differences_sample": [],
+      "match": true
+    },
+    {
+      "file": "supplemental\\q4_q5_joint_screening_custom.csv",
+      "sha256_old": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40",
+      "sha256_new": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40",
+      "identical_bytes": true,
+      "rows_old": 2,
+      "rows_new": 2,
+      "cell_differences": 0,
+      "differences_sample": [],
+      "match": true
+    }
+  ]
+}

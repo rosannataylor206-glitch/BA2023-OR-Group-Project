@@ -1,51 +1,29 @@
-# BA2023 Operations Research — 个人研究管理
+# BA2023 Operations Research — Report Workspace
 
-Repository: BA2023-OR-Group-Project
+本仓库供两名论文作者统一获取研究资料、完善英文Report并记录审核进度。当前目标是基于已有数学与编程成果完成Report，不另设建模手/编程手岗位。仓库Public，Projects保持原可见性；新资料须有公开权限。
 
-Operations Research Group Project | Mathematical Modeling, Optimization, Computational Validation and Academic Report
+## 最新资料导航
 
-本科 Operations Research Group Project 的个人研究成果管理、版本控制、质量审核和论文完善空间。数学建模、程序求解与英文报告已形成初稿；当前优先冻结完整基线，然后提升研究与计算质量。**初稿完成不代表审核通过。**
+| 模块 | 当前候选与入口 | 状态 |
+| --- | --- | --- |
+| Mathematical Modeling | [模型说明](MCM_B_v9/MCM_B_v9_建模修订与独立验证说明.docx) | 与初稿DOCX相同；硬件说明以新版源码/交接为准 |
+| Mathematical Proofs | [8份证明](MCM_B_v9/proofs/) | 建设证明新增常数到代码映射 |
+| Programming | [新版复跑程序](月球基地_编程组交付包_修订版/复跑程序/) / [运行说明](月球基地_编程组交付包_修订版/复跑程序/00_运行说明.md) | 20个PY；主流程闭式充分上界+有限目录 |
+| Data and Parameters | [来源/假设](MCM_B_v9/evidence/) | 题面/常数/团队情景分开；第三方全文不入库 |
+| Computational Results | [Q1–Q5结果表](月球基地_编程组交付包_修订版/results/论文组结果表.csv) / [敏感性](MCM_B_v9/results/sensitivity_v9.csv) | 新版9命令复跑退出0；六表数值一致、ID跨环境漂移 |
+| Figures | [最新PNG/SVG](月球基地_编程组交付包_修订版/figures/) | 5组逻辑图；引用时匹配同批表/记录 |
+| Validation and Verification | [交付验证](月球基地_编程组交付包_修订版/evidence_chain/) / [运行记录](月球基地_编程组交付包_修订版/results/run_record.json) | LP只作核验；技术通过不等于现实验证 |
+| Academic Report | [英文DOCX初稿](report.1docx.docx) | 当前需整改，封面题名冲突等未解决 |
+| Review and Revision | [Report Review Matrix](review/report_review_matrix.md) / [CSV](review/report_review_matrix.csv) / [路线图](review/report_completion_roadmap.md) | 21项；负责人待两人确认 |
+| Handoff Documentation | [先读](月球基地_编程组交付包_修订版/00_先读.md) / [核心代码摘录](月球基地_编程组交付包_修订版/报告核心代码摘录.md) | 最新编程交接 |
+| 项目进度 | [PROGRESS](PROGRESS.md) / [本轮同步报告](review/latest_sync_report.md) / [Issues](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues) | 以真实证据更新 |
 
-- [Public Repository](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project)
-- [Private Projects](https://github.com/users/rosannataylor206-glitch/projects/1)
-- [现有 18 项 Issues](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues)
+## 使用与版本
 
-用户已自行邀请一名组员；Agent 不代为邀请或管理权限，不扩展复杂多人流程。GitHub 上的管理定位不改变课程小组成果的作者身份、学术责任或存储权限。
+最新四份大结果JSON存于 `MCM_B_v9/results/research_results_revision.zip`。检出后执行 `python3 review/checks/restore_latest_results.py` 恢复并核验SHA-256，已有不同结果会报错而非覆盖。原代码路径不变。数值复跑使用独立环境，参考复跑说明；运行会写结果，请复制到隔离目录再执行。
 
-## 研究与基线入口
+初稿基线为 `v0.1-first-draft`，旧 `MCM_B_v9_编程组/` 为历史包，不与新版同名结果混用。模型包和新编程包是相同源码的不同运行批次，不能只凭策略ID拼接；详情见[编程差异](review/programming_version_diff.md)。BA2023教师Guidelines/Rubrics未取得前不宣称Excellent或提交就绪。
 
-| 路径 | 用途 |
-| --- | --- |
-| `report.1docx.docx` | 可编辑英文论文初稿；原样拟存档，需确认作者元数据和存储权限 |
-| `MCM_B_v9_编程组/MCM_B_v9_建模修订与独立验证说明.docx` | v9 可编辑模型说明与公式；并非根目录英文报告的自动生成源 |
-| `MCM_B_v9_编程组/proofs/` | 物理、建设、供水、联合决策、成本/环境和敏感性的推导 |
-| `MCM_B_v9_编程组/*.py`、`reference/`、`utils/` | 完整数值、验证、补充分析、图表和建文档源代码 |
-| `MCM_B_v9_编程组/evidence/*.json` | 参数来源、假设、公开资料索引；不包含第三方论文全文 |
-| `MCM_B_v9_编程组/results/` | 核心 JSON/CSV、阶段证书、敏感性及历史运行记录 |
-| `MCM_B_v9_编程组/figures/` | PNG 与可编辑 SVG 图表；灰度 QA 副本保留本地 |
-| `review/baseline/coverage.md` | 核心文件依赖、参数/数据口径与覆盖边界 |
-| `review/baseline/phase1_upload_scope.md` | 最终逐项上传范围与人工存储权限确认点 |
-| `AGENTS.md`、`PROGRESS.md`、`CHANGELOG.md` | 六阶段规范、真实进度与重要版本记录 |
+## 双人Word协作
 
-旧版本、重复交接包、不相关 Q1 实验、虚拟环境、缓存、凭证、第三方课程/题目 PDF 和重新分发许可未核验的 Skills 保留本地。首次推送前必须审批确切清单，不改变原始文件路径或运行关系。
-
-## 运行边界
-
-`v0.1-first-draft` 保存未经正式审核的初稿。历史入口是 `MCM_B_v9_编程组/run_v9.py`。首次从仓库检出后，先运行 `python3 review/baseline/restore_large_results.py`：它从无损 ZIP 恢复 `results/joint_v9.json` 与 `results/phases_v9.json`，逐文件核验 SHA-256，再使用原有验证与绘图脚本。此步骤只恢复存档证据，不代表数值结果已经通过本轮审核。
-
-Phase 2 将在本项目独立环境解决 NumPy 等兼容性；当前 Anaconda NumPy 1.26.4 不满足 v9 的 numpy>=2.0。历史依赖记录并非本机复现证据。所有实际复跑须在隔离副本执行，避免覆盖原始结果。建模 DOCX 构建另需 Pandoc/字体；原始题目 PDF 排除远程存储时，原打包脚本的题目文件要求仍未满足，不声称所有构建/打包流程已就绪。
-
-## 质量提升流程
-
-1. Phase 1：批准存储清单后 Commit、Tag `v0.1-first-draft`、Push。
-2. Phase 2：独立环境与课程权威材料核验；缺件明确列出。
-3. Phase 3：建模、算法、数值验证、学术审稿与课程评审五视角审核，并记录实际独立性。
-4. Phase 4–5：逐章节保留/修改/删除/补充方案及七份审核报告。
-5. 综合方案经用户确认后才正式修改模型、核心代码和论文。
-6. 重要阶段同步报告、PROGRESS、现有 Issues、Projects 与 Commit；仅上传批准范围内成果。
-
-以真实课程 Rubrics 的 Excellent 为目标；没有 Rubrics 时不编造权重、分数或已达 Excellent 的结论。代码、模型和论文均须接受实证核验，不能只做语言润色。
-
-## 当前 GitHub 可见性
-
-仓库按所有者 2026-11-27 的最新选择设为 Public；所有者已自行邀请一名组员。Projects 仍 Private。新增研究成果公开前先核对存储权限和敏感信息，重大模型/代码/论文修订仍经综合审核与用户确认。
+编辑前查看远程分支/最新commit，并在Issue或Review Matrix确认编辑范围。并行编辑使用各自命名副本和分支，记录父提交；不要自动合并或覆盖另一人的DOCX。人工合并后保存新版本，核对最新数值/图表/引用与最终渲染，再提交PR；重大模型或结论变化先确认。GitHub固定版本是资料入口，避免多个聊天压缩包形成隐含最新版。

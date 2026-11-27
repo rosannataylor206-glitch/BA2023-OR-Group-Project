@@ -6,7 +6,7 @@
 - Course: BA2023 Operations Research
 - Project type: Undergraduate Operations Research Group Project
 - Current stage: First Draft Baseline Archived / Quality Assurance Review
-- GitHub purpose: 研究成果管理、版本控制与质量审核；2026-11-27 用户明确选择仓库 Public，并已自行邀请一名组员。Agent 不代为邀请或改动成员权限，不继续增加复杂多人协作配置。
+- GitHub purpose: 两名论文作者统一的资料共享、英文Report版本管理、质量审核及进度同步平台；Public，组员已由用户邀请，Agent不管理成员权限。
 - Existing deliverables: Mathematical models, source code, datasets, computational results and academic report.
 
 ## Source of Truth
@@ -217,3 +217,13 @@
 ## 2026-11-27 可见性与成员最新指令
 
 用户本人曾将仓库改为 Public 并邀请一名组员；此前 Private 规则已被用户最新明确选择覆盖。仓库当前须保持 **Public**，允许公开已上传成果。Projects 的可见性未要求改变，仍保持 Private。未来上传新增文件仍核对权限、敏感性和批准范围；Agent 不更改现有组员邀请/权限。
+
+## Report中心双人协作（2026-11-27 最新指令，覆盖旧角色分工描述）
+
+- 目前只有用户与另一名论文同学参与后续工作；不设建模手/编程手岗位，不按竞赛阶段重新组织人员。Skills作为技术核验与写作审阅方法按需使用，课程要求优先。
+- 最新技术候选为 MCM_B_v9 模型/证明与 月球基地_编程组交付包_修订版；已核对源码哈希与默认结果，具体运行批次/限制见 review/latest_sync_report.md。旧 MCM_B_v9_编程组 为v0.1历史基线。
+- 最新论文候选仍report.1docx.docx；所有章节改稿按review/report_review_matrix.csv记录问题、证据、优先级、建议、关联模型/结果、负责人和状态，负责人待两人确认。
+- 每次更新先读本地/远程分支与commit，登记父版本/SHA、改动、影响、验证及待同步事项。DOCX不得自动合并；并行稿保留独立文件名/分支，人工合并新版本后复核数值与渲染。
+- 共用GitHub固定commit获取最新版，不以聊天压缩包替代版本记录。保留v0.1-first-draft及所有有效历史，不force push、不覆盖组员成果。
+- 用户已确认共同作者同意公开新增64文件及配套MCM_B_v9研究成果；题面/课程/第三方全文/Skills/个人敏感信息排除。其后新增公开权限不明内容先确认。
+- 工作聚焦Report完整性、数学表达、可复现数值/图表、敏感性、管理价值、英文和引用；无实质错误不重建模型或重构代码。重大模型/核心结果变更、正式改稿范围及Word冲突须确认。

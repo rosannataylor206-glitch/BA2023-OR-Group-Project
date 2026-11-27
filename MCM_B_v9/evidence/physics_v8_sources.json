@@ -1,0 +1,87 @@
+{
+  "accessed_date": "2026-10-23",
+  "scope": "Primary sources support constants, classical equations and explicit limitations; mission architecture and numerical hardware/service screens are project scenarios.",
+  "sources": [
+    {
+      "id": "jpl_astro",
+      "title": "JPL Solar System Dynamics Astrodynamic Parameters",
+      "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+      "read": "Astrodynamic parameter table and DE440 planetary masses table",
+      "use": "Earth GM398600.435507 and Moon GM4902.800118 km3/s2; mean sidereal day86164.09054s.",
+      "not_supported": "Future spacecraft performance or lunar fault probabilities."
+    },
+    {
+      "id": "jpl_moon_radius",
+      "title": "JPL Planetary Satellite Physical Parameters",
+      "url": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "read": "Moon row, DE440 GM and volume-equivalent radius",
+      "use": "Lunar mean radius1737.4km.",
+      "not_supported": "A perfectly spherical real lunar landing surface."
+    },
+    {
+      "id": "nasa_moon_fact",
+      "title": "NASA Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "read": "Orbital parameters: distance, inclination to Earth equator, eccentricity",
+      "use": "Mean distance384400km; actual eccentricity0.0549 and equatorial inclination18.28--28.58deg expose the coplanar-circle limitation.",
+      "not_supported": "Neglecting plane changes is valid for real apex-to-Moon flights."
+    },
+    {
+      "id": "nasa_rocket_equation",
+      "title": "NASA Glenn Ideal Rocket Equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/",
+      "read": "Momentum derivation, ideal mass ratio and caveats on external forces",
+      "use": "Delta-v=v_e ln(m_initial/m_final); project separately derives the carried-return-propellant mass chain.",
+      "not_supported": "450 or900s, dry/cargo ratios, loss margins, or5% structural fraction as validated future hardware specifications."
+    },
+    {
+      "id": "uphoff1993",
+      "title": "Practical Aspects of Transfer from GTO to Lunar Orbit",
+      "authors": "Chauncey Uphoff",
+      "year": 1993,
+      "url": "https://ntrs.nasa.gov/api/citations/19930015530/downloads/19930015530.pdf",
+      "read": "PDFp1 abstract/introduction andpp2--4 transfer geometry; NTRS abstract",
+      "use": "Original zero-sphere-of-influence transfer study explicitly discusses geometry and launch-window phasing. Its GTO results are not transplanted to the100000km apex.",
+      "not_supported": "The project half-ellipse,1.035day phase bound, return mass chain, or future logistics service times are validated by that GTO study."
+    },
+    {
+      "id": "borowski2018_staged",
+      "title": "Robust Exploration and Commercial Missions to the Moon Using Nuclear Thermal Rocket Propulsion and In Situ Propellants Derived From Lunar Polar Ice Deposits",
+      "authors": "Stanley K. Borowski, Stephen W. Ryan, Laura M. Burke, David R. McCurdy, James E. Fittje, Claude R. Joyner",
+      "year": 2018,
+      "report": "NASA/TM-2018-219937",
+      "url": "https://ntrs.nasa.gov/api/citations/20180008495/downloads/20180008495.pdf",
+      "read": "Downloaded complete60-page original; read PDFpp5--6 summary/background,16 NTR conceptual engine,18 TableII lunar-transfer/chemical-lander architecture and returned spentLLV,21 TableIII reserves/thermal/auxiliary propulsion. Printed pages1--2,12,14,17.",
+      "use": "Supports separating orbital NTR transfer from chemical lunar landing and tracking docking, returned structures, cryogenic management and propellant margins. Project explicitly carries all return fuel from apex instead of adopting lunar refuelling.",
+      "not_supported": "The project100000km-apex trajectory, chiT=.2/chiL=.2,5% screen,500t delivery,11/32day logistics budget or nuclear safety are validated by this conceptual study."
+    },
+    {
+      "id": "houts2019_ntp",
+      "title": "Versatile Nuclear Thermal Propulsion (NTP)",
+      "authors": "Mike Houts, Russ Joyner, John Abrams, Jonathan Witter, Paolo Venneri",
+      "year": 2019,
+      "url": "https://ntrs.nasa.gov/api/citations/20190032556/downloads/20190032556.pdf",
+      "read": "PDFpp6--7:830--1000s conceptual thermal propulsion and hardware; p9 shielding; NTRS abstract900s initial concept.",
+      "use": "Supports900s as a concept-level high-Isp performance scenario with reactor/shield/thermal implications.",
+      "not_supported": "A900s direct lunar surface reusable lander exists, has the selected dry/cargo ratio, or has been demonstrated safe near the lunar base."
+    },
+    {
+      "id": "peet2020",
+      "title": "The Orbital Mechanics of Space Elevator Launch Systems",
+      "authors": "Matthew M. Peet",
+      "year": 2020,
+      "url": "https://arxiv.org/pdf/2008.05244",
+      "read": "PDFpp7--8,13--14,29",
+      "use": "Apex corotation/release geometry and cautions that transfer and orbit insertion are distinct mission components.",
+      "not_supported": "This paper certifies the specific lunar surface return architecture or an Isp900s lander."
+    }
+  ],
+  "scenario_assumptions": [
+    "Coplanar circle at384400km; spherical Moon; arbitrary landing-site geometry in ideal impulses.",
+    "Lunar parking height100km; main architecture orbital nuclear tug plus chemical lander, both dry structures returned; single-vehicle and expendable comparisons preserved.",
+    "Isp450/900s; dry/net cargo0.1/0.2/0.5; surface loss each way0.1/0.3/0.5km/s.",
+    "New staged records screen each component dry/(dry+own propellant)>=5%, excluding carried payload; old uniform-Isp records retain explicitly marked dry/initial-wet including cargo screen. Both are study rules only.",
+    "Main tug/lander dry-to-net ratios.2/.2, tug900s/lander450s; descent/ascent loss.3km/s.",
+    "Encounter time allowance2days each leg, lunar service3days, apex service7days, phase-window capacity2departures; staged separation.5day and return docking.5day."
+  ]
+}

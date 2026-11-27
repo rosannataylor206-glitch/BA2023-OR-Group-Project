@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-23",
+  "scope": "NASA一手开放论文的水处理、可维护性、备件与共因故障证据。供v7修订工程边界与情景设计；不是10万人月球基地的实测校准集。",
+  "source_count": 5,
+  "fault_budget_calibration": "没有资料支持把v6的60天时滞、365天内60停发日/7处理故障日/1批货损称为NASA统计估计。本文献集不提供这些预算的发生概率。",
+  "page_convention": "pdf_pages与printed_pages均从1开始；本组论文相关正文的PDF页号与印刷页号一致。",
+  "sources": [
+    {
+      "id": "W1",
+      "title": "Status of ISS Water Management and Recovery",
+      "authors": [
+        "Jill Williamson",
+        "Jonathan P. Wilson",
+        "Hieu Luong",
+        "Leon Chen"
+      ],
+      "year": 2026,
+      "report": "ICES-2026-425",
+      "ntrs_id": "20260004140",
+      "source_type": "NASA与ISS水系统工程团队的一手运行状态论文",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20260004140/downloads/2026%20Status%20of%20ISS%20Water%20FINAL.pdf",
+      "ntrs_url": "https://ntrs.nasa.gov/citations/20260004140",
+      "local_pdf": "Original paper is not included; use its source URL.",
+      "web_ref": "turn72view0",
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reported_values": [
+        {
+          "metric": "whole_ISS_water_recovery",
+          "value": ">98%",
+          "pdf_page": 5,
+          "condition": "BPA运行并与WPA等系统配合时的整体回收口径；不是UPA单机尿液回收率，更不是全年无停机可用率。",
+          "use": "回收技术参照，不能直接视为月面10万人系统已验证性能"
+        },
+        {
+          "metric": "UPA_design_influent",
+          "value": 9,
+          "unit": "kg wastewater/day",
+          "crew": 6,
+          "pdf_page": 4,
+          "condition": "尿液及冲洗水的额定输入；不含全体生活服务水流。",
+          "use": "确认设备/水流边界和小规模设计背景"
+        },
+        {
+          "metric": "ISS_contingency_reserve_threshold",
+          "historical_L": 818,
+          "early_2026_L": 1413,
+          "pdf_page": 3,
+          "condition": "新应急冷却SHREC负荷使储水阈值增加；不是按人口唯一决定。",
+          "use": "支持把应急负荷、冷却及非饮用需求单列；不能按人口比例照搬该阈值"
+        },
+        {
+          "metric": "ACTEX_wetted_service_limit",
+          "value_years": 4,
+          "alternative_throughput_L": 3062,
+          "pdf_page": 7,
+          "condition": "Ambersorb配置的ACTEX耗材，时间或吞吐量限制；报告同时说明避免重复去碘可节省备件。",
+          "use": "可维护性与耗材吞吐约束的实证例子，参数仅适用于相同型号与水质条件"
+        },
+        {
+          "metric": "longest_FCPA_observed_operating_life",
+          "value": 10054,
+          "unit": "operating hours",
+          "year": 2025,
+          "pdf_page": 8,
+          "condition": "最长单台运行记录；其后因泵电机传动故障被换下。该纪录不是平均寿命或MTBF。",
+          "use": "说明代际改进与历史MTBF不可固定外推"
+        }
+      ],
+      "maintenance_evidence": "第6页记录UWMS因新泵和控制器失效处于停用状态，等待2026年稍后硬件补给；没有给出可用于月面的维修时长分布。",
+      "model_implications": [
+        "把回收效率与可用性分开",
+        "维修恢复取决于耗材/备件到位和人员操作",
+        "水质与耗材服务寿命需单列"
+      ],
+      "transfer_limit": "ISS微重力、小规模、有人维护和持续补给背景；不能给10万人月面处理厂标定故障率。",
+      "pdf_sha256": "ededaa43507dba8368d85e272b660d82a00c0e0d97e45592b2a69ee566fc2693",
+      "pdf_bytes": 826603
+    },
+    {
+      "id": "W2",
+      "title": "Modeling Evolvable Water Recovery Systems for Short and Long-Duration Missions in Partial Gravity",
+      "authors": [
+        "Avery L. Carlson",
+        "Kevin E. Lange",
+        "Michael Callahan"
+      ],
+      "year": 2024,
+      "report": "ICES-2024-323",
+      "ntrs_id": "20240005573",
+      "source_type": "NASA/Jacobs部分重力水处理流程建模与技术比较",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20240005573/downloads/ICES_2024_PGWRS_final.pdf",
+      "ntrs_url": "https://ntrs.nasa.gov/citations/20240005573",
+      "local_pdf": "Original paper is not included; use its source URL.",
+      "web_ref": "turn72view1",
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "reported_values": [
+        {
+          "metric": "lightweight_surface_habitat_case",
+          "crew": 4,
+          "duration_days": 30,
+          "pdf_pages": [
+            4,
+            5
+          ],
+          "condition": "仅湿度冷凝水HC处理；尿液处理在这一子情景中被忽略。",
+          "use": "不能把局部处理单元质量当完整水厂质量"
+        },
+        {
+          "metric": "potable_quality_design_limits",
+          "TOC_mg_L_less_than": 3,
+          "ammonia_mg_L_less_than": 1,
+          "pdf_page": 4,
+          "condition": "论文引用的SWEG限值；不是已实测的所有出水。",
+          "use": "提醒回收吨数之外还有水质约束；如正式采用标准需再核对对应SWEG版本"
+        },
+        {
+          "metric": "mature_habitat_model_case",
+          "crew": 4,
+          "duration_days": 30,
+          "pdf_page": 7,
+          "condition": "加入尿液、冷凝水、卫生及洗衣废水；仍是流程模型。",
+          "use": "采用分水流描述，农业/工业需另设，不能依一个总回收率覆盖"
+        }
+      ],
+      "engineering_evidence": "第2–3页说明ISS架构针对微重力，滤床耗材、催化反应器寿命及预处理化学品造成远距离任务负担。第9页要求实验验证并强调废水储存稳定化。",
+      "model_implications": [
+        "10万人放大不能只复制质量与处理量",
+        "需考虑重力、流入组分、耗材、功率、休眠和水质",
+        "等效系统质量应包含功率/体积/消耗品负担"
+      ],
+      "transfer_limit": "小规模概念流程比较且若干技术TRL较低；没有10万人试验，没有校准月面维修率。",
+      "pdf_sha256": "5ef5008b93029a5640d838e13cef5e720a5120224c25638d4afd21f6365e0d99",
+      "pdf_bytes": 1130505
+    },
+    {
+      "id": "W3",
+      "title": "Life Support with Failures and Variable Supply",
+      "authors": [
+        "Harry Jones"
+      ],
+      "year": 2010,
+      "ntrs_id": "20100036365",
+      "source_type": "NASA Ames月球前哨生命保障动态仿真论文",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20100036365/downloads/20100036365.pdf",
+      "ntrs_url": "https://ntrs.nasa.gov/citations/20100036365",
+      "local_pdf": "Original paper is not included; use its source URL.",
+      "web_ref": "turn68view0",
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11,
+        13,
+        16,
+        17,
+        18
+      ],
+      "reported_values": [
+        {
+          "metric": "assumed_lunar_outpost",
+          "crew": 4,
+          "mission_days": 180,
+          "resupply_day": 90,
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "condition": "Constellation时代设定；不是真实月面运行记录。",
+          "use": "历史故障场景设计参照"
+        },
+        {
+          "metric": "ample_water_storage_case",
+          "initial_kg": 600,
+          "maximum_kg": 1073,
+          "maximum_days_supply": 60,
+          "pdf_page": 2,
+          "condition": "该情景同时假设湿食物、较低EVA冷却用水与特定回收过程。",
+          "use": "只能当情景结果，不能据此声称60天是NASA通用标准"
+        },
+        {
+          "metric": "forced_failure_day",
+          "value": 120,
+          "unit": "mission day",
+          "pdf_pages": [
+            4,
+            7,
+            8,
+            11
+          ],
+          "condition": "作者人为注入总断电、处理器或储罐故障；不是频率估计。",
+          "use": "支持分开测试不同故障机理"
+        }
+      ],
+      "engineering_evidence": "第4页总断电同时停止多个生命保障处理过程；第8与11页比较储水整体损失、供水与制氧耦合；第18页建议缓冲库存和隔离分仓。",
+      "model_implications": [
+        "单独建共用电力故障场景",
+        "检验清水储罐损失而不只检验补给损失",
+        "应急减少非关键用水可作为有代价的策略"
+      ],
+      "transfer_limit": "这是带假设的NASA仿真研究，不是可统计拟合故障率的数据集；其食品/EVA/氧气水量口径与v6不同。",
+      "pdf_sha256": "eb6a409222ef0b832862cacc723e2c6ccb5ae08038a54cc247a57b036aa115d8",
+      "pdf_bytes": 6713126
+    },
+    {
+      "id": "W4",
+      "title": "High Reliability Requires More Than Providing Spares",
+      "authors": [
+        "Harry W. Jones"
+      ],
+      "year": 2019,
+      "report": "ICES-2019-14",
+      "ntrs_id": "20190027319",
+      "source_type": "NASA Ames可靠性批判分析，含历史ISS ORU运行经验表",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20190027319/downloads/20190027319.pdf",
+      "ntrs_url": "https://ntrs.nasa.gov/citations/20190027319",
+      "local_pdf": "Original paper is not included; use its source URL.",
+      "web_ref": "turn68view1",
+      "pdf_pages_read": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "reported_values": [
+        {
+          "metric": "historical_UPA_FCPA_MTBF_comparison",
+          "preflight_estimate_h": 22759,
+          "flight_based_estimate_h": 1000,
+          "pdf_page": 8,
+          "table": 3,
+          "condition": "作者据2015资料构建的历史估计，非现役最新版寿命；表中风险另依450日任务等假设计算。",
+          "use": "显示标定不确定性，禁止直接套为月面故障率"
+        }
+      ],
+      "engineering_evidence": "第2、4–5页指出独立故障、完全修复、精确已知MTBF等假设可能失效；共用电力、接口、制造缺陷和操作错误可让相同备件同时失效。第5页给出设计修改才解决的共因案例。",
+      "model_implications": [
+        "独立模块故障与共因故障分开",
+        "维修需要时间且不必完全恢复如新",
+        "同构备件数量不能代替隔离或异构备份",
+        "给故障预算做敏感性和条件保证，不编造置信度"
+      ],
+      "transfer_limit": "历史、小样本、特定ORU和硬件版本；不将统计独立或指数寿命当成已验证事实。2026最长FCPA记录不是与此同口径MTBF。",
+      "visual_check": "已核对PDF第8页表3渲染，22759/1000小时列对应无误。",
+      "pdf_sha256": "d844941d6ebbbdc40a23a00ee51d759842ba749c3d42a925623b72e67a5a3fcd",
+      "pdf_bytes": 263661
+    },
+    {
+      "id": "W5",
+      "title": "Moon Base Life Support Design Depends on Launch Cost, Crew Size, and Mission Duration",
+      "authors": [
+        "Harry W. Jones"
+      ],
+      "year": 2019,
+      "report": "ICES-2019-17",
+      "ntrs_id": "20190027610",
+      "source_type": "NASA Ames月面生命保障架构与全寿命成本情景研究",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20190027610/downloads/20190027610.pdf",
+      "ntrs_url": "https://ntrs.nasa.gov/citations/20190027610",
+      "local_pdf": "Original paper is not included; use its source URL.",
+      "web_ref": "turn68view2",
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "reported_values": [
+        {
+          "metric": "study_population_range",
+          "minimum": 1,
+          "maximum": 100,
+          "unit": "crew",
+          "duration_days_range": [
+            1,
+            10000
+          ],
+          "pdf_page": 2,
+          "use": "明确不能把该文拟合式视为10万人标定"
+        },
+        {
+          "metric": "historical_WPA_reference",
+          "mass_kg": 476,
+          "supported_crew": 10,
+          "pdf_page": 4,
+          "table": 3,
+          "condition": "一个WPA子系统的文献质量与支持人数；不含完整水工厂所有分系统。",
+          "use": "设备质量口径参照，不能与另一文献的50kg/day产出随意拼接"
+        },
+        {
+          "metric": "average_redundancy_curve",
+          "formula": "3.85 - 0.52*ln(Ncrew)",
+          "pdf_page": 6,
+          "equation": 2,
+          "data_crew": [
+            1,
+            3,
+            10,
+            30,
+            100
+          ],
+          "condition": "建立在该文冷备件/故障率和风险目标假设上。",
+          "use": "只在原范围内解释，不外推10万人"
+        },
+        {
+          "metric": "assumed_unrepairable_failure_limit",
+          "value": 0.01,
+          "unit": "per year",
+          "pdf_pages": [
+            3,
+            5
+          ],
+          "condition": "研究的设计目标，不是实测事件频率。",
+          "use": "不用于声称现实事故率或必需安全标准"
+        }
+      ],
+      "model_implications": [
+        "供水设计成本包括开发制造、运输和运营，不能只计运费",
+        "模块数量和备件共享可能非线性，但需新工程论证",
+        "备件、人员维修、停机和资源可靠性相互关联"
+      ],
+      "transfer_limit": "本研究最大100人；把式2外推到100000会产生负冗余，直接表明其不可外推。文中功率与冷却部分成本未纳入，不能据此声称完整10万人报价。",
+      "visual_check": "已核对PDF第6页表4、表5及式2渲染。",
+      "pdf_sha256": "97aae9c110e8cb7cbd8991d08a09a598b05c0143ac6753eddb17afa8ce0121c5",
+      "pdf_bytes": 296338
+    }
+  ],
+  "recommended_v7_changes": [
+    {
+      "change": "明确正常回收率与设备可用性不同",
+      "support": [
+        "W1"
+      ],
+      "status": "可直接改写模型定义；可用率数值仍需设情景"
+    },
+    {
+      "change": "增加耗材或备件耗尽的吞吐约束、维修等待与库存",
+      "support": [
+        "W1",
+        "W4",
+        "W5"
+      ],
+      "status": "工程机理有依据；月面单位耗材量与修复天数未标定"
+    },
+    {
+      "change": "单列共因断电、共享水质污染或储罐损失压力情景",
+      "support": [
+        "W3",
+        "W4"
+      ],
+      "status": "机理参照，不赋予虚构概率"
+    },
+    {
+      "change": "把10万人设备质量线性复制标为待论证，提供多个质量/耗材/功率情景",
+      "support": [
+        "W2",
+        "W5"
+      ],
+      "status": "不能靠一篇小规模论文消除放大不确定性"
+    },
+    {
+      "change": "保留支持集鲁棒保证为条件结论",
+      "support": [
+        "W3",
+        "W4"
+      ],
+      "status": "本资料集不能校准60/7/1故障预算，也不能验证现实无限期零缺水"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "all_comparisons_pass": true,
+  "atol": 1e-07,
+  "rtol": 1e-10,
+  "checks": {
+    "physics_v9.json": "matched",
+    "water_v9.json": "matched",
+    "independent_v9.json": "matched",
+    "construction_baselines": {
+      "matched_records": 88,
+      "changed_hash_ids": 44
+    },
+    "candidates": {
+      "matched_records": 13728,
+      "changed_hash_ids": 6864
+    },
+    "sensitivity_v9.json": {
+      "matched_records": 4872,
+      "input_points": 19,
+      "exact_objective_ties_with_different_selected_policy": [
+        {
+          "point_id": "demand_1",
+          "metric": "habitation_upper_days",
+          "value": 110941.9983585883,
+          "archive_id": "demand_1__8c335a4154ba92e08c",
+          "rerun_id": "demand_1__27456ccfe99ff7bafc"
+        },
+        {
+          "point_id": "R_calendar_365",
+          "metric": "habitation_upper_days",
+          "value": 77609.9983585883,
+          "archive_id": "R_calendar_365__7cda573d922196d67c",
+          "rerun_id": "R_calendar_365__35aab624da2bb11d8c"
+        },
+        {
+          "point_id": "lift_capacity_1.5",
+          "metric": "habitation_upper_days",
+          "value": 96844.89442811359,
+          "archive_id": "lift_capacity_1.5__2e7f5deabe496362f6",
+          "rerun_id": "lift_capacity_1.5__56306734d098accaac"
+        },
+        {
+          "point_id": "counted_faults_0",
+          "metric": "habitation_upper_days",
+          "value": 87410.5738359646,
+          "archive_id": "counted_faults_0__334732b11513f1e4ac",
+          "rerun_id": "counted_faults_0__8b366ce1786defafcd"
+        },
+        {
+          "point_id": "counted_faults_0",
+          "metric": "cost_usd.rocket_favoured",
+          "value": 47009065868273.97,
+          "archive_id": "counted_faults_0__412ac94a0587c6cc89",
+          "rerun_id": "counted_faults_0__5ca8411d352bb780f6"
+        },
+        {
+          "point_id": "propellant_loss_0.2",
+          "metric": "habitation_upper_days",
+          "value": 115350.99460610586,
+          "archive_id": "propellant_loss_0.2__06b7840aa9d0bcce05",
+          "rerun_id": "propellant_loss_0.2__34fc8065f4873fbff1"
+        },
+        {
+          "point_id": "module_mass_50",
+          "metric": "habitation_upper_days",
+          "value": 110961.9983585883,
+          "archive_id": "module_mass_50__47c591a069f4f1da68",
+          "rerun_id": "module_mass_50__3a9949514e0ef09f28"
+        },
+        {
+          "point_id": "module_mass_50",
+          "metric": "cost_usd.central",
+          "value": 67643022186337.625,
+          "archive_id": "module_mass_50__57f53d817cc600e033",
+          "rerun_id": "module_mass_50__56c5c4c94cdb7576cb"
+        },
+        {
+          "point_id": "module_mass_50",
+          "metric": "cost_usd.rocket_favoured",
+          "value": 47338415110531.51,
+          "archive_id": "module_mass_50__64252ed97f1a6e2854",
+          "rerun_id": "module_mass_50__5ca8411d352bb780f6"
+        },
+        {
+          "point_id": "module_mass_50",
+          "metric": "cost_usd.low_carbon_grid",
+          "value": 67643022186337.625,
+          "archive_id": "module_mass_50__57f53d817cc600e033",
+          "rerun_id": "module_mass_50__56c5c4c94cdb7576cb"
+        },
+        {
+          "point_id": "module_mass_50",
+          "metric": "cost_usd.high_carbon_grid",
+          "value": 67643022186337.625,
+          "archive_id": "module_mass_50__57f53d817cc600e033",
+          "rerun_id": "module_mass_50__56c5c4c94cdb7576cb"
+        },
+        {
+          "point_id": "power_limit_4000",
+          "metric": "habitation_upper_days",
+          "value": 111073.9983585883,
+          "archive_id": "power_limit_4000__8c335a4154ba92e08c",
+          "rerun_id": "power_limit_4000__27456ccfe99ff7bafc"
+        },
+        {
+          "point_id": "power_limit_4000",
+          "metric": "cost_usd.rocket_favoured",
+          "value": 47537176164383.56,
+          "archive_id": "power_limit_4000__9d819c56e19630c58a",
+          "rerun_id": "power_limit_4000__b083f35cdc3eb634ba"
+        },
+        {
+          "point_id": "warehouse_limit_250000",
+          "metric": "habitation_upper_days",
+          "value": 155805.0,
+          "archive_id": "warehouse_limit_250000__64252ed97f1a6e2854",
+          "rerun_id": "warehouse_limit_250000__279a39b675f57ab8f4"
+        }
+      ]
+    }
+  },
+  "scope": "Numerical and logical policy comparison. Registry links and every phase recurrence are checked within the rerun by verify_v9.py. Runtime measurements are excluded."
+}
