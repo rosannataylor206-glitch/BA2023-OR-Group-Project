@@ -1,0 +1,4 @@
+# Local reading copies and copyrighted full text: no automatic Public redistribution.
+**/*.pdf
+_reading/
+_provenance/
