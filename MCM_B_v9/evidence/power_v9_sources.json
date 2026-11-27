@@ -1,0 +1,17 @@
+{
+  "title": "月面连续电源设计单位的来源与边界",
+  "url": "https://www.nasa.gov/centers-and-facilities/glenn/nasas-fission-surface-power-project-energizes-lunar-exploration/",
+  "source_type": "NASA primary project article",
+  "access_date": "2026-10-28",
+  "verified_content": "NASA specified a conceptual electrical output of40kW and reactor mass below6metrictons; operatinggoal10years; article describes development concepts, not a qualified deployed product.",
+  "model_adoption": {
+    "net_continuous_power_per_module_kW": 40,
+    "dry_mass_budget_per_module_t": 6,
+    "fault_spare_modules": 1
+  },
+  "limits": [
+    "6t is a design mass budget adopted at the published requirement boundary, not measured hardware mass.",
+    "Parallel replication at MW-scale, shielding, heat rejection, siting, reliability and installation remain engineering assumptions.",
+    "Output is stipulated firm continuous power; no equivalence to unbuffered solar nameplate capacity."
+  ]
+}

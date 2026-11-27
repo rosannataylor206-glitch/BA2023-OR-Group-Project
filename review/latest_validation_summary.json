@@ -1,0 +1,242 @@
+{
+  "date": "2026-11-27",
+  "execution_scope": "isolated copy of updated programming package; original artifacts unchanged",
+  "dependencies": {
+    "python": "3.12.7",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "commands": [
+    {
+      "command": [
+        "run_v9.py"
+      ],
+      "exit_code": 0,
+      "seconds": 67.66
+    },
+    {
+      "command": [
+        "share_lp_check_v9.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.461
+    },
+    {
+      "command": [
+        "programming_handoff.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.462
+    },
+    {
+      "command": [
+        "plot_handoff.py"
+      ],
+      "exit_code": 0,
+      "seconds": 14.085
+    },
+    {
+      "command": [
+        "fault_attribution_v9.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.337
+    },
+    {
+      "command": [
+        "joint_screening_v9.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.518
+    },
+    {
+      "command": [
+        "joint_screening_v9.py",
+        "--deadline-years",
+        "350",
+        "--emissions-cap-gt",
+        "1.99",
+        "2.81"
+      ],
+      "exit_code": 0,
+      "seconds": 0.511
+    },
+    {
+      "command": [
+        "joint_screening_v9.py",
+        "--scenario",
+        "low_carbon_grid",
+        "--deadline-years",
+        "350",
+        "--emissions-cap-gt",
+        "2.81",
+        "--output",
+        "results/supplemental/low_carbon_grid.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 0.513
+    },
+    {
+      "command": [
+        "joint_screening_v9.py",
+        "--scenario",
+        "high_carbon_grid",
+        "--deadline-years",
+        "350",
+        "--emissions-cap-gt",
+        "2.81",
+        "--output",
+        "results/supplemental/high_carbon_grid.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 0.505
+    }
+  ],
+  "tables": [
+    {
+      "path": "论文组结果表.csv",
+      "rows": 117,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 117,
+      "samples": [
+        [
+          1,
+          2,
+          "05f5b7e9793f7baa67",
+          "6dcc68db813a9e9677"
+        ],
+        [
+          2,
+          2,
+          "05f5b7e9793f7baa67",
+          "6dcc68db813a9e9677"
+        ]
+      ]
+    },
+    {
+      "path": "supplemental/q2_fault_attribution.csv",
+      "rows": 16,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 32,
+      "samples": [
+        [
+          1,
+          7,
+          "3d1e825d9369d1f399",
+          "ddf11ab6dd12fcf1f8"
+        ],
+        [
+          1,
+          8,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ]
+      ]
+    },
+    {
+      "path": "supplemental/q4_q5_joint_screening.csv",
+      "rows": 63,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 97,
+      "samples": [
+        [
+          1,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ],
+        [
+          2,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ]
+      ]
+    },
+    {
+      "path": "supplemental/q4_q5_joint_screening_custom.csv",
+      "rows": 2,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 3,
+      "samples": [
+        [
+          1,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ],
+        [
+          2,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ]
+      ]
+    },
+    {
+      "path": "supplemental/low_carbon_grid.csv",
+      "rows": 1,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 2,
+      "samples": [
+        [
+          1,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ],
+        [
+          1,
+          12,
+          "921af7ffdfa6884169",
+          "5cfc6299a00ca067cd"
+        ]
+      ]
+    },
+    {
+      "path": "supplemental/high_carbon_grid.csv",
+      "rows": 1,
+      "row_count_equal": true,
+      "byte_equal": false,
+      "numeric_differences_above_tolerance": 0,
+      "text_differences": 1,
+      "samples": [
+        [
+          1,
+          1,
+          "42ece0ad97c436c7",
+          "e05e8bde2a89bf21"
+        ]
+      ]
+    }
+  ],
+  "large_result_restore_verified": 4,
+  "log_sha256": {
+    "stage_0.log": "847f91f98f7da05dea495d5fca3e255e6824dac3203c8af341c91865884a5b27",
+    "stage_1.log": "4340862053b250269815f4d6320d7ad4c7a4d44549fbcf93500c021fb7fe96a0",
+    "stage_2.log": "5649c4f712ea035a10e8961f90f210dcfd8b056a5943424938a3f3c1cf3faf6e",
+    "stage_3.log": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8",
+    "stage_4.log": "1377b05d6a50a7215aac65472fb6acec41017f543dd1126b9f71aeedc38d56a7",
+    "stage_5.log": "2a8057dcfa27419a126a07c650a73577586ec90ffce8e8334aa9d09ce1fb0353",
+    "stage_6.log": "e01b15e77ca7634bb48e587b5f3023d94c7d514241073c1623e6e00a2ec63204",
+    "stage_7.log": "f654238e1bbeae8be0d97dd4c8985e441c1d466fc17fbd0e2e1479c6e4524abb",
+    "stage_8.log": "a18b15425980c20f53d78ab5e95ca51d07d7d66f0e736b15ad0c45e4fd5a336c"
+  },
+  "limitations": [
+    "six table comparisons check numeric tolerance rel=1e-9 abs=1e-7; IDs differ across platforms",
+    "No empirical future-price or engineering certification",
+    "Teacher BA2023 Rubrics unavailable",
+    "Main pipeline is closed-form certificate and finite catalogue; LP is verification only"
+  ]
+}

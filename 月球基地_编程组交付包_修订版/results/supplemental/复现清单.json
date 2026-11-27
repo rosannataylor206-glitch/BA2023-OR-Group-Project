@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-27T07:05:56.985056+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "fault_attribution_v9.py",
+      "sha256": "e68bc8cadb8a843011dd9149f0291dcf4cdc7f6c50aa37f2f0c96ceeca424f87",
+      "bytes": 5457
+    },
+    {
+      "path": "joint_screening_v9.py",
+      "sha256": "7637642499fca191d4f4a35d117affc731255932060b576196f4a7fe2e8d6b6a",
+      "bytes": 5610
+    },
+    {
+      "path": "utils/supplemental_io.py",
+      "sha256": "28900b32bb07fa3610b61f3190d733b2b47e26c4b9f80d55135dd5ed19acd64c",
+      "bytes": 1535
+    },
+    {
+      "path": "programming_handoff.py",
+      "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd",
+      "bytes": 14462
+    },
+    {
+      "path": "construction_v9.py",
+      "sha256": "fcd1ace9db8d5bc0dd75fe8260a5ea8ef6df846f3214f5c8647012a98ed23008",
+      "bytes": 24784
+    },
+    {
+      "path": "joint_v9.py",
+      "sha256": "00c7c12ca3608ed1487d0c958fdc487dde89fe903eac2515ec558cf54d56f789",
+      "bytes": 29603
+    },
+    {
+      "path": "cost_environment_v9.py",
+      "sha256": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341",
+      "bytes": 16354
+    },
+    {
+      "path": "physics_v9.py",
+      "sha256": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2",
+      "bytes": 18325
+    },
+    {
+      "path": "water_v9.py",
+      "sha256": "74a4691eb41c75a8350de259e15caee3a69f077da49d80ece043f2698a247e0d",
+      "bytes": 29947
+    },
+    {
+      "path": "reference/physics_v8.py",
+      "sha256": "29a12fb250ac78b366947b5f76c1c0289c24fe0cd8d2dbf4133c0f43159ac14d",
+      "bytes": 23213
+    },
+    {
+      "path": "reference/water_v8.py",
+      "sha256": "397270fad79105e69cf0a4080324b14990b4b3fdb0f641ab63a9a52cf916018c",
+      "bytes": 28965
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "7accabe827ac0ba6d43f84edf435fe47371f054e5be69c562963b12f4170d26d",
+      "bytes": 39
+    },
+    {
+      "path": "results/joint_v9.json",
+      "sha256": "1623a6a2955e85feb824dc3e2a293788391bc94b0f21842c96fc05bcea0694c2",
+      "bytes": 67332577
+    },
+    {
+      "path": "results/run_record.json",
+      "sha256": "33b36d34fb14593b9584b6f13b2448f01b05f940d1234b7fcf5af55a6df541fe",
+      "bytes": 3611
+    },
+    {
+      "path": "results/independent_v9.json",
+      "sha256": "d7f6d97669947eefefc67448cd0451766cab529314871d0592e04d5c3f5da90d",
+      "bytes": 3660
+    },
+    {
+      "path": "results/复现清单.json",
+      "sha256": "18c7dcd06e418829035ca4b4866b016e28b81a1980a4b45bc8b5e6b7d782a852",
+      "bytes": 17592
+    },
+    {
+      "path": "share_lp_check_v9.py",
+      "sha256": "28921f411b8ef05c0896414d147c4a02ede920b1ee011230ae4b55ca53d6c846",
+      "bytes": 7098
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "macOS-15.3-arm64-arm-64bit",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "key_parameters": {
+    "baseline_mission_key": "42ece0ad97c436c7",
+    "mode": "fault",
+    "price_and_emissions_scenario": "central",
+    "q2_reference_E_share": 0.29063479,
+    "q2_single_parameter_changes": [
+      "lift_closed_days",
+      "E_closed_days",
+      "R_closed_days",
+      "port_closed_days",
+      "cargo_losses_E_per_harbour_year",
+      "cargo_losses_R_per_site_year",
+      "hull_losses_E_per_harbour_year"
+    ],
+    "q4_q5_deadlines_years": [
+      50.0,
+      100.0,
+      250.0,
+      350.0,
+      500.0,
+      1000.0,
+      1500.0
+    ],
+    "q4_q5_emissions_caps_kg_CO2e_proxy": [
+      1176473891760.0,
+      1992526313536.3022,
+      2808578735312.6045,
+      3624631157088.9067,
+      4440683578865.209,
+      5256736000641.512,
+      6072788422417.813,
+      6888840844194.115,
+      7704893265970.418
+    ],
+    "example_deadline_years": 350,
+    "example_emissions_caps_Gt_CO2e_proxy": [
+      1.99,
+      2.81
+    ],
+    "days_per_year": 365,
+    "kg_per_Gt": 1000000000000.0,
+    "random_seed_usage": "Deterministic; CLI seed 0 is unused."
+  },
+  "reproduce_command": "python fault_attribution_v9.py && python joint_screening_v9.py && python joint_screening_v9.py --deadline-years 350 --emissions-cap-gt 1.99 2.81",
+  "seed_applies": false,
+  "prerequisite": "Run python run_v9.py successfully to generate the verified v9 baseline.",
+  "output_files": [
+    {
+      "path": "results/supplemental/q2_fault_attribution.csv",
+      "sha256": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db",
+      "bytes": 4187
+    },
+    {
+      "path": "results/supplemental/q4_q5_joint_screening.csv",
+      "sha256": "4f4f1361f8c8f7911daaafb8ef545016fe6d72bf8731981d2db812ab257f0a7c",
+      "bytes": 13377
+    },
+    {
+      "path": "results/supplemental/q4_q5_joint_screening_custom.csv",
+      "sha256": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40",
+      "bytes": 867
+    },
+    "low_carbon_grid.csv",
+    "high_carbon_grid.csv"
+  ],
+  "validation_record": {
+    "path": "results/supplemental/verification.json",
+    "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+  },
+  "revision_note": "输入哈希已按 2026-11-27 修订版代码更新（水/建设口径统一后的版本）；补充分析在同一版代码上重跑，结果与归档逐字节一致。",
+  "superseded_by": "../复现清单.json"
+}

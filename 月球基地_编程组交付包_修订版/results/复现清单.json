@@ -1,0 +1,500 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-27T15:41:11.622723+08:00",
+  "package": "月球基地_编程组交付包_修订版",
+  "revision_basis": "MCM_B_v9_代码审阅与修改建议_最终版.docx",
+  "accounting_convention": "generic_100Mt_excludes_water_hardware__water_hardware_is_additional",
+  "hardware_ledger": "Generic 100 Mt is general building material only and excludes all water hardware. Water processors, dedicated fresh/raw tanks and incremental power hardware are an independent, late-delivered increment on top of that target; nothing is netted out of the generic target and nothing is counted twice. All potentially allocated full-job item manufacturing is charged, including destroyed or quarantined equipment; only the required installed quantities run.",
+  "model_identity": "建设工期为闭式充分上界；政策比较为有限目录枚举；主流程不含 MILP/LP 求解。",
+  "share_lp_role": "share_lp_check_v9.py 为独立核验，不参与主流程；其最优份额与解析份额一致。",
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "commands": [
+    {
+      "cmd": "python run_v9.py",
+      "status": "ok",
+      "outputs": [
+        "results/physics_v9.json",
+        "results/water_v9.json",
+        "results/joint_v9.json",
+        "results/sensitivity_v9.json",
+        "results/independent_v9.json",
+        "results/run_record.json"
+      ]
+    },
+    {
+      "cmd": "python share_lp_check_v9.py",
+      "status": "ok",
+      "outputs": [
+        "results/share_lp_check_v9.json"
+      ]
+    },
+    {
+      "cmd": "python programming_handoff.py",
+      "status": "ok",
+      "outputs": [
+        "results/论文组结果表.csv"
+      ]
+    },
+    {
+      "cmd": "python plot_handoff.py",
+      "status": "ok",
+      "outputs": [
+        "figures/*.png",
+        "figures/*.svg"
+      ]
+    },
+    {
+      "cmd": "python fault_attribution_v9.py",
+      "status": "ok",
+      "outputs": [
+        "results/supplemental/q2_fault_attribution.csv"
+      ]
+    },
+    {
+      "cmd": "python joint_screening_v9.py",
+      "status": "ok",
+      "outputs": [
+        "results/supplemental/q4_q5_joint_screening.csv"
+      ]
+    },
+    {
+      "cmd": "python joint_screening_v9.py --deadline-years 350 --emissions-cap-gt 1.99 2.81",
+      "status": "ok",
+      "outputs": [
+        "results/supplemental/q4_q5_joint_screening_custom.csv"
+      ]
+    },
+    {
+      "cmd": "python joint_screening_v9.py --scenario low_carbon_grid --deadline-years 350 --emissions-cap-gt 2.81 --output results/supplemental/low_carbon_grid.csv",
+      "status": "ok",
+      "outputs": [
+        "results/supplemental/low_carbon_grid.csv"
+      ]
+    },
+    {
+      "cmd": "python joint_screening_v9.py --scenario high_carbon_grid --deadline-years 350 --emissions-cap-gt 2.81 --output results/supplemental/high_carbon_grid.csv",
+      "status": "ok",
+      "outputs": [
+        "results/supplemental/high_carbon_grid.csv"
+      ]
+    }
+  ],
+  "key_numbers": {
+    "construction_route_years_ideal": {
+      "R": 320.115068,
+      "E": 893.756164,
+      "ER": 235.769863
+    },
+    "construction_route_years_fault": {
+      "R": 423.745205,
+      "E": 1032.076712,
+      "ER": 300.723288
+    },
+    "mixed_elevator_share": {
+      "ideal": 0.26357498,
+      "fault": 0.29063479
+    },
+    "central_min_cost": {
+      "policy_id": "c9cc3b90716159eb6c",
+      "water": "recycle_0.98_E_every2days",
+      "budget_usd": 67643022186337.625,
+      "budget_t_usd": 67.643,
+      "habitation_years": 1036.3014
+    },
+    "initial_water_t": {
+      "stock_all": 422355.99999999994,
+      "recycle_0.98_E_every2days": 21654.4,
+      "recycle_0.98_R_2flights_daily": 24154.4
+    },
+    "epsilon_selection": [
+      {
+        "cap_kg": 1176473891760.0,
+        "cost_usd": 94438054672175.34,
+        "CO2_kg": 1176473891760.0
+      },
+      {
+        "cap_kg": 1992526313536.3022,
+        "cost_usd": 92317642566114.88,
+        "CO2_kg": 1826239922131.5547
+      },
+      {
+        "cap_kg": 2808578735312.6045,
+        "cost_usd": 86869495175159.1,
+        "CO2_kg": 2796960403941.4766
+      },
+      {
+        "cap_kg": 3624631157088.9067,
+        "cost_usd": 83686349346536.33,
+        "CO2_kg": 3444184067714.576
+      },
+      {
+        "cap_kg": 4440683578865.209,
+        "cost_usd": 79633123371312.22,
+        "CO2_kg": 4415007068343.89
+      },
+      {
+        "cap_kg": 5256736000641.512,
+        "cost_usd": 77085978224300.73,
+        "CO2_kg": 5062230732116.988
+      },
+      {
+        "cap_kg": 6072788422417.813,
+        "cost_usd": 73517726623953.03,
+        "CO2_kg": 6032940836866.239
+      },
+      {
+        "cap_kg": 6888840844194.115,
+        "cost_usd": 71290483449544.28,
+        "CO2_kg": 6680164500639.339
+      },
+      {
+        "cap_kg": 7704893265970.418,
+        "cost_usd": 67643022186337.625,
+        "CO2_kg": 7650899823268.65
+      }
+    ],
+    "deadline_certified": {
+      "50": 0,
+      "100": 0,
+      "250": 0,
+      "350": 528,
+      "500": 1452,
+      "1000": 2772,
+      "1500": 2904
+    }
+  },
+  "archive_equivalence": {
+    "note": "修订版重跑的四张结果表与归档结果逐字节相同。",
+    "files": [
+      "results/论文组结果表.csv",
+      "results/supplemental/q2_fault_attribution.csv",
+      "results/supplemental/q4_q5_joint_screening.csv",
+      "results/supplemental/q4_q5_joint_screening_custom.csv"
+    ],
+    "evidence": "results/revision_table_comparison.json"
+  },
+  "input_files": [
+    {
+      "path": "00_先读.md",
+      "bytes": 7443,
+      "sha256": "c6c5fb52056fda6a6e4627671a471c3ca44f6d2da4e5e89823dac52fdfdddf68"
+    },
+    {
+      "path": "报告核心代码摘录.md",
+      "bytes": 7376,
+      "sha256": "02cac658490d36ced167e4b4d55a104304f1112a6de28744a83c90dc96cdb4db"
+    },
+    {
+      "path": "evidence_chain/P2_技术复核.json",
+      "bytes": 1249,
+      "sha256": "a8e2d2db89921cd35d13ee6e2a70b0bf6848fb89325b9b8d96ea1c51d4827581"
+    },
+    {
+      "path": "evidence_chain/P2_补充分析复核.json",
+      "bytes": 872,
+      "sha256": "b9918cbab093f417148f3748d7e034ba991d428eb241d95e7e02903f2a235435"
+    },
+    {
+      "path": "figures/process_q3_water_preposition.png",
+      "bytes": 96734,
+      "sha256": "703b2b73fb824dce0eff045100df648c8d75fccdb5a07b4be29db595205aac2f"
+    },
+    {
+      "path": "figures/process_q3_water_preposition.svg",
+      "bytes": 13220,
+      "sha256": "006518cb654502d8e1df93967be74f2632951f56b86f3fa77bbc86a6e213623e"
+    },
+    {
+      "path": "figures/raw_q2_declared_fault_budgets.png",
+      "bytes": 70592,
+      "sha256": "6189806aad8fadf0101348c926e1139276796580ce7ceb62dcd2dde4cbc0ddeb"
+    },
+    {
+      "path": "figures/raw_q2_declared_fault_budgets.svg",
+      "bytes": 9296,
+      "sha256": "395472059e909a700aaad2edac91e60f92306b4756e8d8d46cb7f866b1d52ba1"
+    },
+    {
+      "path": "figures/result_q1_construction_bounds.png",
+      "bytes": 82785,
+      "sha256": "c3aada1d2db42768d0c0105e9adff716185029737b6659c4de88c1cefc410b4e"
+    },
+    {
+      "path": "figures/result_q1_construction_bounds.svg",
+      "bytes": 11612,
+      "sha256": "40c1ebb1b86d09666b72b56399d14ec1faac19313c1b476a67a66eaabc892159"
+    },
+    {
+      "path": "figures/result_q4_emissions_budget_frontier.png",
+      "bytes": 98442,
+      "sha256": "f4928b6e8e342e229b12c7f39a52285ec1242758ce7071cf459de3cb3a25fef9"
+    },
+    {
+      "path": "figures/result_q4_emissions_budget_frontier.svg",
+      "bytes": 332093,
+      "sha256": "c98e522da81ff937fac6866f2295b8e3dba29bbca43c66a26ffe9e54772d8f6c"
+    },
+    {
+      "path": "figures/result_q5_habitation_budget_frontier.png",
+      "bytes": 106555,
+      "sha256": "769a8c88d3ea6f76a06aee2e029b4a9271c9c6c460e1b2d777eb55018900c817"
+    },
+    {
+      "path": "figures/result_q5_habitation_budget_frontier.svg",
+      "bytes": 332727,
+      "sha256": "a56082e72338ffa437303d484683cad589f41eca833f621d545d7e1e11176f84"
+    },
+    {
+      "path": "results/archive_comparison.json",
+      "bytes": 4487,
+      "sha256": "e703ecb3a1b623f04821fa6255287ec071b73b2da9bbee9af58661b0006443b6"
+    },
+    {
+      "path": "results/independent_v9.json",
+      "bytes": 3660,
+      "sha256": "d7f6d97669947eefefc67448cd0451766cab529314871d0592e04d5c3f5da90d"
+    },
+    {
+      "path": "results/revision_table_comparison.json",
+      "bytes": 1752,
+      "sha256": "70dec69fbb528dd35029c59b01da144e9125bcbd98152cf7bafadedd804e9065"
+    },
+    {
+      "path": "results/run_record.json",
+      "bytes": 3611,
+      "sha256": "33b36d34fb14593b9584b6f13b2448f01b05f940d1234b7fcf5af55a6df541fe"
+    },
+    {
+      "path": "results/论文组结果表.csv",
+      "bytes": 16610,
+      "sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778"
+    },
+    {
+      "path": "results/supplemental/high_carbon_grid.csv",
+      "bytes": 633,
+      "sha256": "4ed55e7bdc99c217ac022054c26b06d0ccdc648fc5f9d530f82bc5fce1f47cc6"
+    },
+    {
+      "path": "results/supplemental/low_carbon_grid.csv",
+      "bytes": 755,
+      "sha256": "351aef7d4f98bedcbbcf068acbbc8304983e74b694d7eaa52fd2fc99eb42c83f"
+    },
+    {
+      "path": "results/supplemental/q2_fault_attribution.csv",
+      "bytes": 4187,
+      "sha256": "a178aa9cba4904e9793df2f5af1acfbfb6065815443107dba06b7223806f50db"
+    },
+    {
+      "path": "results/supplemental/q4_q5_joint_screening.csv",
+      "bytes": 13377,
+      "sha256": "4f4f1361f8c8f7911daaafb8ef545016fe6d72bf8731981d2db812ab257f0a7c"
+    },
+    {
+      "path": "results/supplemental/q4_q5_joint_screening_custom.csv",
+      "bytes": 867,
+      "sha256": "f5e239f4635c2adc81afb4efa75f280dc4f3551e659d2e253676e35239c79a40"
+    },
+    {
+      "path": "results/supplemental/verification.json",
+      "bytes": 482,
+      "sha256": "3f0efd1ee0812c5adceda085be11dde6ea9505d7f0c77d040527808b6b5a153d"
+    },
+    {
+      "path": "results/supplemental/复现清单.json",
+      "bytes": 5563,
+      "sha256": "65d4028fe263fbbcd0c27a8bf2f273c3f82833f8908cc42dc6f4b614f393d0c4"
+    },
+    {
+      "path": "复跑程序/00_运行说明.md",
+      "bytes": 1845,
+      "sha256": "46225bc2d632d1308ddef47d2a71b310d1f5d6c8b6c9d710de5aa6c8a86ffcb7"
+    },
+    {
+      "path": "复跑程序/construction_v9.py",
+      "bytes": 24784,
+      "sha256": "fcd1ace9db8d5bc0dd75fe8260a5ea8ef6df846f3214f5c8647012a98ed23008"
+    },
+    {
+      "path": "复跑程序/cost_environment_v9.py",
+      "bytes": 16354,
+      "sha256": "c4ebf057863cc61e5ba35954143efb51d228c9f389c8f586456aa3a3d2659341"
+    },
+    {
+      "path": "复跑程序/fault_attribution_v9.py",
+      "bytes": 5457,
+      "sha256": "e68bc8cadb8a843011dd9149f0291dcf4cdc7f6c50aa37f2f0c96ceeca424f87"
+    },
+    {
+      "path": "复跑程序/joint_screening_v9.py",
+      "bytes": 5610,
+      "sha256": "7637642499fca191d4f4a35d117affc731255932060b576196f4a7fe2e8d6b6a"
+    },
+    {
+      "path": "复跑程序/joint_v9.py",
+      "bytes": 29603,
+      "sha256": "00c7c12ca3608ed1487d0c958fdc487dde89fe903eac2515ec558cf54d56f789"
+    },
+    {
+      "path": "复跑程序/phase_audit_v9.py",
+      "bytes": 17982,
+      "sha256": "54297a401f5dba2b1dbbd4cbbbb728b2c9a457c1ea73c3a599b9da5f35d54ac7"
+    },
+    {
+      "path": "复跑程序/physics_v9.py",
+      "bytes": 18325,
+      "sha256": "e15bd74477baaaa1d5d5524fe1b43dc17518c0bfc2499f32c6ad1847e90c62f2"
+    },
+    {
+      "path": "复跑程序/plot_handoff.py",
+      "bytes": 6922,
+      "sha256": "17804bdecac49cea2562a566535d05657b296c13771f99b193065bebb1ba7d56"
+    },
+    {
+      "path": "复跑程序/programming_handoff.py",
+      "bytes": 14462,
+      "sha256": "eec5454faad95b520b0b6f1cededda3995a38a25a779272266eb8a0fafad66fd"
+    },
+    {
+      "path": "复跑程序/registry_v9.py",
+      "bytes": 1742,
+      "sha256": "874e8a112aa2c64f5fcb7443eb42291b06da4485442a33b94e581bc0b952642b"
+    },
+    {
+      "path": "复跑程序/requirements.txt",
+      "bytes": 39,
+      "sha256": "7accabe827ac0ba6d43f84edf435fe47371f054e5be69c562963b12f4170d26d"
+    },
+    {
+      "path": "复跑程序/run_v9.py",
+      "bytes": 3211,
+      "sha256": "d58b2f51d6108fdf04393c445760aee62d40f069e23191f4f9e1881200dbe298"
+    },
+    {
+      "path": "复跑程序/sensitivity_v9.py",
+      "bytes": 13040,
+      "sha256": "790dd514b05f5c195cdcc91a40a942cc16daafdf45d00380325d77421fd1038a"
+    },
+    {
+      "path": "复跑程序/share_lp_check_v9.py",
+      "bytes": 7098,
+      "sha256": "28921f411b8ef05c0896414d147c4a02ede920b1ee011230ae4b55ca53d6c846"
+    },
+    {
+      "path": "复跑程序/verify_v9.py",
+      "bytes": 37541,
+      "sha256": "4652c12163e283c29fc797de46224d4f55af1a69714c78e052c385c4f3f440e9"
+    },
+    {
+      "path": "复跑程序/water_v9.py",
+      "bytes": 29947,
+      "sha256": "74a4691eb41c75a8350de259e15caee3a69f077da49d80ece043f2698a247e0d"
+    },
+    {
+      "path": "复跑程序/figures/process_q3_water_preposition.png",
+      "bytes": 96734,
+      "sha256": "703b2b73fb824dce0eff045100df648c8d75fccdb5a07b4be29db595205aac2f"
+    },
+    {
+      "path": "复跑程序/figures/process_q3_water_preposition.svg",
+      "bytes": 13220,
+      "sha256": "006518cb654502d8e1df93967be74f2632951f56b86f3fa77bbc86a6e213623e"
+    },
+    {
+      "path": "复跑程序/figures/raw_q2_declared_fault_budgets.png",
+      "bytes": 70592,
+      "sha256": "6189806aad8fadf0101348c926e1139276796580ce7ceb62dcd2dde4cbc0ddeb"
+    },
+    {
+      "path": "复跑程序/figures/raw_q2_declared_fault_budgets.svg",
+      "bytes": 9296,
+      "sha256": "395472059e909a700aaad2edac91e60f92306b4756e8d8d46cb7f866b1d52ba1"
+    },
+    {
+      "path": "复跑程序/figures/result_q1_construction_bounds.png",
+      "bytes": 82785,
+      "sha256": "c3aada1d2db42768d0c0105e9adff716185029737b6659c4de88c1cefc410b4e"
+    },
+    {
+      "path": "复跑程序/figures/result_q1_construction_bounds.svg",
+      "bytes": 11612,
+      "sha256": "40c1ebb1b86d09666b72b56399d14ec1faac19313c1b476a67a66eaabc892159"
+    },
+    {
+      "path": "复跑程序/figures/result_q4_emissions_budget_frontier.png",
+      "bytes": 98442,
+      "sha256": "f4928b6e8e342e229b12c7f39a52285ec1242758ce7071cf459de3cb3a25fef9"
+    },
+    {
+      "path": "复跑程序/figures/result_q4_emissions_budget_frontier.svg",
+      "bytes": 332093,
+      "sha256": "c98e522da81ff937fac6866f2295b8e3dba29bbca43c66a26ffe9e54772d8f6c"
+    },
+    {
+      "path": "复跑程序/figures/result_q5_habitation_budget_frontier.png",
+      "bytes": 106555,
+      "sha256": "769a8c88d3ea6f76a06aee2e029b4a9271c9c6c460e1b2d777eb55018900c817"
+    },
+    {
+      "path": "复跑程序/figures/result_q5_habitation_budget_frontier.svg",
+      "bytes": 332727,
+      "sha256": "a56082e72338ffa437303d484683cad589f41eca833f621d545d7e1e11176f84"
+    },
+    {
+      "path": "复跑程序/figures/_qa/process_q3_water_preposition_grayscale.png",
+      "bytes": 96579,
+      "sha256": "5085ddee5c763173063f62e9d9d655c80aab88ecae43d24c3e27d7c6a647bcb9"
+    },
+    {
+      "path": "复跑程序/figures/_qa/raw_q2_declared_fault_budgets_grayscale.png",
+      "bytes": 70418,
+      "sha256": "4a605cdd5ac1fbe2582245439f7d5bd78055394181fa3bc8316325f75b37703d"
+    },
+    {
+      "path": "复跑程序/figures/_qa/result_q1_construction_bounds_grayscale.png",
+      "bytes": 82093,
+      "sha256": "b867301f0d15f188c17d3b587806b0f8d360d64ffe4e011f61515c4db44ef9fa"
+    },
+    {
+      "path": "复跑程序/figures/_qa/result_q4_emissions_budget_frontier_grayscale.png",
+      "bytes": 96311,
+      "sha256": "58cc5570cc2cc63352d448db76d5ef7e1f6a7945fd6db0642f099a85b895108b"
+    },
+    {
+      "path": "复跑程序/figures/_qa/result_q5_habitation_budget_frontier_grayscale.png",
+      "bytes": 104568,
+      "sha256": "c0fb4f19864cbfd5b46592b0d26a6738b50db9d4951367d5a996fa2bf094e41a"
+    },
+    {
+      "path": "复跑程序/reference/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "复跑程序/reference/physics_v8.py",
+      "bytes": 23213,
+      "sha256": "29a12fb250ac78b366947b5f76c1c0289c24fe0cd8d2dbf4133c0f43159ac14d"
+    },
+    {
+      "path": "复跑程序/reference/water_v8.py",
+      "bytes": 28965,
+      "sha256": "397270fad79105e69cf0a4080324b14990b4b3fdb0f641ab63a9a52cf916018c"
+    },
+    {
+      "path": "复跑程序/utils/plot_style.py",
+      "bytes": 17160,
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+    },
+    {
+      "path": "复跑程序/utils/supplemental_io.py",
+      "bytes": 1535,
+      "sha256": "28900b32bb07fa3610b61f3190d733b2b47e26c4b9f80d55135dd5ed19acd64c"
+    }
+  ],
+  "scope": "Files and checksums of this revised package; not a proof of engineering performance. Big intermediate results under 复跑程序/results are regenerated by run_v9.py and excluded here."
+}

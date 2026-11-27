@@ -5,8 +5,8 @@
 
 - Course: BA2023 Operations Research
 - Project type: Undergraduate Operations Research Group Project
-- Current stage: First Draft Completed / Phase 1 Baseline Scope Approval
-- GitHub purpose: 用户个人研究管理、成果存档、版本控制、质量审核与修改记录；当前不邀请任何队友，不继续增加多人协作配置。
+- Current stage: First Draft Baseline Archived / Quality Assurance Review
+- GitHub purpose: 两名论文作者统一的资料共享、英文Report版本管理、质量审核及进度同步平台；Public，组员已由用户邀请，Agent不管理成员权限。
 - Existing deliverables: Mathematical models, source code, datasets, computational results and academic report.
 
 ## Source of Truth
@@ -79,7 +79,7 @@
 ## 项目身份与当前边界
 
 - 本项目是 BA2023 Operations Research 本科课程小组项目。用户确认建模、编程求解和论文初稿已完成，下一阶段为全面审核。
-- 当前按用户的六阶段任务执行，先完成 Phase 1 最终清单，等待人工确认上传范围与存储权限；不得在该确认之前提交、打 Tag 或推送。基线存档后，用户已授权连续开展 Phase 2–5 的环境准备、真实复跑与独立审核，无需逐个小步骤确认。正式修改数学模型、核心代码与论文须先交综合审核报告和整改方案，再获人工确认。
+- Phase 1 已获批准并完成私有基线存档；远程与原始 README 父提交、95 文件和 Tag 已逐项核验。基线存档后，用户已授权连续开展 Phase 2–5 的环境准备、真实复跑与独立审核，无需逐个小步骤确认。正式修改数学模型、核心代码与论文须先交综合审核报告和整改方案，再获人工确认。
 - 审核依据按照下文 Source of Truth 执行；不得将竞赛规则当作课程规则。
 - 当前仅发现文件名为 `队友已完成初步/3. BUS2003_Group Assignment Guideline.docx` 的课程材料，BA2023 的字数、格式、提交方式、AI 披露和评分标准尚未核验。不得自行套用 BUS2003 或 CUMCM/APMCM 的要求。
 - 根目录 `report.1docx.docx` 是候选初稿；`MCM_B_v9_编程组/` 是候选编程交付；`MCM_B_v9/`、`MCM_B_v6/` 和 `output/` 包含多版本及交接副本。正式审核开始时先建立权威文件清单，不得仅凭版本号或修改日期认定唯一权威。
@@ -147,9 +147,9 @@
 
 ## GitHub 协作与持续进度同步
 
-- 唯一目标仓库：`rosannataylor206-glitch/BA2023-OR-Group-Project`，必须保持 **Private**。创建/连接状态见 `review/00_github_setup.md`；未经实际读取验证不得声称仓库已创建或可见性正确。
-- `Ma-mj-Mar/CUMCM` 与 `zelin-michael-zhu/apac-competition-2026-11-26` 仅作只读参考，不向其写入、推送、建 Issue 或改变配置。当前不邀请任何成员。
-- 已有 Private 仓库、Projects、18 项 Issues 与标签须保留，不重新创建。当前用于用户个人管理，不邀请成员。可以补充项目管理与审核记录，但不能借整理基线改变原文件路径或代码运行关系。
+- 唯一目标仓库：`rosannataylor206-glitch/BA2023-OR-Group-Project`，当前按用户最新明确选择保持 **Public**；任何未来可见性调整以用户新指令为准。创建/连接状态见 `review/00_github_setup.md`；未经实际读取验证不得声称仓库已创建或可见性正确。
+- `Ma-mj-Mar/CUMCM` 与 `zelin-michael-zhu/apac-competition-2026-11-26` 仅作只读参考，不向其写入、推送、建 Issue 或改变配置。Agent 不代为邀请成员。
+- 已有仓库、Projects、原18项阶段 Issues 与标签须保留，不重新创建；用户已选择仓库 Public，已自行邀请一名组员，Agent 不管理成员。可以补充项目管理与审核记录，但不能借整理基线改变原文件路径或代码运行关系。
 - 首次推送前必须生成逐项拟上传清单和哈希，取得人工明确确认。不得 `git add .`，不得用 Contents API、Issue 附件或其他上传手段绕过批准。确认范围后才提交初稿基线并建立 `v0.1-first-draft`；Tag 只代表实际纳入文件的初稿快照，不是质量通过证明。
 - 默认分支 main 仅存经确认的稳定版本。审核、整改、模型、程序、论文分支分别按 `review/audit`、`review/revision-v2`、`feature/model`、`feature/code`、`feature/paper` 命名；可加 Issue 后缀，仅创建实际需要的分支。
 - main 不直接实施未经审核的重大修改；不强制推送、不自动合并重大 PR。新版本须保留原始成果并记录影响范围，重大模型调整须人工确认。
@@ -180,7 +180,7 @@
 
 先复核最终上传文件、存储权限、敏感信息与 SHA-256，覆盖模型及推导、完整代码、必要参数/数据、核心结果、实验图表、可编辑论文与审核/管理记录。只选一套现行候选主线；历史重复副本和不相关实验排除，原路径不动。大结果若属于证据依赖不得仅因体积一律删除；在清单说明必要性与存储方式。
 
-**在最终清单展示且用户确认范围和存储权限前停止。** 批准后仅逐项暂存批准文件，核对哈希，首次 Commit、Tag `v0.1-first-draft` 并 Push。Tag 为初稿快照，不表示审核通过；Private 仓库与 Projects 保持不变。不以 Contents API、Issue 附件等绕过上传审批。
+**在最终清单展示且用户确认范围和存储权限前停止。** 批准后仅逐项暂存批准文件，核对哈希，首次 Commit、Tag `v0.1-first-draft` 并 Push。Tag 为初稿快照，不表示审核通过；仓库可见性后来由用户明确改为 Public，Projects 保持原可见性。不以 Contents API、Issue 附件等绕过上传审批。
 
 ### Phase 2：正式审核准备
 
@@ -212,4 +212,25 @@
 
 ### Phase 6：个人进度与成果同步
 
-每完成重要阶段，保存报告/测试证据，更新 PROGRESS、相关现有 Issues、Projects 和 CHANGELOG，记录明确 Commit，并仅在已批准的上传范围和存储权限内同步 GitHub。新增未批准文件或敏感/第三方内容先补清单再确认；无权上传时保留本地并披露。用户无需逐个小步骤批准已授权的审核，但重大模型、核心代码和论文修改仍受综合方案确认门禁约束。仓库不邀请队友，不继续扩展多人管理机制。
+每完成重要阶段，保存报告/测试证据，更新 PROGRESS、相关现有 Issues、Projects 和 CHANGELOG，记录明确 Commit，并仅在已批准的上传范围和存储权限内同步 GitHub。新增未批准文件或敏感/第三方内容先补清单再确认；无权上传时保留本地并披露。用户无需逐个小步骤批准已授权的审核，但重大模型、核心代码和论文修改仍受综合方案确认门禁约束。用户已自行邀请一名组员；Agent 不代为邀请或管理成员，不继续扩展复杂多人机制。
+
+## 2026-11-27 可见性与成员最新指令
+
+用户本人曾将仓库改为 Public 并邀请一名组员；此前 Private 规则已被用户最新明确选择覆盖。仓库当前须保持 **Public**，允许公开已上传成果。Projects 的可见性未要求改变，仍保持 Private。未来上传新增文件仍核对权限、敏感性和批准范围；Agent 不更改现有组员邀请/权限。
+
+## Report中心双人协作（2026-11-27 最新指令，覆盖旧角色分工描述）
+
+- 目前只有用户与另一名论文同学参与后续工作；不设建模手/编程手岗位，不按竞赛阶段重新组织人员。Skills作为技术核验与写作审阅方法按需使用，课程要求优先。
+- 最新技术候选为 MCM_B_v9 模型/证明与 月球基地_编程组交付包_修订版；已核对源码哈希与默认结果，具体运行批次/限制见 review/latest_sync_report.md。旧 MCM_B_v9_编程组 为v0.1历史基线。
+- 最新论文候选仍report.1docx.docx；所有章节改稿按review/report_review_matrix.csv记录问题、证据、优先级、建议、关联模型/结果、负责人和状态，负责人待两人确认。
+- 每次更新先读本地/远程分支与commit，登记父版本/SHA、改动、影响、验证及待同步事项。DOCX不得自动合并；并行稿保留独立文件名/分支，人工合并新版本后复核数值与渲染。
+- 共用GitHub固定commit获取最新版，不以聊天压缩包替代版本记录。保留v0.1-first-draft及所有有效历史，不force push、不覆盖组员成果。
+- 用户已确认共同作者同意公开新增64文件及配套MCM_B_v9研究成果；题面/课程/第三方全文/Skills/个人敏感信息排除。其后新增公开权限不明内容先确认。
+- 工作聚焦Report完整性、数学表达、可复现数值/图表、敏感性、管理价值、英文和引用；无实质错误不重建模型或重构代码。重大模型/核心结果变更、正式改稿范围及Word冲突须确认。
+
+## main统一资料入口（用户明确授权合并PR #27）
+
+- main是两名论文作者直接获取当前已获共享授权研究资料的默认入口；不把“同步最新版”等同于“质量审核全部通过”。此规则覆盖早期main只存稳定最终版的表述。
+- 用户已授权在检查公开权限、敏感信息、远程组员更新和冲突后，以Merge commit合并PR #27。保留完整历史和v0.1-first-draft，不squash/rebase/force push，不删除历史成果。
+- 后续论文改动使用独立分支或独立Word副本；DOCX不自动合并，不覆盖另一位作者修改；保存双方版本、人工合并、检查模型/结果/图表/正文一致性、更新修改记录，再同步main。
+- 后续工作以Report撰写、审核及完善为中心，不再增加无必要的项目管理流程。重大模型/核心结果变更、论文冲突或新增公开权限仍须确认。

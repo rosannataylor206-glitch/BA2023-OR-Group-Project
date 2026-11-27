@@ -1,0 +1,462 @@
+{
+  "schema_version": "1.0",
+  "scope": "v7 physics research, original papers and NASA original reports; no changes to v6",
+  "source_count": 6,
+  "core_source_count": 5,
+  "sources": [
+    {
+      "id": "peet2020",
+      "title": "The Orbital Mechanics of Space Elevator Launch Systems",
+      "authors": [
+        "Matthew M. Peet"
+      ],
+      "year": 2020,
+      "type": "Original author preprint, arXiv:2008.05244v2",
+      "url": "https://arxiv.org/abs/2008.05244",
+      "pdf_url": "https://arxiv.org/pdf/2008.05244",
+      "file": "orbital_mechanics_space_elevator_2020.pdf",
+      "role": "Core orbital mechanics evidence",
+      "locations": [
+        {
+          "pdf_pages": [
+            3
+          ],
+          "finding": "Departing spacecraft energy comes from Earth rotation through the anchored tether; it is not created by a negative work segment."
+        },
+        {
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "section": "4 and 4.1",
+          "equations": [
+            "1",
+            "2"
+          ],
+          "finding": "a(r)=-mu/r^2+omega^2*r; integrating yields rotating effective-potential work and free sliding radial velocity. The paper uses geocentric radius rp, not height."
+        },
+        {
+          "pdf_pages": [
+            13,
+            14
+          ],
+          "section": "7.1",
+          "equations": [
+            "11",
+            "12"
+          ],
+          "finding": "epsilon=|v|^2/2-mu/rp; zero-radial-speed Tier 0 escape threshold rp=(2mu/omega^2)^(1/3), about53123km."
+        },
+        {
+          "pdf_pages": [
+            29
+          ],
+          "section": "End of10",
+          "finding": "Planetary orbit-insertion delta-v is explicitly excluded from the paper analysis."
+        }
+      ],
+      "extractable_parameters": [
+        "Gravity/centrifugal equations",
+        "GEO radius relation",
+        "Release inertial velocity and energy",
+        "Finite radial-release speed envelope and release geometry"
+      ],
+      "cannot_extrapolate": [
+        "No validated material or climber throughput",
+        "Propellant-free departure is not propellant-free lunar capture or landing",
+        "Daily planetary launch capability requires the specific Tier3 steerable ramp; it is not a feature of every tether",
+        "Apex radius100000km in this paper is not the MCM100000km tether height"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 2792418,
+      "sha256": "a341ae12187763ee4b53dd63ee0f83dc882e4fce92cf2ae93fe304e18be075ef",
+      "pdf_page_count": 34,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    },
+    {
+      "id": "edwards2003",
+      "title": "The Space Elevator: NIAC Phase II Final Report",
+      "authors": [
+        "Bradley C. Edwards"
+      ],
+      "year": 2003,
+      "type": "NASA Institute for Advanced Concepts funded original final report",
+      "url": "https://www.niac.usra.edu/studies/521Edwards.html",
+      "original_pdf_url": "https://www.niac.usra.edu/files/studies/final_report/521Edwards.pdf",
+      "pdf_url": "https://nss.org/wp-content/uploads/2017/07/2003-Space-Elevator-NIAC-phase2.pdf",
+      "file": "edwards_2003_niac_phase2.pdf",
+      "role": "Historical concept and power architecture evidence; downloaded original report through public mirror",
+      "locations": [
+        {
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "section": "Power beaming",
+          "finding": "Proposed laser/PV architecture;80% at840nm refers to receiver light-to-electric conversion, not end-to-end lifting efficiency."
+        },
+        {
+          "pdf_pages": [
+            17,
+            18
+          ],
+          "finding": "Climber traction, ribbon deformation and wear affect engineering operation."
+        },
+        {
+          "pdf_pages": [
+            43
+          ],
+          "finding": "Historical concept states13ton payload and roughly1000ton/year; this is a design estimate, not an operating system."
+        }
+      ],
+      "extractable_parameters": [
+        "Candidate component power-conversion architecture",
+        "Historical climber payload and capacity design assumptions"
+      ],
+      "cannot_extrapolate": [
+        "Cannot equate receiver80% to global70% or80% efficiency",
+        "Does not validate modern tether manufacturability, readiness, cost, or task throughput179000ton/year",
+        "Historical cost and schedule are not actual future observations"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 2844555,
+      "sha256": "8f2a364f4685e97cacb917a121d2d65b46333d80a73391896757d28d6503eda6",
+      "pdf_page_count": 43,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    },
+    {
+      "id": "mueller2021",
+      "title": "Large Vehicle Lunar Landing Surface Interaction and In-Situ Resource Based Risk Mitigation: Landing & Launch Pads",
+      "authors": [
+        "Robert P. Mueller",
+        "Nathan J. Gelino",
+        "Laurent Sibille",
+        "Kyle L. Dixon",
+        "Bruce T. Vu",
+        "Matthew Kuhns"
+      ],
+      "year": 2021,
+      "type": "NASA and collaborating researchers original conference paper, NTRS20210022503",
+      "url": "https://ntrs.nasa.gov/citations/20210022503",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20210022503/downloads/LPad-ACO%20Large%20Vehicle%20Lunar%20Landings%20v1.pdf",
+      "file": "mueller_2021_large_vehicle_lunar_landings.pdf",
+      "role": "Lunar landing infrastructure readiness and plume constraints",
+      "locations": [
+        {
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ],
+          "finding": "Large-vehicle plumes increase excavation, thermal and ejecta risks. The campaign used1m^2 candidate coupons and15hot-fire tests; this is material testing, not terminal cadence validation."
+        },
+        {
+          "pdf_pages": [
+            3
+          ],
+          "finding": "Detailed Starship plume results were proprietary and not reported."
+        },
+        {
+          "pdf_pages": [
+            4
+          ],
+          "section": "IV",
+          "finding": "Atmospheric1g rocket testing cannot reproduce the lunar vacuum/one-sixth-g plume interaction; the experiment approximates selected material challenges."
+        }
+      ],
+      "extractable_parameters": [
+        "Landing-pad readiness requirement",
+        "Test article scale and material-test conditions",
+        "Need to distinguish terrestrial tests from lunar conditions"
+      ],
+      "cannot_extrapolate": [
+        "No validated annual landing count or tonnes/year",
+        "No evidence for1millionton/year lunar receiving capacity",
+        "Pad commissioning, cooldown, inspection and plume exclusion zones require separate assumptions"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 727710,
+      "sha256": "62403322df77a7eb64a9a12c9be8fd436aa62c9db7fdae9a887a09ee489532a1",
+      "pdf_page_count": 14,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    },
+    {
+      "id": "seatest2023",
+      "title": "NASA Space Environment Analog for Training, Engineering, Science, and Technology (SEATEST)6 Detailed Final Report",
+      "authors": [
+        "Harry L. Litaker Jr.",
+        "Kara H. Beaton",
+        "Allison P. Porter",
+        "Shonn F. Everett",
+        "Marcum L. Reagan",
+        "Jason E. Poffenberger",
+        "Bill L. Todd",
+        "Taylor Phillips-Hungerford",
+        "Barbara A. Janoiko",
+        "Grier L. Wilt"
+      ],
+      "year": 2023,
+      "type": "NASA/TM-20230013000 original analog test report",
+      "url": "https://ntrs.nasa.gov/citations/20230013000",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/20230013000/downloads/SEATEST%206%20Detailed%20Final%20Report%20FINAL-REV%201.pdf",
+      "file": "nasa_seatest6_2023_cargo_offloading.pdf",
+      "role": "Receiving and unloading process decomposition",
+      "locations": [
+        {
+          "pdf_pages": [
+            12,
+            27
+          ],
+          "section": "Executive summary and2.4.2",
+          "finding": "Scenario assumption: two-crew14-day rover mission,37.5cargo-transfer-bag equivalents, approximately9.5m^3pressurized cabin volume. These are small crew-cargo analog conditions."
+        },
+        {
+          "pdf_pages": [
+            31,
+            32
+          ],
+          "table": "3",
+          "finding": "Time measurements separate offloading, transport, staging, dusting and airlock choreography."
+        },
+        {
+          "pdf_pages": [
+            36,
+            38,
+            39,
+            40
+          ],
+          "section": "3.2 andTable5",
+          "finding": "Eight of ten planned scenarios completed; five operational phases and example field timing data reported."
+        }
+      ],
+      "extractable_parameters": [
+        "Explicit process stages and handling resources",
+        "Scenario-level field time records, if preserving test conditions",
+        "Crew/airlock/cargo-container constraints"
+      ],
+      "cannot_extrapolate": [
+        "Cannot linearly scale CTBE analog times to100-500ton lander cargos",
+        "Does not establish autonomous bulk unloading throughput",
+        "Arrival at lunar vicinity, landing, unloading and delivery to point of use are separate milestones"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 8952247,
+      "sha256": "c5bf4e6cb31e14cf21bcef4bbeb9793969ab066112dfb9fbbd5c025e2c865156",
+      "pdf_page_count": 90,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    },
+    {
+      "id": "metzger2022",
+      "title": "The Cost of Lunar Landing Pads with a Trade Study of Construction Methods",
+      "authors": [
+        "Philip T. Metzger",
+        "Greg W. Autry"
+      ],
+      "year": 2022,
+      "type": "Original author preprint, arXiv:2205.00378",
+      "url": "https://arxiv.org/abs/2205.00378",
+      "pdf_url": "https://arxiv.org/pdf/2205.00378",
+      "file": "metzger_autry_2022_landing_pad_trade.pdf",
+      "role": "Pad construction mass, time, power and shared equipment accounting",
+      "locations": [
+        {
+          "pdf_pages": [
+            6
+          ],
+          "section": "4,Table1",
+          "finding": "Construction-process time, energy, imported mass, rover count and peak power are modeled. The authors explicitly note estimates instead of measurements of mature lunar systems."
+        },
+        {
+          "pdf_pages": [
+            8
+          ],
+          "table": "2",
+          "finding": "Eight inner/outer pad construction combinations; shared rover and other equipment masses are not double counted."
+        },
+        {
+          "pdf_pages": [
+            10
+          ],
+          "table": "3",
+          "finding": "Baseline transport300kUSD/kg,20year program, solar80%duty factor and30kg/kW are study assumptions, not contemporary measured prices/performance."
+        },
+        {
+          "pdf_pages": [
+            16
+          ],
+          "section": "7",
+          "finding": "Parallel construction equipment trades imported mass against construction time."
+        }
+      ],
+      "extractable_parameters": [
+        "Scenario construction task graph",
+        "Equipment-sharing accounting",
+        "Power/mass/duration trade structure"
+      ],
+      "cannot_extrapolate": [
+        "Cannot import historical economic assumptions as actual future costs",
+        "Pad construction model does not validate landing turnaround or receiving capacity",
+        "Modeled reliability targets are not measured operational reliability"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 1136756,
+      "sha256": "0519d7f4e4f3c4923ddad7c8dd0a3b3a0ef9426a87e80b11d968085349ad622d",
+      "pdf_page_count": 50,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    },
+    {
+      "id": "wessels2018",
+      "title": "Space Elevator Propulsion by Mechanical Waves",
+      "metadata_title": "Space Elevator Propulsion with Mechanical Waves",
+      "authors": [
+        "Mark A. Wessels"
+      ],
+      "year": 2018,
+      "type": "Original speculative author preprint, arXiv:1802.07443; ancillary, not a validated engineering source",
+      "url": "https://arxiv.org/abs/1802.07443",
+      "pdf_url": "https://arxiv.org/pdf/1802.07443",
+      "file": "wessels_2018_mechanical_wave_propulsion.pdf",
+      "role": "Ancillary illustration that regeneration depends on architecture; not used to calibrate the model",
+      "locations": [
+        {
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "finding": "Discusses limitations of one-way laser/PV power and proposes mechanical-wave transmission; the proposal is not a validated operating architecture."
+        },
+        {
+          "pdf_pages": [
+            3
+          ],
+          "section": "Power Requirements",
+          "finding": "P=mgv and10ton,33m/s,3.23MW example are explicitly near-surface only and ignore efficiency."
+        }
+      ],
+      "extractable_parameters": [
+        "Near-surface mechanical power identity only"
+      ],
+      "cannot_extrapolate": [
+        "No measured full-scale efficiency or regenerative recovery",
+        "No evidence of hardware readiness or14day transit performance",
+        "Proposed wave propulsion is not adopted in v7"
+      ],
+      "local_pdf_path": "Original paper is not included; use its source URL.",
+      "downloaded_bytes": 521637,
+      "sha256": "26c19ce6959d04d0370ed5a5943686d0cad6e506f8543deab044d9e72e002f94",
+      "pdf_page_count": 10,
+      "download_verified_pdf_header": true,
+      "page_number_convention": "One-based PDF page index",
+      "accessed_date_utc": "2026-10-23"
+    }
+  ],
+  "constant_sources": [
+    {
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "publisher": "NASA Goddard NSSDCA",
+      "last_updated": "2024-11-15",
+      "parameters": {
+        "equatorial_radius_km": 6378.137,
+        "GM_km3_s2": 398600.0,
+        "sidereal_rotation_period_hours": 23.9345,
+        "standard_gravity_m_s2": 9.80665
+      },
+      "boundary": "Rounded fact-sheet constants; not a precision ephemeris"
+    },
+    {
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "publisher": "NASA Goddard NSSDCA",
+      "last_updated": "2024-01-11",
+      "parameters": {
+        "mean_geocentric_semimajor_axis_km": 384400.0,
+        "lunar_orbit_inclination_to_earth_equator_deg_range": [
+          18.28,
+          28.58
+        ]
+      },
+      "boundary": "Mean orbital values; no departure-date ephemeris or landing-site trajectory"
+    }
+  ],
+  "key_model_corrections": [
+    {
+      "id": "height_radius",
+      "correction": "Interpret task100000km tether as height. Use r_apex=R_E+100000km; distinguish source papers using apex geocentric radius."
+    },
+    {
+      "id": "energy",
+      "correction": "Use Phi_eff=-mu/r-omega^2*r^2/2. Calculate positive drive work to GEO and braking beyond GEO separately. Without explicit regeneration, grid draw does not receive a negative-work credit. Energy and angular momentum are exchanged with Earth rotation via tether torque."
+    },
+    {
+      "id": "trajectory",
+      "correction": "Release-state inertial energy and vector determine feasible lunar transfers. A high apex with positive Earth-centered energy is not automatically a low-delta-v lunar arrival. Solve release longitude/time, lunar phase/inclination and capture/descent together before calibrating delta-v, flight time or propellant."
+    },
+    {
+      "id": "mass_basis",
+      "correction": "Earth launch rated payload, elevator lifted mass, transfer initial mass, lunar-orbit arrival mass and landed usable cargo are different quantities. beta=1.5 is a scenario, not a derived physical constant. Rocket-equation zero-dry-mass curves are only optimistic lower bounds for a declared total propulsive delta-v."
+    },
+    {
+      "id": "receiving",
+      "correction": "Keep unverified terminal capacity as a named scenario. Distinguish lunar vicinity arrival, soft landing, unloading, storage and point-of-use delivery. Construction cargo and pad/handler/road capacity consume mass and time."
+    }
+  ],
+  "recommended_receiving_capacity_form": {
+    "expression": "K_recv(t)=min(N_pad(t)*payload_per_landing/cycle_time, N_handler(t)*handling_batch/handling_time, K_surface_transport(t), K_storage_turnover(t))",
+    "status": "Engineering decomposition for scenario analysis; no calibrated annual megaton throughput",
+    "required_inputs": [
+      "Number of commissioned pads",
+      "Landing and inspection turnaround",
+      "Lander payload and unloading system",
+      "Bulk-handler cycle rate and availability",
+      "Surface road/rover capacity",
+      "Storage buffer and clearance time",
+      "Infrastructure construction mass and lead time"
+    ],
+    "retain_as_explicit_assumptions": [
+      "Future lander payload and reusable-vehicle dry mass",
+      "2050+ engine Isp, reserves, return architecture",
+      "End-to-end elevator efficiency and power availability",
+      "Pad commissioning rate, handlers and turnaround",
+      "Annual lunar receiving capacity"
+    ]
+  },
+  "access_limits": [
+    {
+      "title": "Lunar transportation scenarios utilising the Space Elevator",
+      "authors": [
+        "Kilian A. Engel"
+      ],
+      "year": 2005,
+      "doi": "10.1016/j.actaastro.2005.03.016",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/16010760/",
+      "attempted_pdf_url": "https://www.spaceelevator.com/docs/iac-2004/iac-04-iaa.3.8.3.04.engel.pdf",
+      "status": "Original metadata/abstract inspected; PDF download failedHTTP503. No numerical mission parameters imported."
+    },
+    {
+      "title": "Transportation Study of Release from a Space Elevator to Cislunar Space",
+      "author": "Daniel Griffin",
+      "year": 2023,
+      "attempted_pdf_url": "https://kth.diva-portal.org/smash/get/diva2:1817004/FULLTEXT01.pdf",
+      "status": "Public KTH thesis discovered and partial web extraction observed; direct PDF retrieval repeatedly failedHTTP503. Not used for numerical calibration."
+    }
+  ],
+  "completion_audit": {
+    "four_to_six_primary_original_documents": true,
+    "public_pdf_downloaded_and_hashed": true,
+    "specific_pdf_pages_and_equations_recorded": true,
+    "rotating_lift_work_and_regeneration_boundary": true,
+    "release_and_lunar_arrival_distinguished": true,
+    "receiving_capacity_evidence_gap_explicit": true,
+    "future_hardware_or_trajectory_validated": false,
+    "v6_modified": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "technical_result": "PASS",
+  "reviewer": "v9_programming_qa",
+  "scope": "Full clean isolated rerun, archive comparison, Q1-Q5 spot checks, manifest integrity and figure audit",
+  "commands": [
+    {
+      "command": "python run_v9.py",
+      "exit_code": 0,
+      "wall_seconds": 33.75
+    },
+    {
+      "command": "python programming_handoff.py --compare-with <original v9>",
+      "exit_code": 0,
+      "wall_seconds": 1.42
+    },
+    {
+      "command": "python plot_handoff.py",
+      "exit_code": 0,
+      "wall_seconds": 8.4
+    }
+  ],
+  "manifest_checked": {
+    "input_files": 20,
+    "output_files": 32,
+    "all_hashes_match": true
+  },
+  "table_rows": 117,
+  "paper_csv_sha256": "cc2964129a31bf9dfede9e5beba3202528ddc6bdbf25423e9aba28e5a7571778",
+  "regenerated_paper_csv_matches": true,
+  "regenerated_color_and_grayscale_figures_match": true,
+  "archive_comparison": {
+    "construction_baselines": 88,
+    "main_policies": 13728,
+    "sensitivity_policies": 4872,
+    "equal_time_ties": 8,
+    "equal_cost_ties": 6
+  },
+  "figure_audit_exit_code": 0,
+  "model_note": "water_v9.py:289 wording about included hardware requires reconciliation with the joint ledger and delivery notes",
+  "formal_p2_human_confirmation": "pending"
+}
