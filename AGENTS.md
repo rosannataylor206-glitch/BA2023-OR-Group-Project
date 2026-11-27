@@ -5,7 +5,7 @@
 
 - Course: BA2023 Operations Research
 - Project type: Undergraduate Operations Research Group Project
-- Current stage: First Draft Completed / Phase 1 Baseline Scope Approval
+- Current stage: First Draft Baseline Archived / Quality Assurance Review
 - GitHub purpose: 用户个人研究管理、成果存档、版本控制、质量审核与修改记录；当前不邀请任何队友，不继续增加多人协作配置。
 - Existing deliverables: Mathematical models, source code, datasets, computational results and academic report.
 
@@ -79,7 +79,7 @@
 ## 项目身份与当前边界
 
 - 本项目是 BA2023 Operations Research 本科课程小组项目。用户确认建模、编程求解和论文初稿已完成，下一阶段为全面审核。
-- 当前按用户的六阶段任务执行，先完成 Phase 1 最终清单，等待人工确认上传范围与存储权限；不得在该确认之前提交、打 Tag 或推送。基线存档后，用户已授权连续开展 Phase 2–5 的环境准备、真实复跑与独立审核，无需逐个小步骤确认。正式修改数学模型、核心代码与论文须先交综合审核报告和整改方案，再获人工确认。
+- Phase 1 已获批准并完成私有基线存档；远程与原始 README 父提交、95 文件和 Tag 已逐项核验。基线存档后，用户已授权连续开展 Phase 2–5 的环境准备、真实复跑与独立审核，无需逐个小步骤确认。正式修改数学模型、核心代码与论文须先交综合审核报告和整改方案，再获人工确认。
 - 审核依据按照下文 Source of Truth 执行；不得将竞赛规则当作课程规则。
 - 当前仅发现文件名为 `队友已完成初步/3. BUS2003_Group Assignment Guideline.docx` 的课程材料，BA2023 的字数、格式、提交方式、AI 披露和评分标准尚未核验。不得自行套用 BUS2003 或 CUMCM/APMCM 的要求。
 - 根目录 `report.1docx.docx` 是候选初稿；`MCM_B_v9_编程组/` 是候选编程交付；`MCM_B_v9/`、`MCM_B_v6/` 和 `output/` 包含多版本及交接副本。正式审核开始时先建立权威文件清单，不得仅凭版本号或修改日期认定唯一权威。

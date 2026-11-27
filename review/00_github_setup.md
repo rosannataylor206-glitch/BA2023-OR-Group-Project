@@ -131,3 +131,9 @@ README 明确三角色如何查看/认领 Issue、创建分支、提交 PR、查
 个人管理定位补充：保留 Private 仓库、Private Projects、18 项 Issues 与现有标签，不邀请成员、不增加复杂多人机制。研究质量提升完整规则见 AGENTS.md；基线存档前停在文件范围/存储权限确认点。
 
 最新远程状态补充：main 出现 Initial commit `a4fdee6be9df0fb8c2f068adc13af990ca424f33`，仅含 README.md（144 字节）。本 Agent 未执行该提交或任何 Push；本地仍为无提交 main。仓库 Private，Projects Private，18 个条目（6 Done、9 To Do、3 Blocked）均重新核验。新基线确认后必须先读取/衔接最新远程历史，不 force push。初始化 README 的项目名称和描述已纳入本地拟上传 README。
+
+## 2026-11-27 基线完成记录（覆盖上述历史待确认状态）
+
+用户批准 95 项私有存储范围并要求去除无关 DOCX 账号元数据。英文论文的 Git blob 仅清除 WPS 数字账号、最后修改者标识与三个应用追踪属性，正文、批注、图片和作者显示署名不变；本地原件未改。45/64 MiB 原始 JSON 因 GitHub API 大请求受限，按批准的必要压缩方案无损封装为 `results/core_certificates_v9.zip`（7,010,274 字节），由 `review/baseline/restore_large_results.py` 在原路径恢复，隔离测试字节一致。
+
+Git HTTPS 到 github.com:443 超时，改用已授权 GitHub API 上传并逐 blob 验证 SHA；远程树 `e4e7559edc25085437fa9f167a513e61890380d3` 与本地一致，95 文件共 53,190,995 字节。Private main 为 `9994d70a150c9e5cbe34a3ba726fbe7b4237c7a9`，父提交为原 README Initial commit `a4fdee6be9df0fb8c2f068adc13af990ca424f33`；annotated Tag `v0.1-first-draft` 对象 `7a8221a2b6b52828d8a99acc013b6b7b6889519e`。Projects 仍 Private，18 Issues，未邀请成员。Tag 表示未审核初稿。
