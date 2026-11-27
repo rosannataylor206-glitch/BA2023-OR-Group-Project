@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-label="Parallel research framework">
+<rect width="900" height="380" fill="#fff"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#173149"><text x="24" y="33" font-size="22" font-weight="700">Parallel research framework</text><text x="24" y="56" font-size="13">Shared inputs and comparable outputs</text>
+<path d="M185 201 C251 201 251 101 317 101" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="317,101 309,97 309,105" fill="#33536b"/>
+<text x="251" y="143" text-anchor="middle" font-size="11">sample A</text>
+<path d="M185 201 C251 201 251 201 317 201" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="317,201 309,197 309,205" fill="#33536b"/>
+<text x="251" y="193" text-anchor="middle" font-size="11">features</text>
+<path d="M185 201 C251 201 251 301 317 301" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="317,301 309,297 309,305" fill="#33536b"/>
+<text x="251" y="243" text-anchor="middle" font-size="11">constraints</text>
+<path d="M470 101 C536 101 536 201 602 201" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="602,201 594,197 594,205" fill="#33536b"/>
+<text x="536" y="143" text-anchor="middle" font-size="11">effect</text>
+<path d="M470 201 C536 201 536 201 602 201" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="602,201 594,197 594,205" fill="#33536b"/>
+<text x="536" y="193" text-anchor="middle" font-size="11">forecast</text>
+<path d="M470 301 C536 301 536 201 602 201" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="602,201 594,197 594,205" fill="#33536b"/>
+<text x="536" y="243" text-anchor="middle" font-size="11">policy</text>
+<rect x="35" y="170" width="150" height="62" rx="9" fill="#e8eff6" stroke="#33536b"/><text x="110" y="194" text-anchor="middle" font-size="16" font-weight="700">Shared data</text><text x="110" y="215" text-anchor="middle" font-size="11">Schema and sample</text>
+<rect x="320" y="70" width="150" height="62" rx="9" fill="#e8eff6" stroke="#33536b"/><text x="395" y="94" text-anchor="middle" font-size="16" font-weight="700">Question A</text><text x="395" y="115" text-anchor="middle" font-size="11">Estimate [quantity]</text>
+<rect x="320" y="170" width="150" height="62" rx="9" fill="#e2f1ed" stroke="#33536b"/><text x="395" y="194" text-anchor="middle" font-size="16" font-weight="700">Question B</text><text x="395" y="215" text-anchor="middle" font-size="11">Predict [response]</text>
+<rect x="320" y="270" width="150" height="62" rx="9" fill="#e2f1ed" stroke="#33536b"/><text x="395" y="294" text-anchor="middle" font-size="16" font-weight="700">Question C</text><text x="395" y="315" text-anchor="middle" font-size="11">Optimize [action]</text>
+<rect x="605" y="170" width="150" height="62" rx="9" fill="#f9ecdd" stroke="#33536b"/><text x="680" y="194" text-anchor="middle" font-size="16" font-weight="700">Synthesis</text><text x="680" y="215" text-anchor="middle" font-size="11">Compare on [scale]</text>
+</g></svg>

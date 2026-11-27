@@ -62,3 +62,23 @@ env/
 /review/baseline/previous_90_manifest.json
 /review/baseline/local_*.json
 /review/runs/
+
+# Approved shared Report Skills (2026-11-28)
+!/.agents/
+/.agents/*
+!/.agents/REPORT_SKILLS.md
+!/.agents/report-knowledge/
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/apmcm-research-philosophy/
+!/.agents/skills/apmcm-academic-writing/
+!/.agents/skills/apmcm-abstract/
+!/.agents/skills/apmcm-visualization/
+!/.agents/skills/apmcm-paper-review/
+!/.agents/skills/apmcm-model-validation/
+!/.agents/skills/apmcm-model-selection/
+!/.agents/skills/apmcm-independent-review/
+!/.agents/skills/or-latex-typesetting/
+!/.agents/skills/or-report-structure/
+!/.agents/skills/or-mathematical-exposition/
+!/.agents/skills/or-report-final-qc/

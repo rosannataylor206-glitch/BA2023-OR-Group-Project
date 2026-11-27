@@ -1,0 +1,363 @@
+{
+  "repository": "zelin-michael-zhu/apac-competition-2026-11-26",
+  "ref": "research/q1-synthesis",
+  "commit": "fcbe3c2eda3bff0ac1b7c4a4bbba3d32ddba0b65",
+  "files": [
+    {
+      "source_path": ".agents/skills/apmcm-abstract/SKILL.md",
+      "bytes": 2690,
+      "sha256": "a912aa024368444b5b53d8f6cd54d32b6bec4d55e34679d11d06cf5cb0754c88",
+      "destination": ".agents/skills/apmcm-abstract/SKILL.md",
+      "adapted_sha256": "a1c26c1349a831d10472cff3f445619d4435bb1f76e238fbfa617002a553ac14"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-abstract/references/HANDBOOK_EVIDENCE.md",
+      "bytes": 2825,
+      "sha256": "182c8f28a5bbb236b18c28bcf50147477c1a4d8e8afa105e8b0369312f8a2528",
+      "destination": ".agents/skills/apmcm-abstract/references/HANDBOOK_EVIDENCE.md",
+      "adapted_sha256": "182c8f28a5bbb236b18c28bcf50147477c1a4d8e8afa105e8b0369312f8a2528"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-academic-writing/SKILL.md",
+      "bytes": 1540,
+      "sha256": "4bc0f51ffde048eb237e4390ccc7c4ac3290af49501f0a8cd8ec612f4be4e9fd",
+      "destination": ".agents/skills/apmcm-academic-writing/SKILL.md",
+      "adapted_sha256": "be2d3b488703c01c6eddf01ede6a3a6ec80834ae74576320c8aa6f95eda5d827"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-independent-review/SKILL.md",
+      "bytes": 1074,
+      "sha256": "df5313e4c7fbe98b0a3064c16c238bb3bfea7d49c4ef2220841dd4d30959fd63",
+      "destination": ".agents/skills/apmcm-independent-review/SKILL.md",
+      "adapted_sha256": "484bbdef4deace8b625ea7669ff825b5de0fe1353a7eb9d4f182f8a5c56e74c3"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-model-selection/SKILL.md",
+      "bytes": 717,
+      "sha256": "40a4ed1c271478a06d22ccef4ccdd6f99790aa582263025d338de8368995fadf",
+      "destination": ".agents/skills/apmcm-model-selection/SKILL.md",
+      "adapted_sha256": "33e8ffba6805561a1d3673ce7ef8ae196d536eff0692fb49cf9c470a583b6e1a"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-model-validation/SKILL.md",
+      "bytes": 1043,
+      "sha256": "4bbfb927cd5c4537829b509fdf9e2f2975aed642230b2bd85fb017e0d6600145",
+      "destination": ".agents/skills/apmcm-model-validation/SKILL.md",
+      "adapted_sha256": "0404b9a1c622dfe6c883d742c66a29404094fab97eb5f85c890ab737a0af7e92"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-paper-review/SKILL.md",
+      "bytes": 1300,
+      "sha256": "4565bc7e43055c289f2bbda19551e477386e58b9367e36c8f46d6bed49c584a6",
+      "destination": ".agents/skills/apmcm-paper-review/SKILL.md",
+      "adapted_sha256": "7b01917efe5bf8a60175dd562a9fb85b09ce64cea1119afea1e62fe61b12ad14"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-research-philosophy/SKILL.md",
+      "bytes": 12594,
+      "sha256": "8149569f659d84621617a99e9f225b91ffcdac73147dd7f17531654cd3a9212d",
+      "destination": ".agents/skills/apmcm-research-philosophy/SKILL.md",
+      "adapted_sha256": "d6e27e488b166d409856ff02f7a44e296ba6b7eb8d352303ad6dc679df8486c4"
+    },
+    {
+      "source_path": ".agents/skills/apmcm-visualization/SKILL.md",
+      "bytes": 1506,
+      "sha256": "c38c750d77bad03346f47704b0171aca9bf442901f41c2fa81bc4d0569a272a1",
+      "destination": ".agents/skills/apmcm-visualization/SKILL.md",
+      "adapted_sha256": "009a3417da75ed3ffb9c81dcdc8410f369a416bfc22b1f77a6316b79cf8c5006"
+    },
+    {
+      "source_path": "examples/publication_plots.py",
+      "bytes": 1417,
+      "sha256": "e722f47bfb86a8e6a528782247d7a4574010a7434f27572cadf5c2f756c344e2",
+      "destination": ".agents/report-knowledge/examples/publication_plots.py",
+      "adapted_sha256": "e722f47bfb86a8e6a528782247d7a4574010a7434f27572cadf5c2f756c344e2"
+    },
+    {
+      "source_path": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "bytes": 22566,
+      "sha256": "bb04180f480c097a99e0ca3ca2b55cb4130f27d58c950cd66140161cde87979f",
+      "destination": ".agents/report-knowledge/research/handbook/ABSTRACT_ANALYSIS.md",
+      "adapted_sha256": "cbd90ecf678fc94e88ff741e76c2f0747013b80c24f276f2fd9ed947d02c5e27"
+    },
+    {
+      "source_path": "research/handbook/ABSTRACT_METRICS.json",
+      "bytes": 253214,
+      "sha256": "07bcfda64175d4e105474a9dedc572462eda0009d5f5b17ef2109677cff4e216",
+      "destination": ".agents/report-knowledge/research/handbook/ABSTRACT_METRICS.json",
+      "adapted_sha256": "07bcfda64175d4e105474a9dedc572462eda0009d5f5b17ef2109677cff4e216"
+    },
+    {
+      "source_path": "research/handbook/ABSTRACT_VISUAL_AUDIT.md",
+      "bytes": 3307,
+      "sha256": "750aa5d0db5dc7791859610f434f78b10a0a9c237471386128db3e88efd2993c",
+      "destination": ".agents/report-knowledge/research/handbook/ABSTRACT_VISUAL_AUDIT.md",
+      "adapted_sha256": "2b0e567c600971e60650868a8d080c58cb6a6e61468d069a33d6188085cc21c5"
+    },
+    {
+      "source_path": "research/handbook/DATA_ANALYSIS_SELECTION.md",
+      "bytes": 2018,
+      "sha256": "f0e0bafb842e70f46cd5fbdf62b88dc963e3524969b880d1d944ef4f784c86ab",
+      "destination": ".agents/report-knowledge/research/handbook/DATA_ANALYSIS_SELECTION.md",
+      "adapted_sha256": "ec39a846ab07495c0c4c986c5b9376c890959d990c6c066781907f518534a452"
+    },
+    {
+      "source_path": "research/paper_reports/DATA_ANALYSIS_CASES.md",
+      "bytes": 6745,
+      "sha256": "c39442650c98fb2ac2b9d730b4e6e26d6d36fa60b3b90a335785a446cecd6f7c",
+      "destination": ".agents/report-knowledge/research/paper_reports/DATA_ANALYSIS_CASES.md",
+      "adapted_sha256": "a7784f064fa10a7ed3306e0c141918fb6c654d2ca91ca269848f61c115c8a434"
+    },
+    {
+      "source_path": "research/paper_reports/HANDBOOK_STRUCTURE_AND_MODELS.md",
+      "bytes": 20587,
+      "sha256": "d768ea4d794c9da480d942ac054ec25f29ab557bf5e44fd2aba583a146afe59c",
+      "destination": ".agents/report-knowledge/research/paper_reports/HANDBOOK_STRUCTURE_AND_MODELS.md",
+      "adapted_sha256": "bfc83e0d7783ba7ed61819a57a11eb898b84f751ee2490aa633d2215b5878651"
+    },
+    {
+      "source_path": "research/paper_reports/HANDBOOK_VISUAL_AND_LOGIC.md",
+      "bytes": 13785,
+      "sha256": "58fdff6242d5b7ff3228dc5a2a19854e3e8e2105ca2fcfd6eb7a465d330e410c",
+      "destination": ".agents/report-knowledge/research/paper_reports/HANDBOOK_VISUAL_AND_LOGIC.md",
+      "adapted_sha256": "81b6ae2c05ddaec6031f069ceda80e281dbf503a532f8fdfd1a983f5f61cdc69"
+    },
+    {
+      "source_path": "research/paper_reports/HB-2025-B.md",
+      "bytes": 2081,
+      "sha256": "c3c519a1450a003d440913549d77004a84daf1923c67b0f382f889aee64eba82",
+      "destination": ".agents/report-knowledge/research/paper_reports/HB-2025-B.md",
+      "adapted_sha256": "de5262779eae1634e435c0a4acb54627880f8c712da1c1616d0aea1c0482de09"
+    },
+    {
+      "source_path": "research/paper_reports/handbook_structure_evidence.json",
+      "bytes": 447016,
+      "sha256": "259e01d6435d93e68f073704b7384c58f7d21d01fa2fc11d26ab570b38fdd992",
+      "destination": ".agents/report-knowledge/research/paper_reports/handbook_structure_evidence.json",
+      "adapted_sha256": "259e01d6435d93e68f073704b7384c58f7d21d01fa2fc11d26ab570b38fdd992"
+    },
+    {
+      "source_path": "research/textbook_cards/KKT_CONDITIONS.md",
+      "bytes": 4974,
+      "sha256": "11207660523ab3501660e22fb7767446571599e8f9a27e4152d506b639d61238",
+      "destination": ".agents/report-knowledge/research/textbook_cards/KKT_CONDITIONS.md",
+      "adapted_sha256": "f95e9f3b0c239142eacfec44827d0e8763730c450f719b42f9a4077edf852208"
+    },
+    {
+      "source_path": "research/textbook_cards/LEARNING_OBJECTIVE_AND_VALIDATION.md",
+      "bytes": 8793,
+      "sha256": "86fe9306da5018fde0e6c621d9e8ab2a8dc3c58d9d3dfd74ac237d0a2dce8544",
+      "destination": ".agents/report-knowledge/research/textbook_cards/LEARNING_OBJECTIVE_AND_VALIDATION.md",
+      "adapted_sha256": "7d84c5c691606369a6075d74419af1a35d52b54d6606e2670f7e2f91e8a305be"
+    },
+    {
+      "source_path": "research/textbook_cards/OPTIMIZATION_MAP.md",
+      "bytes": 7522,
+      "sha256": "13e31a9c00ab59b49723ce5da4241438f1d9ecfbb244f8bfee032a07b1841fad",
+      "destination": ".agents/report-knowledge/research/textbook_cards/OPTIMIZATION_MAP.md",
+      "adapted_sha256": "902d4875994af4afba05811bd6f0e69426b37c2d8684f7ca6075d2f3a0ba7f1c"
+    },
+    {
+      "source_path": "research/textbook_cards/RIDGE_REGRESSION.md",
+      "bytes": 3484,
+      "sha256": "602a0bdfeb8914489dbe15128b53f3fb5780ba5dc57a02816574cc63f5554588",
+      "destination": ".agents/report-knowledge/research/textbook_cards/RIDGE_REGRESSION.md",
+      "adapted_sha256": "19609a473434c3d330fa148aae5c1f0886947f5e44be4d239575e67564e2ce49"
+    },
+    {
+      "source_path": "research/textbook_topics/AI_PROBABILITY_AND_DECISIONS.md",
+      "bytes": 12092,
+      "sha256": "c746a3060001ad8d04252b2cc66c226e2d65e536806d52422006a0676f3b9ca6",
+      "destination": ".agents/report-knowledge/research/textbook_topics/AI_PROBABILITY_AND_DECISIONS.md",
+      "adapted_sha256": "890a7b4859dfd088107e7f144caee8e7f1592db180be6e2a9f7f3067b5dcb787"
+    },
+    {
+      "source_path": "research/textbook_topics/AI_SEARCH_AND_SEQUENTIAL.md",
+      "bytes": 14429,
+      "sha256": "0d9ff117ee5e26a180479d368877bf033895cb57bfb7bf5e87226fa1ab719155",
+      "destination": ".agents/report-knowledge/research/textbook_topics/AI_SEARCH_AND_SEQUENTIAL.md",
+      "adapted_sha256": "dfdbf6c7c7ff663b0eeb138629153a33573c95c79e14c2db33645bdff2dcac32"
+    },
+    {
+      "source_path": "research/textbook_topics/DIMENSIONALITY_CLUSTERING_AND_EVALUATION.md",
+      "bytes": 4957,
+      "sha256": "f39e6fd8d5f59c3b5f2fa63d4fcfec16ba9cd5d88aa9051ba79e5c15a0cb02b0",
+      "destination": ".agents/report-knowledge/research/textbook_topics/DIMENSIONALITY_CLUSTERING_AND_EVALUATION.md",
+      "adapted_sha256": "985c9dad06e9b837bcce227f1ba911c7bfbaadbd51daa597eb72300ca8733a07"
+    },
+    {
+      "source_path": "research/textbook_topics/INDEX.md",
+      "bytes": 4598,
+      "sha256": "afcb32bfe5a40c15620d0fdd9aaf1eb3b6353f2749c945fe8044eb8d684aa090",
+      "destination": ".agents/report-knowledge/research/textbook_topics/INDEX.md",
+      "adapted_sha256": "2ae189858a754aa77f42c4176771887a85363ce349cccc4748725d4e717e272e"
+    },
+    {
+      "source_path": "research/textbook_topics/NONLINEAR_MACHINE_LEARNING.md",
+      "bytes": 4538,
+      "sha256": "83eb049668b102122ed3d3279477b709113746bf231380c9262de9a048e6c783",
+      "destination": ".agents/report-knowledge/research/textbook_topics/NONLINEAR_MACHINE_LEARNING.md",
+      "adapted_sha256": "d257585a8923520533b8fa8b549757b09624b9cd89b0f41dc0dcc5176f192e38"
+    },
+    {
+      "source_path": "research/textbook_topics/OPTIMIZATION_THEORY.md",
+      "bytes": 25227,
+      "sha256": "f73f5274b9e76b0fc99dcc8efaf3a3d7d9773351e1630d5d13aa49f2e984a6eb",
+      "destination": ".agents/report-knowledge/research/textbook_topics/OPTIMIZATION_THEORY.md",
+      "adapted_sha256": "29dce298a17d6c68555954648f462bc7e3e999d3abc6565d2ec07704d08fb5b4"
+    },
+    {
+      "source_path": "research/textbook_topics/REGRESSION_AND_STATISTICAL_INFERENCE.md",
+      "bytes": 4934,
+      "sha256": "5dcd089ddf3f055d8d341f177aa891d4388402822ffa8295355510f610a4e8c2",
+      "destination": ".agents/report-knowledge/research/textbook_topics/REGRESSION_AND_STATISTICAL_INFERENCE.md",
+      "adapted_sha256": "f214a47b338e5cfcc6711eb98a8850f09683a4f8393c5ff6372ca721518d9c56"
+    },
+    {
+      "source_path": "research/textbook_topics/STATISTICAL_LEARNING_AND_GENERALIZATION.md",
+      "bytes": 5735,
+      "sha256": "d85d1ca3cdd7a6f5a6715343ffebc6a362bd74026fb2267cbe02db70307823cb",
+      "destination": ".agents/report-knowledge/research/textbook_topics/STATISTICAL_LEARNING_AND_GENERALIZATION.md",
+      "adapted_sha256": "638f5271254ce566f300563e20103181e205c5a193529f890a384569f18de4cc"
+    },
+    {
+      "source_path": "templates/NOTATION.md",
+      "bytes": 1978,
+      "sha256": "969ff9b7b862b8658fdf55d70a52084ce7b1f931b4fd1c31cdde86cb6285a2f4",
+      "destination": ".agents/report-knowledge/templates/NOTATION.md",
+      "adapted_sha256": "969ff9b7b862b8658fdf55d70a52084ce7b1f931b4fd1c31cdde86cb6285a2f4"
+    },
+    {
+      "source_path": "templates/workflows/fusion.svg",
+      "bytes": 2840,
+      "sha256": "676858bb78d246c71f9738850a9a373b019ae12766032186131ba78cd8e59ff5",
+      "destination": ".agents/report-knowledge/templates/workflows/fusion.svg",
+      "adapted_sha256": "676858bb78d246c71f9738850a9a373b019ae12766032186131ba78cd8e59ff5"
+    },
+    {
+      "source_path": "templates/workflows/parallel.svg",
+      "bytes": 3083,
+      "sha256": "35d9609f3840adcc67f135f27f70dc84d2e206751deedfcd45760bc2a723f6fa",
+      "destination": ".agents/report-knowledge/templates/workflows/parallel.svg",
+      "adapted_sha256": "35d9609f3840adcc67f135f27f70dc84d2e206751deedfcd45760bc2a723f6fa"
+    },
+    {
+      "source_path": "templates/workflows/prediction-decision.svg",
+      "bytes": 2153,
+      "sha256": "981c407988f565d294288b7f8c74d7cf07def86b649e05cd11c8eb4b02807437",
+      "destination": ".agents/report-knowledge/templates/workflows/prediction-decision.svg",
+      "adapted_sha256": "981c407988f565d294288b7f8c74d7cf07def86b649e05cd11c8eb4b02807437"
+    },
+    {
+      "source_path": "tests/learning-objective.test.mjs",
+      "bytes": 2569,
+      "sha256": "306e67e2c3e2923b3ad5c4243af7069aaf7e774765f6f9470457a9c18c1ee5d2",
+      "destination": ".agents/report-knowledge/tests/learning-objective.test.mjs",
+      "adapted_sha256": "306e67e2c3e2923b3ad5c4243af7069aaf7e774765f6f9470457a9c18c1ee5d2"
+    },
+    {
+      "source_path": "tools/abstract_audit.py",
+      "bytes": 5123,
+      "sha256": "b601db3497983dc512fd3692cb50e59b261f6333f6813a49a7a18dafcc8cb4c3",
+      "destination": ".agents/report-knowledge/tools/abstract_audit.py",
+      "adapted_sha256": "d773254f3d0010074ffddc3d6369ee94b86f790253fcca32d2ab982c6a33cca2"
+    },
+    {
+      "source_path": "tools/paper_structure_audit.py",
+      "bytes": 10287,
+      "sha256": "f084095ebcd823716c8c3f756c48b060459bf5d43fbf4a2227bf15b133e64df9",
+      "destination": ".agents/report-knowledge/tools/paper_structure_audit.py",
+      "adapted_sha256": "f07e65e3f3399eba1e22e7d9252e9aa6c33358becad34daeb0e7a8f6f7fe6726"
+    },
+    {
+      "source_path": "tools/scan_handbook.py",
+      "bytes": 4567,
+      "sha256": "d592d42534b3539565a025cad4f0788f51fd7b3d277e26968b8c9ca6376f0506",
+      "destination": ".agents/report-knowledge/tools/scan_handbook.py",
+      "adapted_sha256": "79f45638f9e2c2fa7eec81382da67515c65b69fc1af313046f99013e44d8118c"
+    }
+  ],
+  "policy": "Local reuse only; source repository untouched; no Problem C data/models/results/state imported; no public redistribution authorization inferred.",
+  "external_gaps": [
+    {
+      "document": "research/textbook_topics/AI_SEARCH_AND_SEQUENTIAL.md",
+      "original_target": "../../.agents/skills/apmcm-artificial-intelligence/SKILL.md",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/textbook_topics/INDEX.md",
+      "original_target": "../transfer/README.md",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/textbook_topics/AI_PROBABILITY_AND_DECISIONS.md",
+      "original_target": "../../.agents/skills/apmcm-artificial-intelligence/SKILL.md",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/textbook_topics/OPTIMIZATION_THEORY.md",
+      "original_target": "../transfer/README.md",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-01-page-069.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-02-page-098.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-03-page-134.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-04-page-161.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-05-page-188.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-06-page-216.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-07-page-244.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-08-page-275.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-09-page-351.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-10-page-391.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/handbook/ABSTRACT_ANALYSIS.md",
+      "original_target": "abstract_pages/paper-11-page-414.png",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    },
+    {
+      "document": "research/paper_reports/HANDBOOK_VISUAL_AND_LOGIC.md",
+      "original_target": "../transfer/README.md",
+      "status": "SOURCE_EXTERNAL_NOT_IMPORTED"
+    }
+  ]
+}

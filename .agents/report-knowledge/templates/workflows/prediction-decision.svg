@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-label="Forecasting and constrained decision">
+<rect width="900" height="380" fill="#fff"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#173149"><text x="24" y="33" font-size="22" font-weight="700">Forecasting and constrained decision</text><text x="24" y="56" font-size="13">Each model output has a downstream role</text>
+<path d="M170 191 C206 191 206 191 242 191" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="242,191 234,187 234,195" fill="#33536b"/>
+<text x="206" y="183" text-anchor="middle" font-size="11">features</text>
+<path d="M395 191 C431 191 431 191 467 191" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="467,191 459,187 459,195" fill="#33536b"/>
+<text x="431" y="183" text-anchor="middle" font-size="11">scenarios</text>
+<path d="M620 191 C656 191 656 191 692 191" stroke="#33536b" stroke-width="1.8" fill="none"/><polygon points="692,191 684,187 684,195" fill="#33536b"/>
+<text x="656" y="183" text-anchor="middle" font-size="11">actions</text>
+<rect x="20" y="160" width="150" height="62" rx="9" fill="#e8eff6" stroke="#33536b"/><text x="95" y="184" text-anchor="middle" font-size="16" font-weight="700">Analyze</text><text x="95" y="205" text-anchor="middle" font-size="11">Histories and drivers</text>
+<rect x="245" y="160" width="150" height="62" rx="9" fill="#e8eff6" stroke="#33536b"/><text x="320" y="184" text-anchor="middle" font-size="16" font-weight="700">Predict</text><text x="320" y="205" text-anchor="middle" font-size="11">Conditional demand</text>
+<rect x="470" y="160" width="150" height="62" rx="9" fill="#e2f1ed" stroke="#33536b"/><text x="545" y="184" text-anchor="middle" font-size="16" font-weight="700">Optimize</text><text x="545" y="205" text-anchor="middle" font-size="11">Cost and capacity</text>
+<rect x="695" y="160" width="150" height="62" rx="9" fill="#e2f1ed" stroke="#33536b"/><text x="770" y="184" text-anchor="middle" font-size="16" font-weight="700">Evaluate</text><text x="770" y="205" text-anchor="middle" font-size="11">Held-out cost</text>
+</g></svg>

@@ -1,0 +1,3 @@
+# Skill validators and PDF knowledge tools only; install in project .venv
+PyYAML==6.0.4
+PyMuPDF==1.28.2

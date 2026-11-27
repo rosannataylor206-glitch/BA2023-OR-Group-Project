@@ -1,0 +1,156 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\usepackage{amsmath,amssymb,booktabs,longtable,graphicx}
+\usepackage[numbers]{natbib}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Report infrastructure fixture}\fancyfoot[C]{\thepage}
+\title{Typesetting Capability Fixture}
+\author{}\date{}
+\begin{document}\maketitle
+\noindent This is a synthetic layout test, not the OR report or a research result.
+Its geometry and fonts are demonstration settings, not verified course rules.
+\tableofcontents
+\section{Mathematical exposition}\label{sec:math}
+Define $x\in[0,1]$ as a dimensionless demonstration variable. The following
+identities only exercise aligned equations and references:
+\begin{align}
+F(x)&=\int_0^x t\,\mathrm{d}t=\frac{x^2}{2},\label{eq:integral}\\
+\operatorname{argmin}_{x\in[0,1]}F(x)&=0.\label{eq:min}
+\end{align}
+Equation~\eqref{eq:integral} defines the function used in Equation~\eqref{eq:min}.
+Real reports must state assumptions, units and the scope of any guarantee.
+The rocket-equation source is used only to test bibliography generation~\citep{nasa-rocket}.
+\section{Tables and figure layout}
+\begin{table}[htbp]\centering
+\caption{Synthetic values for alignment testing.}\label{tab:short}
+\begin{tabular}{lrr}\toprule
+Case & Input (unitless) & Output (unitless)\\\midrule
+A & 1.00 & 2.00\\ B & 2.00 & 4.00\\\bottomrule
+\end{tabular}\end{table}
+\begin{figure}[htbp]\centering
+\begin{minipage}{.45\linewidth}\centering\fbox{\rule{0pt}{18mm}\rule{.85\linewidth}{0pt}}
+\\Panel A: layout only\end{minipage}\hfill
+\begin{minipage}{.45\linewidth}\centering\fbox{\rule{0pt}{18mm}\rule{.85\linewidth}{0pt}}
+\\Panel B: layout only\end{minipage}
+\caption{Empty synthetic panels test spacing; no experimental data.}\label{fig:layout}
+\end{figure}
+Table~\ref{tab:short} and Figure~\ref{fig:layout} are referenced automatically.
+\subsection{Continuation headers}
+Table~\ref{tab:long} tests repeated headers across pages.
+\begin{longtable}{p{.15\linewidth}p{.55\linewidth}p{.15\linewidth}}
+\caption{Synthetic symbol ledger.}\label{tab:long}\\\toprule
+Symbol & Definition & Unit\\\midrule\endfirsthead
+\multicolumn{3}{l}{Table \thetable\ continued}\\\toprule
+Symbol & Definition & Unit\\\midrule\endhead
+\midrule\multicolumn{3}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+$s_{1}$ & Synthetic entry 1; no research interpretation. & 1 \\
+$s_{2}$ & Synthetic entry 2; no research interpretation. & 1 \\
+$s_{3}$ & Synthetic entry 3; no research interpretation. & 1 \\
+$s_{4}$ & Synthetic entry 4; no research interpretation. & 1 \\
+$s_{5}$ & Synthetic entry 5; no research interpretation. & 1 \\
+$s_{6}$ & Synthetic entry 6; no research interpretation. & 1 \\
+$s_{7}$ & Synthetic entry 7; no research interpretation. & 1 \\
+$s_{8}$ & Synthetic entry 8; no research interpretation. & 1 \\
+$s_{9}$ & Synthetic entry 9; no research interpretation. & 1 \\
+$s_{10}$ & Synthetic entry 10; no research interpretation. & 1 \\
+$s_{11}$ & Synthetic entry 11; no research interpretation. & 1 \\
+$s_{12}$ & Synthetic entry 12; no research interpretation. & 1 \\
+$s_{13}$ & Synthetic entry 13; no research interpretation. & 1 \\
+$s_{14}$ & Synthetic entry 14; no research interpretation. & 1 \\
+$s_{15}$ & Synthetic entry 15; no research interpretation. & 1 \\
+$s_{16}$ & Synthetic entry 16; no research interpretation. & 1 \\
+$s_{17}$ & Synthetic entry 17; no research interpretation. & 1 \\
+$s_{18}$ & Synthetic entry 18; no research interpretation. & 1 \\
+$s_{19}$ & Synthetic entry 19; no research interpretation. & 1 \\
+$s_{20}$ & Synthetic entry 20; no research interpretation. & 1 \\
+$s_{21}$ & Synthetic entry 21; no research interpretation. & 1 \\
+$s_{22}$ & Synthetic entry 22; no research interpretation. & 1 \\
+$s_{23}$ & Synthetic entry 23; no research interpretation. & 1 \\
+$s_{24}$ & Synthetic entry 24; no research interpretation. & 1 \\
+$s_{25}$ & Synthetic entry 25; no research interpretation. & 1 \\
+$s_{26}$ & Synthetic entry 26; no research interpretation. & 1 \\
+$s_{27}$ & Synthetic entry 27; no research interpretation. & 1 \\
+$s_{28}$ & Synthetic entry 28; no research interpretation. & 1 \\
+$s_{29}$ & Synthetic entry 29; no research interpretation. & 1 \\
+$s_{30}$ & Synthetic entry 30; no research interpretation. & 1 \\
+$s_{31}$ & Synthetic entry 31; no research interpretation. & 1 \\
+$s_{32}$ & Synthetic entry 32; no research interpretation. & 1 \\
+$s_{33}$ & Synthetic entry 33; no research interpretation. & 1 \\
+$s_{34}$ & Synthetic entry 34; no research interpretation. & 1 \\
+$s_{35}$ & Synthetic entry 35; no research interpretation. & 1 \\
+$s_{36}$ & Synthetic entry 36; no research interpretation. & 1 \\
+$s_{37}$ & Synthetic entry 37; no research interpretation. & 1 \\
+$s_{38}$ & Synthetic entry 38; no research interpretation. & 1 \\
+$s_{39}$ & Synthetic entry 39; no research interpretation. & 1 \\
+$s_{40}$ & Synthetic entry 40; no research interpretation. & 1 \\
+$s_{41}$ & Synthetic entry 41; no research interpretation. & 1 \\
+$s_{42}$ & Synthetic entry 42; no research interpretation. & 1 \\
+$s_{43}$ & Synthetic entry 43; no research interpretation. & 1 \\
+$s_{44}$ & Synthetic entry 44; no research interpretation. & 1 \\
+$s_{45}$ & Synthetic entry 45; no research interpretation. & 1 \\
+$s_{46}$ & Synthetic entry 46; no research interpretation. & 1 \\
+$s_{47}$ & Synthetic entry 47; no research interpretation. & 1 \\
+$s_{48}$ & Synthetic entry 48; no research interpretation. & 1 \\
+$s_{49}$ & Synthetic entry 49; no research interpretation. & 1 \\
+$s_{50}$ & Synthetic entry 50; no research interpretation. & 1 \\
+$s_{51}$ & Synthetic entry 51; no research interpretation. & 1 \\
+$s_{52}$ & Synthetic entry 52; no research interpretation. & 1 \\
+$s_{53}$ & Synthetic entry 53; no research interpretation. & 1 \\
+$s_{54}$ & Synthetic entry 54; no research interpretation. & 1 \\
+$s_{55}$ & Synthetic entry 55; no research interpretation. & 1 \\
+$s_{56}$ & Synthetic entry 56; no research interpretation. & 1 \\
+$s_{57}$ & Synthetic entry 57; no research interpretation. & 1 \\
+$s_{58}$ & Synthetic entry 58; no research interpretation. & 1 \\
+$s_{59}$ & Synthetic entry 59; no research interpretation. & 1 \\
+$s_{60}$ & Synthetic entry 60; no research interpretation. & 1 \\
+$s_{61}$ & Synthetic entry 61; no research interpretation. & 1 \\
+$s_{62}$ & Synthetic entry 62; no research interpretation. & 1 \\
+$s_{63}$ & Synthetic entry 63; no research interpretation. & 1 \\
+$s_{64}$ & Synthetic entry 64; no research interpretation. & 1 \\
+$s_{65}$ & Synthetic entry 65; no research interpretation. & 1 \\
+$s_{66}$ & Synthetic entry 66; no research interpretation. & 1 \\
+$s_{67}$ & Synthetic entry 67; no research interpretation. & 1 \\
+$s_{68}$ & Synthetic entry 68; no research interpretation. & 1 \\
+$s_{69}$ & Synthetic entry 69; no research interpretation. & 1 \\
+$s_{70}$ & Synthetic entry 70; no research interpretation. & 1 \\
+$s_{71}$ & Synthetic entry 71; no research interpretation. & 1 \\
+$s_{72}$ & Synthetic entry 72; no research interpretation. & 1 \\
+$s_{73}$ & Synthetic entry 73; no research interpretation. & 1 \\
+$s_{74}$ & Synthetic entry 74; no research interpretation. & 1 \\
+$s_{75}$ & Synthetic entry 75; no research interpretation. & 1 \\
+$s_{76}$ & Synthetic entry 76; no research interpretation. & 1 \\
+$s_{77}$ & Synthetic entry 77; no research interpretation. & 1 \\
+$s_{78}$ & Synthetic entry 78; no research interpretation. & 1 \\
+$s_{79}$ & Synthetic entry 79; no research interpretation. & 1 \\
+$s_{80}$ & Synthetic entry 80; no research interpretation. & 1 \\
+$s_{81}$ & Synthetic entry 81; no research interpretation. & 1 \\
+$s_{82}$ & Synthetic entry 82; no research interpretation. & 1 \\
+$s_{83}$ & Synthetic entry 83; no research interpretation. & 1 \\
+$s_{84}$ & Synthetic entry 84; no research interpretation. & 1 \\
+$s_{85}$ & Synthetic entry 85; no research interpretation. & 1 \\
+$s_{86}$ & Synthetic entry 86; no research interpretation. & 1 \\
+$s_{87}$ & Synthetic entry 87; no research interpretation. & 1 \\
+$s_{88}$ & Synthetic entry 88; no research interpretation. & 1 \\
+$s_{89}$ & Synthetic entry 89; no research interpretation. & 1 \\
+$s_{90}$ & Synthetic entry 90; no research interpretation. & 1 \\
+$s_{91}$ & Synthetic entry 91; no research interpretation. & 1 \\
+$s_{92}$ & Synthetic entry 92; no research interpretation. & 1 \\
+$s_{93}$ & Synthetic entry 93; no research interpretation. & 1 \\
+$s_{94}$ & Synthetic entry 94; no research interpretation. & 1 \\
+$s_{95}$ & Synthetic entry 95; no research interpretation. & 1 \\
+$s_{96}$ & Synthetic entry 96; no research interpretation. & 1 \\
+$s_{97}$ & Synthetic entry 97; no research interpretation. & 1 \\
+$s_{98}$ & Synthetic entry 98; no research interpretation. & 1 \\
+$s_{99}$ & Synthetic entry 99; no research interpretation. & 1 \\
+$s_{100}$ & Synthetic entry 100; no research interpretation. & 1 \\
+\end{longtable}
+\section{Reference integrity}
+Section~\ref{sec:math} introduced Equation~\eqref{eq:integral}.
+\begingroup\raggedright\bibliographystyle{plainnat}\bibliography{references}\endgroup
+\end{document}
