@@ -1,5 +1,7 @@
 # 最新资料同步与Report审核报告
 
+**最新状态：PR #27已合并main，默认首页已可获取本报告列出的获批最新资料。** [合并核验](main_merge_check.md)。
+
 2026-11-27；Public仓库，双人Report中心工作流。初稿tag v0.1-first-draft保持不变。远程起点：main 9994d70、review/audit 1e17f99；扫描未见其他远程分支/组员新提交，不覆盖或合并他人Word文件。
 
 ## 权威候选与版本
@@ -75,3 +77,11 @@ Mathematical Model → Code → Results → Figures → Report：本轮数值复
 公开验证摘要见[latest_validation_summary.json](latest_validation_summary.json)，包含9命令退出码/耗时、6表容差对比和日志SHA，不包含本机绝对路径或凭证。五主PNG均已实际打开检查可读性；尚未认证最终Word尺寸的视觉效果。
 
 本报告后续状态记录提交不修改任何研究源/结果或英文Report。当前仍需两人确认错题封面修订、教师课程材料/179000吨口径、章节负责人及正式Word整改；不用重新分配建模/编程角色。
+
+## main默认首页已更新（2026-11-28）
+
+用户明确授权后，PR #27 以Merge commit `f4c4a94ca4db3c926b7a18c91bb8308dbb20f59e` 合并至main。两位作者现在直接打开仓库默认首页即可获取最新模型/证明、编程、结果、图表、英文Report初稿和审核资料，无需切分支。此前“尚未合并”的段落保留为历史记录，以本节最新状态为准。
+
+README已核对所有相对链接目标，当前模型MCM_B_v9、当前编程/表图为修订交付包、英文Report仍是根目录待整改初稿。合并前PR可合并且未见组员新提交；224文件远程树与本地匹配，112项授权研究内容SHA匹配。未配置CI，未声称CI通过；此前9命令实际运行证据保留。扫描无常见凭证/邮箱/WPS账号模式命中；Git历史作者邮箱和已有本机路径风险仍如前披露。原始Word没有上传覆盖。
+
+保留原main初稿提交和全部PR分支提交，v0.1-first-draft Tag对象仍为 `7a8221a2b6b52828d8a99acc013b6b7b6889519e`；未squash/rebase/force push。后续论文使用独立分支或Word副本，保留双方版本，人工合并、一致性审核并同步修改记录。工作聚焦Report，不增加管理流程。

@@ -99,3 +99,11 @@ GitHub 配置已完成：Private 仓库、Private Projects 和 18 项 Issues 均
 ## 本轮同步完成
 
 研究资料与Report审核流程已发布至 `sync/report-materials-20261127`，提交 `62e0d7e`，完整远程树223文件匹配。[PR #27](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/pull/27)供双人审阅，main与初稿Tag保留。资料同步任务#22可关闭为Done（仅同步完成，不代表研究/论文质量通过）；其余任务按Report Matrix继续。
+
+## main默认首页已更新（2026-11-28）
+
+用户明确授权后，PR #27 以Merge commit `f4c4a94ca4db3c926b7a18c91bb8308dbb20f59e` 合并至main。两位作者现在直接打开仓库默认首页即可获取最新模型/证明、编程、结果、图表、英文Report初稿和审核资料，无需切分支。此前“尚未合并”的段落保留为历史记录，以本节最新状态为准。
+
+README已核对所有相对链接目标，当前模型MCM_B_v9、当前编程/表图为修订交付包、英文Report仍是根目录待整改初稿。合并前PR可合并且未见组员新提交；224文件远程树与本地匹配，112项授权研究内容SHA匹配。未配置CI，未声称CI通过；此前9命令实际运行证据保留。扫描无常见凭证/邮箱/WPS账号模式命中；Git历史作者邮箱和已有本机路径风险仍如前披露。原始Word没有上传覆盖。
+
+保留原main初稿提交和全部PR分支提交，v0.1-first-draft Tag对象仍为 `7a8221a2b6b52828d8a99acc013b6b7b6889519e`；未squash/rebase/force push。后续论文使用独立分支或Word副本，保留双方版本，人工合并、一致性审核并同步修改记录。工作聚焦Report，不增加管理流程。
