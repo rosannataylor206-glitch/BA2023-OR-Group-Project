@@ -6,11 +6,11 @@ Operations Research Group Project | Mathematical Modeling, Optimization, Computa
 
 本科 Operations Research Group Project 的个人研究成果管理、版本控制、质量审核和论文完善空间。数学建模、程序求解与英文报告已形成初稿；当前优先冻结完整基线，然后提升研究与计算质量。**初稿完成不代表审核通过。**
 
-- [Private Repository](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project)
+- [Public Repository](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project)
 - [Private Projects](https://github.com/users/rosannataylor206-glitch/projects/1)
 - [现有 18 项 Issues](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues)
 
-当前不邀请任何队友，不扩展多人管理流程。GitHub 上的管理定位不改变课程小组成果的作者身份、学术责任或存储权限。
+用户已自行邀请一名组员；Agent 不代为邀请或管理权限，不扩展复杂多人流程。GitHub 上的管理定位不改变课程小组成果的作者身份、学术责任或存储权限。
 
 ## 研究与基线入口
 
@@ -45,3 +45,7 @@ Phase 2 将在本项目独立环境解决 NumPy 等兼容性；当前 Anaconda N
 6. 重要阶段同步报告、PROGRESS、现有 Issues、Projects 与 Commit；仅上传批准范围内成果。
 
 以真实课程 Rubrics 的 Excellent 为目标；没有 Rubrics 时不编造权重、分数或已达 Excellent 的结论。代码、模型和论文均须接受实证核验，不能只做语言润色。
+
+## 当前 GitHub 可见性
+
+仓库按所有者 2026-11-27 的最新选择设为 Public；所有者已自行邀请一名组员。Projects 仍 Private。新增研究成果公开前先核对存储权限和敏感信息，重大模型/代码/论文修订仍经综合审核与用户确认。

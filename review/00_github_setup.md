@@ -137,3 +137,7 @@ README 明确三角色如何查看/认领 Issue、创建分支、提交 PR、查
 用户批准 95 项私有存储范围并要求去除无关 DOCX 账号元数据。英文论文的 Git blob 仅清除 WPS 数字账号、最后修改者标识与三个应用追踪属性，正文、批注、图片和作者显示署名不变；本地原件未改。45/64 MiB 原始 JSON 因 GitHub API 大请求受限，按批准的必要压缩方案无损封装为 `results/core_certificates_v9.zip`（7,010,274 字节），由 `review/baseline/restore_large_results.py` 在原路径恢复，隔离测试字节一致。
 
 Git HTTPS 到 github.com:443 超时，改用已授权 GitHub API 上传并逐 blob 验证 SHA；远程树 `e4e7559edc25085437fa9f167a513e61890380d3` 与本地一致，95 文件共 53,190,995 字节。Private main 为 `9994d70a150c9e5cbe34a3ba726fbe7b4237c7a9`，父提交为原 README Initial commit `a4fdee6be9df0fb8c2f068adc13af990ca424f33`；annotated Tag `v0.1-first-draft` 对象 `7a8221a2b6b52828d8a99acc013b6b7b6889519e`。Projects 仍 Private，18 Issues，未邀请成员。Tag 表示未审核初稿。
+
+## 2026-11-27 用户更新：Public 与组员
+
+用户确认仓库公开及邀请一名组员均由本人主动操作，并明确选择“改为 Public（允许公开已上传成果）”。Agent 已将仓库设为 Public 并经 gh repo view 核验 visibility=PUBLIC。先前将 Public 判作异常并临时恢复 Private 的判断已撤回；Issue #21 已更正并关闭。Projects 仍 Private，未代为邀请或改变组员权限。上述早期 Private 要求只记录当时状态，当前以用户最新指令为准。

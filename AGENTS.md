@@ -6,7 +6,7 @@
 - Course: BA2023 Operations Research
 - Project type: Undergraduate Operations Research Group Project
 - Current stage: First Draft Baseline Archived / Quality Assurance Review
-- GitHub purpose: 用户个人研究管理、成果存档、版本控制、质量审核与修改记录；当前不邀请任何队友，不继续增加多人协作配置。
+- GitHub purpose: 研究成果管理、版本控制与质量审核；2026-11-27 用户明确选择仓库 Public，并已自行邀请一名组员。Agent 不代为邀请或改动成员权限，不继续增加复杂多人协作配置。
 - Existing deliverables: Mathematical models, source code, datasets, computational results and academic report.
 
 ## Source of Truth
@@ -147,9 +147,9 @@
 
 ## GitHub 协作与持续进度同步
 
-- 唯一目标仓库：`rosannataylor206-glitch/BA2023-OR-Group-Project`，必须保持 **Private**。创建/连接状态见 `review/00_github_setup.md`；未经实际读取验证不得声称仓库已创建或可见性正确。
-- `Ma-mj-Mar/CUMCM` 与 `zelin-michael-zhu/apac-competition-2026-11-26` 仅作只读参考，不向其写入、推送、建 Issue 或改变配置。当前不邀请任何成员。
-- 已有 Private 仓库、Projects、18 项 Issues 与标签须保留，不重新创建。当前用于用户个人管理，不邀请成员。可以补充项目管理与审核记录，但不能借整理基线改变原文件路径或代码运行关系。
+- 唯一目标仓库：`rosannataylor206-glitch/BA2023-OR-Group-Project`，当前按用户最新明确选择保持 **Public**；任何未来可见性调整以用户新指令为准。创建/连接状态见 `review/00_github_setup.md`；未经实际读取验证不得声称仓库已创建或可见性正确。
+- `Ma-mj-Mar/CUMCM` 与 `zelin-michael-zhu/apac-competition-2026-11-26` 仅作只读参考，不向其写入、推送、建 Issue 或改变配置。Agent 不代为邀请成员。
+- 已有仓库、Projects、原18项阶段 Issues 与标签须保留，不重新创建；用户已选择仓库 Public，已自行邀请一名组员，Agent 不管理成员。可以补充项目管理与审核记录，但不能借整理基线改变原文件路径或代码运行关系。
 - 首次推送前必须生成逐项拟上传清单和哈希，取得人工明确确认。不得 `git add .`，不得用 Contents API、Issue 附件或其他上传手段绕过批准。确认范围后才提交初稿基线并建立 `v0.1-first-draft`；Tag 只代表实际纳入文件的初稿快照，不是质量通过证明。
 - 默认分支 main 仅存经确认的稳定版本。审核、整改、模型、程序、论文分支分别按 `review/audit`、`review/revision-v2`、`feature/model`、`feature/code`、`feature/paper` 命名；可加 Issue 后缀，仅创建实际需要的分支。
 - main 不直接实施未经审核的重大修改；不强制推送、不自动合并重大 PR。新版本须保留原始成果并记录影响范围，重大模型调整须人工确认。
@@ -180,7 +180,7 @@
 
 先复核最终上传文件、存储权限、敏感信息与 SHA-256，覆盖模型及推导、完整代码、必要参数/数据、核心结果、实验图表、可编辑论文与审核/管理记录。只选一套现行候选主线；历史重复副本和不相关实验排除，原路径不动。大结果若属于证据依赖不得仅因体积一律删除；在清单说明必要性与存储方式。
 
-**在最终清单展示且用户确认范围和存储权限前停止。** 批准后仅逐项暂存批准文件，核对哈希，首次 Commit、Tag `v0.1-first-draft` 并 Push。Tag 为初稿快照，不表示审核通过；Private 仓库与 Projects 保持不变。不以 Contents API、Issue 附件等绕过上传审批。
+**在最终清单展示且用户确认范围和存储权限前停止。** 批准后仅逐项暂存批准文件，核对哈希，首次 Commit、Tag `v0.1-first-draft` 并 Push。Tag 为初稿快照，不表示审核通过；仓库可见性后来由用户明确改为 Public，Projects 保持原可见性。不以 Contents API、Issue 附件等绕过上传审批。
 
 ### Phase 2：正式审核准备
 
@@ -212,4 +212,8 @@
 
 ### Phase 6：个人进度与成果同步
 
-每完成重要阶段，保存报告/测试证据，更新 PROGRESS、相关现有 Issues、Projects 和 CHANGELOG，记录明确 Commit，并仅在已批准的上传范围和存储权限内同步 GitHub。新增未批准文件或敏感/第三方内容先补清单再确认；无权上传时保留本地并披露。用户无需逐个小步骤批准已授权的审核，但重大模型、核心代码和论文修改仍受综合方案确认门禁约束。仓库不邀请队友，不继续扩展多人管理机制。
+每完成重要阶段，保存报告/测试证据，更新 PROGRESS、相关现有 Issues、Projects 和 CHANGELOG，记录明确 Commit，并仅在已批准的上传范围和存储权限内同步 GitHub。新增未批准文件或敏感/第三方内容先补清单再确认；无权上传时保留本地并披露。用户无需逐个小步骤批准已授权的审核，但重大模型、核心代码和论文修改仍受综合方案确认门禁约束。用户已自行邀请一名组员；Agent 不代为邀请或管理成员，不继续扩展复杂多人机制。
+
+## 2026-11-27 可见性与成员最新指令
+
+用户本人曾将仓库改为 Public 并邀请一名组员；此前 Private 规则已被用户最新明确选择覆盖。仓库当前须保持 **Public**，允许公开已上传成果。Projects 的可见性未要求改变，仍保持 Private。未来上传新增文件仍核对权限、敏感性和批准范围；Agent 不更改现有组员邀请/权限。

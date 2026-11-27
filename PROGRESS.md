@@ -64,3 +64,7 @@ GitHub 配置已完成：Private 仓库、Private Projects 和 18 项 Issues 均
 
 - 已有任务 #7 已关闭；#8、#15 Blocked；#9–#13 In Review；#14 继续 Blocked。Projects 对应状态已同步。
 - 新建实际缺陷 [#19](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/19)（P0，论文身份）和 [#20](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/20)（P1，运力口径），均加入 Private Projects，Blocked。18 个原阶段任务保留；看板现共 20 项。
+
+## 可见性更正（2026-11-27）
+
+用户确认仓库 Public 及组员邀请是本人主动操作，并明确选择今后保持 Public。Agent 已据此重新设置并核验仓库 PUBLIC；Projects 保持 Private。误判可见性异常的 [#21](https://github.com/rosannataylor206-glitch/BA2023-OR-Group-Project/issues/21) 已更正并关闭。未来新增成果公开前仍核对批准范围和敏感信息。
